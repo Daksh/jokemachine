@@ -1,0 +1,121 @@
+
+!!!! AIMING FOR OCTOBER 30  !!!!
+
+  * Check in code & Trac component WAITING
+  * Mesh
+  * Bugs
+  * i18n
+  * Sample Data
+  * Memory
+  * Lesson Plans
+
+  * Sound  WORKABLE 
+  ** check tempdir against a vmware img
+
+
+= Current =
+
+* Bugs
+** Choose -> Delete not work
+
+
+* Mesh
+** Put text: Downloading... or somesuch when joining activity
+** After submitted joke has been approved broadcast it back to participants so that it appears in their version of the jokebook DONE
+** Do we want all changes in state initiator side broadcast ? A lot of work to do it... 
+** is_visible flag on jokes and jokebooks ?
+** Do we want the initiator to see the jokes of folk who join ? Could be nice... could be confusing...
+** Share icons getting left behind
+** What's this with activities getting journalled as shared - and then not being visible when resumed ?
+** Make mesh work!  DONE
+** Detect whether am sharer or sharee  DONE
+** Remove the crapload of UI functions if sharee  DONE
+
+= To Do =
+
+* Mesh
+** Make mesh work!
+
+
+* Check in code & Trac component WAITING
+** My domains are either gone or down - wait a few hours, if not back up then
+   do the big txfer else do the big txfer THIS WEEK !! :-(
+
+
+* GUI 
+** Not going back to read jokebooks from edit mode on build 613 ?
+** Preview mode shows make jokebook button - shouldn't
+** Prepend Cover on preview
+** Submit a Joke button -> only for foreigners
+** On read jokebook & empty -> "Edit My Jokes" -> Go to edit my jokes tab
+** Jokebook Info -> Edit Jokebook Cover  DONE
+** Refactor Page.make_* infrastructure
+*** Factor out CanvasText's and replace with a better make_text
+*** Add a make_button as well
+*** Refactor Page.make_imagebox & ObjectChooser code - it's squishy!
+** Fix gtkrc for non-default frame states
+
+
+* Multimedia - Images/Audio
+** Filter ObjectChooser to only list images/audio -> https://dev.laptop.org/ticket/3060
+** Select a sound to play on Joke punchlines  DONE
+*** NOTE writing out sound_blob to temp file for now before handing to gstreamer
+** fold image/image_blob into a single property?
+** fold sound/sound_blob into a single property?
+
+
+* Persistence
+** Build# 613 - keep/save problems ?
+** Some sample jokes
+** Restore last known state of activity instead of starting from scratch when not started from Journal - YES
+*** Chat to eben
+** Create and set activity_version property for persistence.JokeMachineState.version
+** Don't persist if there are no jokebooks
+** Can we point to datastore objects rather than having to copy them into our
+   own datastructures - has disadvantage that deleting an object from the
+   datastore that's in use will delete it from the joke - also creates problems
+   when sharing...
+
+
+* Memory
+** If memory should become a problem... write pickle restored from journal out 
+   to disk and extend Persistence interface to feed from disk rather than RAM
+
+
+* i18n
+** Do a test translation into Afrikaans
+** Make language selection button work
+** Double check that all strings are gettexted
+
+
+* Lesson Plans
+** Make Lesson Plans button work
+
+
+* Unit Tests
+** Split unit.py out into separate test cases 
+
+
+
+= Known Problems =
+
+* Sugar Versions
+** Vanishing controls on Build 542.3 running on B2 hardware - bring up & hide developer terminal to reset
+** gtk.TextViews have borders on Build 557 which shouldn't be there
+** These problems are all fixed on Build >600 and sugar-jhbuild
+
+* Audio
+** Audio b0rk3d on B2 Hardware w/ build 542.3
+
+* Edit Jokebook -> Review Jokes
+** Present&working, but no way to submit jokes to it as mesh code is still coming up :-)
+** If you want to see some sample data with waiting submissions edit persistence/jokemachinestate.py -> test_data() -> num_jokebooks = a number bigger than zero
+
+* Bugs
+** Activity Icon not being set to theme colors
+** Language selection button not theming as it should DONE
+*** We can also lose theme_widget seeing as we're using a custom gtkrc now
+
+
+
+

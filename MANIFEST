@@ -1,0 +1,40 @@
+./JokeMachineActivity.py
+./TODO
+./globals.py
+./gtkrc
+./gui/__init__.py
+./gui/canvaslistbox.py
+./gui/frame.py
+./gui/lessonplanwidget.py
+./gui/page.py
+./gui/theme.py
+./i18n.py
+./i18n_misc_strings.py
+./resources/GameLogoCharacter.png
+./resources/image.png
+./resources/audio.png
+./lessons/Introduction/default.abw
+./lessons/Lesson 1/default.abw
+./lessons/Lesson 2/default.abw
+./lessons/Lesson 3/default.abw
+./lessons/Lesson 4/default.abw
+./locale/jokemachine.pot
+./mesh/__init__.py
+./mesh/activitysession.py
+./pages/__init__.py
+./pages/choose.py
+./pages/cover.py
+./pages/edit.py
+./pages/joke.py
+./pages/preview.py
+./pages/submit.py
+./persistence/__init__.py
+./persistence/joke.py
+./persistence/jokebook.py
+./persistence/jokemachinestate.py
+./setup.py
+./util/__init__.py
+./util/audioplayer.py
+./util/decorators.py
+./util/journalpickler.py
+./util/persistence.py
