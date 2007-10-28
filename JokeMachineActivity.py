@@ -61,7 +61,7 @@ class JokeMachineActivity(activity.Activity):
     activity.Activity.__init__(self, handle)
 
     # customize theme
-    gtkrc = os.path.join(Globals.pwd, 'gtkrc')
+    gtkrc = os.path.join(Globals.pwd, 'resources/gtkrc')
     if os.path.exists(gtkrc):
       logging.debug("Loading resources from %s" % gtkrc)
       gtk.rc_add_default_file(gtkrc)
