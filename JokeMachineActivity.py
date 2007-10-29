@@ -13,7 +13,7 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #
 
-import os
+import os,sys
 import logging
 import gtk
 
@@ -48,6 +48,13 @@ from mesh.activitysession import JokeMachineSession, MESH_IFACE, MESH_PATH, MESH
 from persistence.jokemachinestate import JokeMachineState
 
 
+# TODO: Handle <= Build# 622 gracefully 
+try:
+  from sugar.graphics.alert import NotifyAlert
+except ImportError:
+  import sys as NotifyAlert
+
+
 
 class JokeMachineActivity(activity.Activity):
   """Sugar activity for jokes
@@ -59,23 +66,6 @@ class JokeMachineActivity(activity.Activity):
   in our world collapse with giggles of helpless laughter!
   """
 
-  # TODO: Handle <= Build# 622 gracefully 
-  try:
-    def alert(self, title, text=None):
-      '''Show an alert above the activity.'''
-      from sugar.graphics.alert import NotifyAlert
-      alert = NotifyAlert(timeout=10)
-      alert.props.title = title
-      alert.props.msg = text
-      self.add_alert(alert)
-      alert.connect('response', self.__alert_cancel_cb)
-      alert.show()
-    def __alert_cancel_cb(self, alert, response_id):
-      '''Callback for alert events'''
-      self.remove_alert(alert)
-  except ImportError:
-    def alert(self, title, text=None):
-      pass
 
   def __init__(self, handle):
     activity.Activity.__init__(self, handle)
@@ -154,6 +144,26 @@ class JokeMachineActivity(activity.Activity):
     # set default startup page if we're the initiator
     if self.is_initiator: 
       self.set_page(pages.choose.Choose)
+
+
+
+
+  def alert(self, title, text=None):
+    '''Show an alert above the activity.'''
+    if NotifyAlert is not sys:
+      alert = NotifyAlert(timeout=10)
+      alert.props.title = title
+      alert.props.msg = text
+      self.add_alert(alert)
+      alert.connect('response', self.__alert_cancel_cb)
+      alert.show()
+    else:
+      logging.warning('sugar.graphics.alert.NotifyAlert not present for %r, %r', title, text)
+
+    
+  def __alert_cancel_cb(self, alert, response_id):
+    '''Callback for alert events'''
+    self.remove_alert(alert)
 
 
   # Mesh Callbacks #############################################################
