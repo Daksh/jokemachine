@@ -13,7 +13,7 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #
 
-import os,sys
+import os
 import logging
 import gtk
 
@@ -52,7 +52,7 @@ from persistence.jokemachinestate import JokeMachineState
 try:
   from sugar.graphics.alert import NotifyAlert
 except ImportError:
-  import sys as NotifyAlert
+  pass
 
 
 
@@ -146,20 +146,18 @@ class JokeMachineActivity(activity.Activity):
       self.set_page(pages.choose.Choose)
 
 
-
-
   def alert(self, title, text=None):
     '''Show an alert above the activity.'''
-    if NotifyAlert is not sys:
+    try:
       alert = NotifyAlert(timeout=10)
-      alert.props.title = title
-      alert.props.msg = text
-      self.add_alert(alert)
-      alert.connect('response', self.__alert_cancel_cb)
-      alert.show()
-    else:
+    except NameError:
       logging.warning('sugar.graphics.alert.NotifyAlert not present for %r, %r', title, text)
-
+      return
+    alert.props.title = title
+    alert.props.msg = text
+    self.add_alert(alert)
+    alert.connect('response', self.__alert_cancel_cb)
+    alert.show()
     
   def __alert_cancel_cb(self, alert, response_id):
     '''Callback for alert events'''
