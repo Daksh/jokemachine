@@ -4,6 +4,6 @@ bundle_id = org.worldwideworkshop.JokeMachineActivity
 service_name = org.worldwideworkshop.JokeMachineActivity
 class = JokeMachineActivity.JokeMachineActivity
 icon = activity-jokemachine
-activity_version = 3
+activity_version = 4
 host_version = 1
 show_launcher = 1
