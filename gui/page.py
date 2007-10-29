@@ -73,7 +73,7 @@ class Page(hippo.CanvasBox):
     list_row = RoundBox()
     list_row.props.border  = 0 # properties not being set properly by constructor
     list_row.props.padding = theme.DEFAULT_PADDING
-    list_row.props.padding_right=0
+    #list_row.props.padding_right=0
     list_row.props.background_color = self.color_listrow
     if contents is not None:
       list_row.append(contents)

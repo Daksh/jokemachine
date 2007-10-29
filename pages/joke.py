@@ -100,6 +100,11 @@ class Joke(Page):
         button.connect('clicked', self.__do_clicked_submit, jokebook, joke_id)        
         self.append(hippo.CanvasWidget(widget=theme.theme_widget(button), 
                                        padding_top=20))
+      else:
+        button = gtk.Button(_('Add Jokes'))
+        button.connect('clicked', self.__do_clicked_add, jokebook, joke_id)        
+        self.append(hippo.CanvasWidget(widget=theme.theme_widget(button), 
+                                       padding_top=20))
       return
       
     # the joke box
@@ -152,7 +157,12 @@ class Joke(Page):
       button.connect('clicked', self.__do_clicked_submit, jokebook, joke_id)        
       self.navigation_box.append(hippo.CanvasWidget(widget=theme.theme_widget(button), 
                                                     padding_top=20))
+      
     
+  def __do_clicked_add(self, button, jokebook, joke_id):
+    page = Globals.JokeMachineActivity.set_page(pages.edit.Edit, jokebook)
+    tab = page.do_tab_clicked(pages.edit.EditJokes)
+    tab.do_clicked_add_joke(None, jokebook)
 
   def __do_clicked_submit(self, button, jokebook, joke_id):
     Globals.JokeMachineActivity.set_page(pages.submit.Submit, jokebook, joke_id)

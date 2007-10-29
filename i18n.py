@@ -27,8 +27,7 @@
 import os
 import gettext
 import locale
-
-from gui import theme
+import logging
 
 import gtk, gobject
 
@@ -43,6 +42,7 @@ lang_name_mapping = {
   'cs':(None, _('Czech'),'czech_republic'),
   'da':(None, _('Danish'),'denmark'),
   'nl':(None, _('Dutch'), 'netherlands'),
+  'af':(None, _('Afrikaans'), 'south_africa'),
   'en':('English', _('English'),'united_states'),
   'en_gb':('English', _('English - Great Britain'),'united_kingdom'),
   'en_us':('English', _('English - U.S.'),'united_states'),
@@ -72,16 +72,12 @@ class LangDetails (object):
     self.image = image
 
   def guess_translation (self, fallback=False):
-    locale_dir = os.path.join(os.getcwd(), 'locale')
-    domain = 'jokemachine'
-    self.gnutranslation = gettext.translation(domain, locale_dir, [self.code], fallback=fallback)
+    self.gnutranslation = gettext.translation('JokeMachine', './locale', [self.code], fallback=fallback)
 
   def install (self):
     self.gnutranslation.install()
 
   def matches (self, code, exact=True):
-    if code is None or self.code is None:
-      return False
     if exact:
       return code.lower() == self.code.lower()
     return code.split('_')[0].lower() == self.country_code.lower()
@@ -99,7 +95,7 @@ def get_lang_details (lang):
   return LangDetails(lang, mapping[0], mapping[2])
 
 def list_available_translations ():
-  rv = [get_lang_details('en'), get_lang_details('fr'), get_lang_details('es')]
+  rv = [get_lang_details('en')]
   rv[0].guess_translation(True)
   for i,x in enumerate([x for x in os.listdir('locale') if os.path.isdir('locale/' + x) and not x.startswith('.')]):
     try:
@@ -109,6 +105,7 @@ def list_available_translations ():
         rv.append(details)
     except:
       raise
+      pass
   return rv
 
 class LanguageComboBox (gtk.ComboBox):
@@ -117,9 +114,6 @@ class LanguageComboBox (gtk.ComboBox):
     gtk.ComboBox.__init__(self, liststore)
 
     self.cell = gtk.CellRendererText()
-    #self.cell.props.background_gdk = theme.COLOR_DARK_GREEN.get_gdk_color()
-    #self.cell.props.background_set = True
-    
     self.pack_start(self.cell, True)
     self.add_attribute(self.cell, 'text', 0)
 
@@ -127,23 +121,26 @@ class LanguageComboBox (gtk.ComboBox):
     for i,x in enumerate(self.translations):
       liststore.insert(i+1, (gettext.gettext(x.name), ))
     self.connect('changed', self.install)
-    
-    self.set_title('MaMaLanguageComboBox')
-    
 
   def modify_bg (self, state, color):
-    # AVG - cell.props.background not cell.background
-    cell.props.background = '#027F01'
-    self.cell.props.background_gdk = color
-    self.cell.props.background_set = True
-    #setattr(self.cell, 'background-gdk',color)
-    #setattr(self.cell, 'background-set',True)
+    setattr(self.cell, 'background-gdk',color)
+    setattr(self.cell, 'background-set',True)
 
   def install (self, *args):
     if self.get_active() > -1:
-      self.translations[self.get_active()].install()
+      translation = self.translations[self.get_active()]
+      logging.debug('i18n - Installing locale: %r %r - %r',
+                    translation.code, 
+                    translation.country_code, 
+                    translation.name)
+      translation.install()
     else:
       code, encoding = locale.getdefaultlocale()
+      logging.debug('Locale code: %r' % code)
+      if code is None:
+        locale.setlocale(locale.LC_ALL, 'en_US')
+        code, encoding = locale.getlocale()
+
       # Try to find the exact translation
       for i,t in enumerate(self.translations):
         if t.matches(code):
@@ -164,7 +161,7 @@ class LanguageComboBox (gtk.ComboBox):
 ###
 def gather_other_translations ():
   from glob import glob
-  entries = filter(lambda x: os.path.isdir(x), glob('resources/*'))
+  entries = filter(lambda x: os.path.isdir(x), glob('images/*'))
   entries.extend(filter(lambda x: os.path.isdir(x), glob('lessons/*')))
   entries = map(lambda x: os.path.basename(x), entries)
   f = file('i18n_misc_strings.py', 'w')

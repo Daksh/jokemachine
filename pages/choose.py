@@ -39,11 +39,10 @@ class Choose(Page):
     Page.__init__(self)
 
     # page title
-    self.append(hippo.CanvasText(
-      text= 'Choose a Jokebook to read:',
-      xalign=hippo.ALIGNMENT_START,
-      padding=10,
-      font_desc=theme.FONT_BODY.get_pango_desc()))
+    self.append(hippo.CanvasText(text= _('Choose a Jokebook to read:'),
+                                 xalign=hippo.ALIGNMENT_START,
+                                 padding=10,
+                                 font_desc=theme.FONT_BODY.get_pango_desc()))
     
     # list of Jokebooks 
     allow_edit = Globals.JokeMachineActivity.is_initiator
@@ -63,12 +62,15 @@ class Choose(Page):
 
     
   def __do_clicked_delete(self, button, jokebook):
+    message = _('Are you sure you want to delete your ') 
+    if jokebook.title is not None:
+      message += '\'' + jokebook.title + '\' ' 
+    message += _('jokebook ?')
     confirm = gtk.MessageDialog(Globals.JokeMachineActivity, 
                                 gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
                                 gtk.MESSAGE_QUESTION,
                                 gtk.BUTTONS_YES_NO,
-                                _('Are you sure you want to delete your') + \
-                                ' \'' + jokebook.title + '\' ' +  _('jokebook ?'))
+                                message)
     response = confirm.run()
     confirm.hide()
     confirm.destroy()

@@ -13,8 +13,10 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #
 
+import os
 import locale
 import gtk
+import logging
 
 from abiword import Canvas as AbiCanvas
 
@@ -42,6 +44,10 @@ class LessonPlanWidget(gtk.Notebook):
         lesson -- string, name of lesson
         """
     code, encoding = locale.getdefaultlocale()
+    logging.debug('Locale code: %r' % code)
+    if code is None or encoding is None:
+      locale.setlocale(locale.LC_ALL, 'en_US')
+      code, encoding = locale.getlocale()
     canvas = AbiCanvas()
     canvas.show()
     files = map(lambda x: os.path.join(path, '%s.abw' % x),
@@ -57,3 +63,5 @@ class LessonPlanWidget(gtk.Notebook):
     canvas.zoom_width()
     canvas.set_show_margin(False)
     self.append_page(canvas, gtk.Label(name))
+    
+    

@@ -18,6 +18,8 @@ import logging
 import gtk
 
 from gettext import gettext as _
+import gettext
+import locale
 
 import hippo
 from sugar.activity import activity
@@ -57,8 +59,33 @@ class JokeMachineActivity(activity.Activity):
   in our world collapse with giggles of helpless laughter!
   """
 
+  # TODO: Handle <= Build# 622 gracefully 
+  try:
+    def alert(self, title, text=None):
+      '''Show an alert above the activity.'''
+      from sugar.graphics.alert import NotifyAlert
+      alert = NotifyAlert(timeout=10)
+      alert.props.title = title
+      alert.props.msg = text
+      self.add_alert(alert)
+      alert.connect('response', self.__alert_cancel_cb)
+      alert.show()
+    def __alert_cancel_cb(self, alert, response_id):
+      '''Callback for alert events'''
+      self.remove_alert(alert)
+  except ImportError:
+    def alert(self, title, text=None):
+      pass
+
   def __init__(self, handle):
     activity.Activity.__init__(self, handle)
+
+    # TODO - clean -  install gettext
+    #os.chdir(Globals.pwd)  # required for i18n.py to work
+    #gettext.install('JokeMachine', './locale', unicode=True)
+    #presLan_af = gettext.translation("JokeMachine", os.path.join(Globals.pwd, 'locale'), languages=['af'])
+    #presLan_af.install()
+    #locale.setlocale(locale.LC_ALL, 'af')    
 
     # customize theme
     gtkrc = os.path.join(Globals.pwd, 'resources/gtkrc')
@@ -73,8 +100,6 @@ class JokeMachineActivity(activity.Activity):
     Globals.set_activity_instance(self)
 
     logging.debug("Starting the Joke Machine activity")
-
-    os.chdir(Globals.pwd)  # required for i18n.py to work TODO -> You're not initting i8n properly dude!
 
     # toolbox
     self.__toolbox = activity.ActivityToolbox(self)
@@ -103,13 +128,14 @@ class JokeMachineActivity(activity.Activity):
     owner = self.__presence_service.get_owner()
     Globals.set_owner(owner)
 
-    self.__session = None # ????  self.poll_session
+    self.__session = None  # JokeMachineSession
     self.connect('shared', self.__do_activity_shared)
 
 
     # Check if we're joining another instance 
     self.__is_initiator = True
     if self._shared_activity is not None:
+      self.alert(_('Joke Machine'), _('Please wait a moment for your buddy\'s Jokebooks to show up'))
       self.__is_initiator = False
       logging.debug('shared:  %s' % self._shared_activity.props.joined)
       # We are joining the activity
@@ -150,11 +176,9 @@ class JokeMachineActivity(activity.Activity):
       channel = telepathy.client.Channel(bus_name, channel_path)
       htype, handle = channel.GetHandle()
       if htype == telepathy.HANDLE_TYPE_ROOM:
-        # TODO - this log message throws an exception
-        #logging.debug('Found our room: it has handle# %d %s', 
-        #              handle, 
-        #              self.__telepathy_connection.InspectHandles(htype, [handle][0]))
-        logging.debug('Found our room: it has handle# %d' % handle)
+        logging.debug('Found our room: it has handle# %d %s', 
+                      handle, 
+                      self.__telepathy_connection.InspectHandles(htype, [handle])[0])
         room = handle
         ctype = channel.GetChannelType()
         if ctype == telepathy.CHANNEL_TYPE_TUBES:
@@ -170,14 +194,20 @@ class JokeMachineActivity(activity.Activity):
     if text_chan is None:
       logging.debug('Presence service did not create a text channel')
       return
-
-    # Make sure we have a Tubes channel - PS doesn't yet provide one
     if tubes_chan is None:
-      logging.debug('Did not find our Tubes channel, requesting one...')
+      logging.debug('Presence service did not create a tubes channel')
+      # okay - we're going to try requesting one because this always fails on
+      # build# <= 622
+      logging.debug('TODO - DEPRECATE: TRYING TO REQUEST A TUBES CHANNEL')
       tubes_chan = self.__telepathy_connection.request_channel(telepathy.CHANNEL_TYPE_TUBES,
                                                                telepathy.HANDLE_TYPE_ROOM, 
                                                                room, 
                                                                True)
+      if tubes_chan is None:
+        logging.debug('TODO - DEPRECATE: FAILED TO REQUEST A TUBES CHANNEL - QUITTING')
+        return
+      logging.debug('TODO - DEPRECATE: MANAGED TO REQUEST A TUBES CHANNEL')
+      
     self.tubes_chan = tubes_chan
     self.text_chan = text_chan
 
@@ -239,7 +269,7 @@ class JokeMachineActivity(activity.Activity):
       logging.debug('non-CS handle %u belongs to itself', handle)
       assert handle != 0
 
-    name, path = self.__presence_service.get_preferred_connection() # TODO - make sure this does not cause bugs
+    name, path = self.__presence_service.get_preferred_connection() 
 
     return self.__presence_service.get_buddy_by_telepathy_handle(name,
                                                                  path, 
@@ -259,7 +289,7 @@ class JokeMachineActivity(activity.Activity):
     logging.debug('The activity was shared')
     
     self.__telepathy_initiating = True
-    self.__setup() # TODO - more civilized name
+    self.__setup() 
 
     for buddy in self._shared_activity.get_joined_buddies():
       logging.debug('Buddy %s is already in the activity' % buddy.props.nick)
@@ -316,18 +346,24 @@ class JokeMachineActivity(activity.Activity):
     return page
 
 
+  #def alert(self, title, text=None):
+    #'''Show an alert above the activity.'''
+    #alert = NotifyAlert(timeout=10)
+    #alert.props.title = title
+    #alert.props.msg = text
+    #self.add_alert(alert)
+    #alert.connect('response', self.__alert_cancel_cb)
+    #alert.show()
+
+
+  #def __alert_cancel_cb(self, alert, response_id):
+    #'''Callback for alert events'''
+    #self.remove_alert(alert)
+    
 
   def read_file(self, file_path):
     '''Callback to resume activity state from Journal'''
     logging.debug('Reading file from datastore via Journal: %s' % file_path)
-    
-    # TODO - double check -> if I'm a shared activity, don't restore me
-    # TODO - this doesn't work here - not initted yet
-    #if not self.is_initiator:
-    #  logging.debug('joining a shared activity - dont restore')
-    #  return
-
-    # read activity state from Journal
     f = open(file_path, 'r')
     pickle = f.read()
     if len(pickle) == 0:
@@ -342,26 +378,17 @@ class JokeMachineActivity(activity.Activity):
     Globals.set_activity_state(activity_state) 
 
 
-
   def write_file(self, file_path):
     '''Callback to persist activity state to Journal'''
     
-    # TODO - double check -> if I'm a shared activity, don't persist me
-    # TODO - this doesn't work here - not initted yet
-    #if not self.is_initiator:
-    #  logging.debug('joining a shared activity - dont persist')
-    #  return
-    
     if len(Globals.JokeMachineState.jokebooks) != 0:
       logging.debug('Writing file to datastore via Journal: %s' % file_path)
-      # write activity state to journal
       f = open(file_path, 'w')
       pickle = Globals.JokeMachineState.dumps()
       f.write(pickle)
       f.close()
     else:
       logging.debug('nothing to persist')
-
 
 
   def close(self):    

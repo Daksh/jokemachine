@@ -73,8 +73,14 @@ class Jokebook(object):
     '''jokes submitted to this jokebook pending approval'''
     def default(self): return []
     def get(self): return self.__submissions
-  
 
+  @PersistentProperty
+  def show():
+    '''should this jokebook be visible to others'''
+    def default(self): return False
+    def get(self): return self.__show
+    def set(self, value): self.__show = value
+    
   # TODO - this should really be transparent
   @property
   def next_joke_id(self):

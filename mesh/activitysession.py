@@ -25,9 +25,9 @@ from globals import Globals
 from persistence.jokemachinestate import JokeMachineState
 from persistence.joke import Joke
 
-MESH_SERVICE = 'org.worldwideworkshop.JokeMachine'
+MESH_SERVICE = 'org.worldwideworkshop.olpc.JokeMachine'
 MESH_IFACE = MESH_SERVICE
-MESH_PATH = '/org/worldwideworkshop/JokeMachine'
+MESH_PATH = '/org/worldwideworkshop/olpc/JokeMachine'
 
 
 
@@ -146,7 +146,9 @@ class JokeMachineSession(ExportedGObject):
       logging.debug('JokeMachineSession.submit_cb() -> empty joke_pickle - doing nothing')
       return
     joke = Joke.loads(joke_pickle)
-    logging.debug('%s submitted a joke to my jokebook# %d with text: %s and answer %s', joke.joker, jokebook_id, joke.text, joke.answer)
+    if joke is None:
+      logging.error('JokeMachineSession.submit_cb -> could not unpickle joke')
+      return
     
     # 2. get the jokebook it belongs to
     jokebook = Globals.JokeMachineState.jokebook(jokebook_id)
@@ -155,17 +157,20 @@ class JokeMachineSession(ExportedGObject):
       return
     
     # 3. add it to submissions in the appropriate jokebook
+    logging.debug('%s submitted a joke to my jokebook# %d with text: %s and answer %s', joke.joker, jokebook_id, joke.text, joke.answer)
     jokebook.submissions.append(joke)
   
-    # 4. TODO - show some kind of alert - ask on #sugar
+    # 4. alert the owner 
+    message = str(joke.joker) + _(' submitted a joke to ') + str(jokebook.title)
+    Globals.JokeMachineActivity.alert(_('Joke Machine'), message)
 
 
   # e -> I am the initiator, I've just accepted a submission, tell everyone!
-  @signal (dbus_interface=MESH_IFACE, signature='us')
-  def BroadcastJoke(self, jokebook_id, joke_pickle):
+  @signal (dbus_interface=MESH_IFACE, signature='uss')
+  def BroadcastJoke(self, jokebook_id, joke_pickle, sender_nick):
     '''broadcast newly accepted submission back to the mesh'''
     
-  def broadcast_joke_cb(self, jokebook_id, joke_pickle, sender):
+  def broadcast_joke_cb(self, jokebook_id, joke_pickle, sender_nick, sender):
     '''handle a BroadCast Joke by creating a new joke in the local store'''
     if sender == self.my_bus_name:
       # Ignore my own signal
@@ -179,7 +184,9 @@ class JokeMachineSession(ExportedGObject):
       logging.debug('JokeMachineSession.broadcast_joke_cb() -> empty joke_pickle - doing nothing')
       return
     joke = Joke.loads(joke_pickle)
-    logging.debug('%s broadcast a joke to my jokebook# %d with text: %s and answer %s', joke.joker, jokebook_id, joke.text, joke.answer)
+    if joke is None:
+      logging.error('JokeMachineSession.broadcast_joke_cb -> could not unpickle joke')
+      return
     
     # 2. get the jokebook it belongs to
     jokebook = Globals.JokeMachineState.jokebook(jokebook_id)
@@ -188,10 +195,14 @@ class JokeMachineSession(ExportedGObject):
       return
     
     # 3. add it to jokes in the appropriate jokebook
+    logging.debug('%s broadcast a joke to my jokebook# %d with text: %s and answer %s', joke.joker, jokebook_id, joke.text, joke.answer)    
     jokebook.jokes.append(joke)
+
     
     # 4. TODO - show some kind of alert - ask on #sugar
-
+    message = str(sender_nick) + _(' accepted a joke submitted to ') + \
+              str(jokebook.title) + _(' by ') + str(joke.joker)
+    Globals.JokeMachineActivity.alert(_('Joke Machine'), message)
 
   # ############################################################################
 

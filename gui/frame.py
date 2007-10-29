@@ -30,6 +30,7 @@ import pages.choose
 import pages.edit
 
 from persistence.jokebook import Jokebook
+from gui.lessonplanwidget import LessonPlanWidget
 
 class Frame(hippo.Canvas):
   
@@ -49,28 +50,25 @@ class Frame(hippo.Canvas):
     
     # Page Container ###########################################################
     # Holds: The currently open UI page
-    self.__container = hippo.CanvasBox(
-      border=theme.BORDER_WIDTH,
-      border_color=theme.COLOR_FRAME.get_int(),
-      background_color=theme.COLOR_BACKGROUND.get_int(),
-      spacing=4,
-      padding_top=20, 
-      padding_left=40, 
-      padding_right=40,
-      padding_bottom=20,
-      orientation=hippo.ORIENTATION_VERTICAL)
+    self.__container = hippo.CanvasBox(border=theme.BORDER_WIDTH,
+                                       border_color=theme.COLOR_FRAME.get_int(),
+                                       background_color=theme.COLOR_BACKGROUND.get_int(),
+                                       spacing=4,
+                                       padding_top=20, 
+                                       padding_left=40, 
+                                       padding_right=40,
+                                       padding_bottom=20,
+                                       orientation=hippo.ORIENTATION_VERTICAL)
     self.__root.append(self.__container, hippo.PACK_EXPAND)
     
-    self.__page = hippo.CanvasBox(
-      box_height=theme.PAGE_HEIGHT,  # TODO -> Pull width/height from theme - and make sure all
-                       #         children pull their sizes relative to this box
-      background_color=theme.COLOR_PAGE.get_int(),
-      border=4,
-      border_color=theme.COLOR_PAGE_BORDER.get_int(), 
-      spacing=8,      
-      padding=20,
-      xalign=hippo.ALIGNMENT_CENTER,
-      orientation=hippo.ORIENTATION_VERTICAL)
+    self.__page = hippo.CanvasBox(box_height=theme.PAGE_HEIGHT,
+                                  background_color=theme.COLOR_PAGE.get_int(),
+                                  border=4,
+                                  border_color=theme.COLOR_PAGE_BORDER.get_int(), 
+                                  spacing=8,      
+                                  padding=20,
+                                  xalign=hippo.ALIGNMENT_CENTER,
+                                  orientation=hippo.ORIENTATION_VERTICAL)
     self.__container.append(self.__page)
     
     self.__page_class = None
@@ -92,37 +90,38 @@ class Frame(hippo.Canvas):
     ret.append(hippo.CanvasWidget(widget=logo))
     
     # language selection box
-    language =  hippo.CanvasWidget(
-      background_color=theme.COLOR_BACKGROUND.get_int(),
-      border_top=theme.BORDER_WIDTH,
-      border_left=theme.BORDER_WIDTH,
-      border_color=theme.COLOR_FRAME.get_int(),
-      padding_top=12, 
-      padding_bottom=12,
-      padding_left=100, 
-      padding_right=100,
-      yalign=hippo.ALIGNMENT_CENTER,
-      orientation=hippo.ORIENTATION_VERTICAL)
+    language =  hippo.CanvasWidget(background_color=theme.COLOR_BACKGROUND.get_int(),
+                                   border_top=theme.BORDER_WIDTH,
+                                   border_left=theme.BORDER_WIDTH,
+                                   border_color=theme.COLOR_FRAME.get_int(),
+                                   padding_top=12, 
+                                   padding_bottom=12,
+                                   padding_left=100, 
+                                   padding_right=100,
+                                   yalign=hippo.ALIGNMENT_CENTER,
+                                   orientation=hippo.ORIENTATION_VERTICAL)
     button = LanguageComboBox()
     button.install()
+    button.set_name('fubar')
     language.props.widget = button 
-    button.set_name('Fubar')
     ret.append(language, hippo.PACK_EXPAND)
     
     # lesson plans
-    lesson_plans =  hippo.CanvasWidget(
-      background_color=theme.COLOR_BACKGROUND.get_int(),
-      border_top=theme.BORDER_WIDTH,
-      border_left=theme.BORDER_WIDTH, 
-      border_right=theme.BORDER_WIDTH, 
-      border_color=theme.COLOR_FRAME.get_int(),
-      padding_top=12, 
-      padding_bottom=12,
-      padding_left=30, 
-      padding_right=30,
-      yalign=hippo.ALIGNMENT_CENTER,
-      orientation=hippo.ORIENTATION_VERTICAL)
+    lesson_plans =  hippo.CanvasWidget(background_color=theme.COLOR_BACKGROUND.get_int(),
+                                      border_top=theme.BORDER_WIDTH,
+                                      border_left=theme.BORDER_WIDTH, 
+                                      border_right=theme.BORDER_WIDTH, 
+                                      border_color=theme.COLOR_FRAME.get_int(),
+                                      padding_top=12, 
+                                      padding_bottom=12,
+                                      padding_left=30, 
+                                      padding_right=30,
+                                      yalign=hippo.ALIGNMENT_CENTER,
+                                      orientation=hippo.ORIENTATION_VERTICAL)
     button = gtk.Button(_('Lesson Plans'))
+    button.set_size_request(200, -1)
+    button.active = False
+    button.connect('clicked', self.__do_clicked_lessonplans)
     lesson_plans.props.widget = theme.theme_widget(button)
     ret.append(lesson_plans, hippo.PACK_EXPAND)
     
@@ -203,3 +202,26 @@ class Frame(hippo.Canvas):
     Globals.JokeMachineState.jokebooks.append(jokebook)
     Globals.JokeMachineActivity.set_page(pages.edit.Edit, jokebook)
  
+ 
+  def __do_clicked_lessonplans(self, button):
+    if button.active:
+      button.set_label(_('Lesson Plans'))
+      button.active = False
+      Globals.JokeMachineActivity.set_page(pages.choose.Choose)
+    else:
+      button.set_label(_('Close Lessons'))
+      button.active = True
+      widget_box = hippo.CanvasBox(border=0,
+                                   border_color=theme.COLOR_BLUE.get_int())
+      widget_box.append(hippo.CanvasText(text= _('Lesson Plans:'),
+                                         xalign=hippo.ALIGNMENT_START,
+                                         padding=10,
+                                         font_desc=theme.FONT_BODY.get_pango_desc()))
+      lesson_plans = LessonPlanWidget(Globals.pwd)
+      lesson_plans.set_size_request(1050, 500)
+      widget_box.append(hippo.CanvasWidget(widget=lesson_plans,
+                                           border=0,
+                                           border_color=theme.COLOR_DARK_GREEN.get_int()))
+      self.page = widget_box
+      self.__button_read.set_visible(False)
+      self.__button_make.set_visible(False)            

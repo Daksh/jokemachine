@@ -1,7 +1,6 @@
 ./JokeMachineActivity.py
-./TODO
 ./globals.py
-./gtkrc
+./resources/gtkrc
 ./gui/__init__.py
 ./gui/canvaslistbox.py
 ./gui/frame.py
@@ -18,7 +17,9 @@
 ./lessons/Lesson 2/default.abw
 ./lessons/Lesson 3/default.abw
 ./lessons/Lesson 4/default.abw
-./locale/jokemachine.pot
+./locale/JokeMachine.pot
+./locale/af/LC_MESSAGES/JokeMachine.mo
+./locale/af/LC_MESSAGES/JokeMachine.po
 ./mesh/__init__.py
 ./mesh/activitysession.py
 ./pages/__init__.py

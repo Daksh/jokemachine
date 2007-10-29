@@ -37,6 +37,21 @@ class Preview(Page):
     Page.__init__(self, xalign=hippo.ALIGNMENT_CENTER)
     
     preview_box = CanvasListBox(1028, theme.PREVIEW_HEIGHT) # TODO - really shouldn't be hardcoded
+    
+    # cover
+    cover = self.make_listrow()
+    cover.props.orientation=hippo.ORIENTATION_VERTICAL
+    cover.append(hippo.CanvasText(text='"' + jokebook.title + '" ' + _('started by') + ' ' + jokebook.owner,
+                                 xalign=hippo.ALIGNMENT_CENTER,
+                                 padding_top=10,
+                                 font_desc=theme.FONT_BODY_BOLD.get_pango_desc()))
+    cover.append(hippo.CanvasBox(box_height=theme.SPACER_VERTICAL))      
+    cover_picture = self.make_imagebox(jokebook, 'image', 640, 480, False)    
+    cover.append(cover_picture)
+    cover.append(hippo.CanvasBox(box_height=theme.SPACER_VERTICAL))
+    preview_box.append(cover)
+    
+    # jokes
     for joke in jokebook.jokes:
       list_row = self.make_listrow(JokeViewer(joke, jokebook.title))
       preview_box.append(list_row)

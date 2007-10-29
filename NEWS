@@ -1,5 +1,28 @@
+JokeMachine-3.xo
+
+  * Feature: Put alerts up when joke submitted and approved over mesh 
+  * Feature: Put alert up advising patience when joining a shared jokebook
+  * Feature: Made Lesson Plans button work 
+  * Feature: Safe fallback for builds without sugar.alert
+  * Feature: Hooked LanguageCombo up
+  * i18n: Created (a rough!) Afrikaans translation
+  * Fixed: Prepended Cover on preview 
+  * Fixed: Don't hardcode JokeEditor delete button position 
+  * Fixed: On read jokebook & empty -> "Edit My Jokes" -> Go to edit my jokes tab  
+  * Updated :Mesh code for dbus tubes changes 
+  
+   -- Antoine van Gelder <hummingbird@hivemind.net>  Mon, 29 Oct 2007
+
+
 JokeMachine-2.xo
 
-  * Initial Import
- 
+  * Feature: Initial Import w/ basic mesh support
+  * Feature: Adapt UI depending on whether you are sharing or joining
+  * Feature: Broadcast accepted submissions back to buddies
+  * Feature: Select a sound to play on Joke punchlines  
+  * Fixed: Rename Jokebook Info -> Edit Jokebook Cover  
+  * Fixed: Preview mode shows make jokebook button - it shouldn't  
+  * Fixed: Submit a Joke button -> only for buddies
+  * Fixed: Deprecated theme_widget() in favor of a custom gtkrc 
+
    -- Antoine van Gelder <hummingbird@hivemind.net>  Sun, 28 Oct 2007

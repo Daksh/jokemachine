@@ -67,14 +67,6 @@ class Joke(object):
     '''the country of the author'''
     def get(self): return self.__joker_country
     def set(self, value): self.__joker_country = value
-    
-  @PersistentProperty
-  def show():
-    '''should this joke be visible to others'''
-    def default(self): return False
-    def get(self): return self.__show
-    def set(self, value): self.__show = value
- 
  
   def test_data(self):
     #self.image = 'resources/knockknock.png'
@@ -86,7 +78,6 @@ Alex who?'''
     self.joker = 'hummingbird'
     self.joker_location = 'Cape Town'
     self.joker_country = 'South Africa'
-    self.show = True
     
     return self
   

@@ -40,24 +40,23 @@ class JokeMachineState(object):
     def default(self): return 1  # TODO - pull from activity/activity.info
     def get(self): return self.__version
     
-    
   @property
   def next_jokebook_id(self):
     if len(self.jokebooks) == 0:
       return 1
     return max([jokebook.id for jokebook in self.jokebooks]) + 1
 
-
   def jokebook(self, id):
+    '''returns the jokebook specified by id'''
     for jokebook in self.jokebooks:
       if jokebook.id == id:
         return jokebook
     logging.error('Could not find jokebook with id %d' % d)
     return None
 
+
   def test_data(self):
     self.id = 1
-
     # add some jokebooks with jokes
     num_jokebooks = 0
     num_jokes = 2
@@ -77,6 +76,5 @@ class JokeMachineState(object):
         joke.id = joke_id
         jokebook.submissions.append(joke)
       self.jokebooks.append(jokebook)
-
     return self
   

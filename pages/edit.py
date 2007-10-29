@@ -132,7 +132,7 @@ class Edit(Page):
   def do_tab_clicked(self, page_class):
     print page_class
     self.__page_selector.page = page_class(self.__jokebook, self)
-    
+    return self.__page_selector.page
 
 
 class EditInfo(Page): # TODO -> gui.Page should follow this pattern rather
@@ -142,6 +142,8 @@ class EditInfo(Page): # TODO -> gui.Page should follow this pattern rather
                         padding=20, 
                         spacing=20,
                         box_height=theme.TABS_HEIGHT)
+    
+    self.__parent = parent
     
     # page title
     self.append(self.make_field(_('Title of Jokebook:'), 250, jokebook, 'title', 300, True))
@@ -167,34 +169,31 @@ class EditJokes(Page):
   def __init__(self, jokebook, parent):
     Page.__init__(self)
     
+    self.__parent = parent
+    
     # list of jokes
     jokes_div = CanvasListBox(800, theme.TABS_HEIGHT)  
     jokes_div.props.border=0
     for joke in jokebook.jokes:
-      list_row = self.make_listrow(JokeEditor(joke))
       button = gtk.Button(' ' + _('Delete') + ' ')
-      button.connect('clicked', self.__do_clicked_delete, jokebook, joke, parent)
+      button.connect('clicked', self.__do_clicked_delete, jokebook, joke)
+      list_row = self.make_listrow(JokeEditor(joke))
       list_row.append(hippo.CanvasWidget(widget=theme.theme_widget(button),
-                                         border_color=theme.COLOR_RED.get_int(),
-                                         border=0,
-                                         padding_top=10,
-                                         padding_bottom=10,
-                                         padding_left=85))
-                                         #xalign=hippo.ALIGNMENT_END))
+                                         padding=5),
+                      hippo.PACK_END)
       jokes_div.append(list_row)
     self.append(jokes_div)
     
     # new joke button
     buttons = hippo.CanvasBox(orientation=hippo.ORIENTATION_HORIZONTAL,
                               xalign=hippo.ALIGNMENT_START)
-    
     button = gtk.Button(_('Add New Joke'))
-    button.connect('clicked', self.__do_clicked_add_joke, jokebook, parent)    
+    button.connect('clicked', self.do_clicked_add_joke, jokebook)    
     buttons.append(hippo.CanvasWidget(widget=theme.theme_widget(button)))    
     jokes_div.append(buttons)
     
     
-  def __do_clicked_delete(self, button, jokebook, joke, parent):
+  def __do_clicked_delete(self, button, jokebook, joke):
     confirm = gtk.MessageDialog(Globals.JokeMachineActivity, 
                                 gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
                                 gtk.MESSAGE_QUESTION,
@@ -207,10 +206,10 @@ class EditJokes(Page):
     if response == gtk.RESPONSE_YES:
       logging.debug('Deleting joke: %s' % joke.id)
       jokebook.jokes.remove(joke)
-      parent.do_tab_clicked(EditJokes)
+      self.__parent.do_tab_clicked(EditJokes)
     
     
-  def __do_clicked_add_joke(self, button, jokebook, parent):
+  def do_clicked_add_joke(self, button, jokebook):
     # create a new joke
     joke = persistence.joke.Joke() 
     joke.id = jokebook.next_joke_id
@@ -219,13 +218,15 @@ class EditJokes(Page):
     jokebook.jokes.append(joke)
     
     # reload tab
-    parent.do_tab_clicked(EditJokes)
+    self.__parent.do_tab_clicked(EditJokes)
   
     
     
 class EditReview(Page):
   def __init__(self, jokebook, parent):
     Page.__init__(self)
+    
+    self.__parent = parent
     
     jokes_div = CanvasListBox(800, theme.TABS_HEIGHT)  
     jokes_div.props.border=0
@@ -239,14 +240,14 @@ class EditReview(Page):
                                 padding=10)
       
       button = gtk.Button(' ' + _('Reject') + ' ')
-      button.connect('clicked', self.__do_clicked_reject, jokebook, joke, parent)
+      button.connect('clicked', self.__do_clicked_reject, jokebook, joke)
       buttons.append(hippo.CanvasWidget(widget=theme.theme_widget(button),
                                         border_color=theme.COLOR_RED.get_int(),
                                         border=0,
                                         xalign=hippo.ALIGNMENT_CENTER))
 
       button = gtk.Button(' ' + _('Accept') + ' ')
-      button.connect('clicked', self.__do_clicked_accept, jokebook, joke, parent)
+      button.connect('clicked', self.__do_clicked_accept, jokebook, joke)
       buttons.append(hippo.CanvasWidget(widget=theme.theme_widget(button),
                                         border_color=theme.COLOR_RED.get_int(),
                                         border=0,
@@ -282,22 +283,18 @@ class EditReview(Page):
     self.append(jokes_div)
     
     
-  def __do_clicked_accept(self, button, jokebook, joke, parent):
+  def __do_clicked_accept(self, button, jokebook, joke):
     jokebook.jokes.append(joke)
     jokebook.submissions.remove(joke)
-    parent.do_tab_clicked(EditReview)
-    
-    if not Globals.JokeMachineActivity.is_shared:
-      return
-    
-    # broadcast submission onto the mesh
-    logging.debug('Broadcasting joke to mesh')
-    pickle = joke.dumps()
-    Globals.JokeMachineActivity.tube.BroadcastJoke(jokebook.id, pickle)
-    logging.debug('Broadcasted joke to mesh')
-
+    self.__parent.do_tab_clicked(EditReview)
+    if Globals.JokeMachineActivity.is_shared:
+      # broadcast submission onto the mesh
+      logging.debug('Broadcasting joke to mesh')
+      pickle = joke.dumps()
+      Globals.JokeMachineActivity.tube.BroadcastJoke(jokebook.id, pickle, Globals.nickname)
+      logging.debug('Broadcasted joke to mesh')
 
   
-  def __do_clicked_reject(self, button, jokebook, joke, parent):
+  def __do_clicked_reject(self, button, jokebook, joke):
     jokebook.submissions.remove(joke)
-    parent.do_tab_clicked(EditReview)
+    self.__parent.do_tab_clicked(EditReview)
