@@ -81,7 +81,7 @@ class JokeMachineActivity(activity.Activity):
     activity.Activity.__init__(self, handle)
 
     # TODO - clean -  install gettext
-    #os.chdir(Globals.pwd)  # required for i18n.py to work
+    os.chdir(Globals.pwd)  # required for i18n.py to work
     #gettext.install('JokeMachine', './locale', unicode=True)
     #presLan_af = gettext.translation("JokeMachine", os.path.join(Globals.pwd, 'locale'), languages=['af'])
     #presLan_af.install()
