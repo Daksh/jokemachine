@@ -32,6 +32,16 @@ from util.decorators import Property
 # test Property decorator
 #
 
+
+from util.audioplayer import AudioPlayer
+
+audio = AudioPlayer()
+#audio.uri = '/home/antoine/Projects/dev.laptop.org/sugar-jhbuild/build/share/activities/JokeMachine.activity/resources/laugh_attack.wav'
+audio.uri = '/home/antoine/Projects/dev.laptop.org/sugar-jhbuild/source/sugar/data/startup.flac'
+audio.play()
+
+sys.exit()
+
 #class Foo(object):
   
   #@Property

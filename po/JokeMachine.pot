@@ -1,60 +1,61 @@
-# Afrikaans translations for PACKAGE package.
-# Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#  <antoine@g7.org.za>, 2007.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-29 05:52+0200\n"
-"PO-Revision-Date: 2007-10-29 05:53+0200\n"
-"Last-Translator:  <antoine@g7.org.za>\n"
-"Language-Team: Afrikaans\n"
+"POT-Creation-Date: 2007-10-30 22:32+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: UTF-8\n"
 
-#: activity/activity.info:2 JokeMachineActivity.py:123
+#: activity/activity.info:2 JokeMachineActivity.py:128
 #: mesh/activitysession.py:165 mesh/activitysession.py:205
 msgid "Joke Machine"
-msgstr "Grap Masjien"
+msgstr ""
 
-#: JokeMachineActivity.py:123
+#: JokeMachineActivity.py:128
 msgid "Please wait a moment for your buddy's Jokebooks to show up"
-msgstr "Wag asseblief 'n oomblik vir jou maaitjie se grap boek"
+msgstr ""
 
 #: gui/frame.py:121 gui/frame.py:208
 msgid "Lesson Plans"
-msgstr "Les Planne"
+msgstr ""
 
 #: gui/frame.py:139
 msgid "Read Jokebooks"
-msgstr "Lees Grapboeke"
+msgstr ""
 
 #: gui/frame.py:143
 msgid "Make Jokebook"
-msgstr "Maak Grapboek"
+msgstr ""
 
 #: gui/frame.py:212
 msgid "Close Lessons"
-msgstr "Maak Lesse Toe"
+msgstr ""
 
 #: gui/frame.py:216
 msgid "Lesson Plans:"
-msgstr "Les Planne:"
+msgstr ""
 
 #: gui/page.py:99
 msgid "Click to choose a sound"
-msgstr "Klik om n klank te kies"
+msgstr ""
 
 #: gui/page.py:294
 msgid "Choose image"
-msgstr "Kies n prentjie"
+msgstr ""
 
 #: gui/page.py:322
 msgid "Choose Sound"
-msgstr "Kies n klank"
+msgstr ""
 
 #: i18n.py:40
 msgid "Chinese (simplified)"
@@ -158,148 +159,148 @@ msgstr ""
 
 #: i18n_misc_strings.py:1
 msgid "Lesson 1"
-msgstr "Les 1"
+msgstr ""
 
 #: i18n_misc_strings.py:2
 msgid "Lesson 2"
-msgstr "Les 2"
+msgstr ""
 
 #: i18n_misc_strings.py:3
 msgid "Lesson 3"
-msgstr "Les 3"
+msgstr ""
 
 #: i18n_misc_strings.py:4
 msgid "Lesson 4"
-msgstr "Les 4"
+msgstr ""
 
 #: i18n_misc_strings.py:5
 msgid "Introduction"
-msgstr "Introduksie"
+msgstr ""
 
 #: mesh/activitysession.py:164
 msgid " submitted a joke to "
-msgstr " het 'n grappie gestuur aan  "
+msgstr ""
 
 #: mesh/activitysession.py:203
 msgid " accepted a joke submitted to "
-msgstr " het 'n grappie antvaar vir "
+msgstr ""
 
 #: mesh/activitysession.py:204
 msgid " by "
-msgstr " deur "
+msgstr ""
 
 #: pages/choose.py:42
 msgid "Choose a Jokebook to read:"
-msgstr "Kies 'n Grapboek om te lees:"
+msgstr ""
 
 #: pages/choose.py:65
 msgid "Are you sure you want to delete your "
-msgstr "Is jy seker jy wil jou "
+msgstr ""
 
 #: pages/choose.py:68
-msgid "grapboek uitvee ?"
+msgid "jokebook ?"
 msgstr ""
 
 #: pages/choose.py:110 pages/preview.py:62
 msgid "Edit"
-msgstr "Redigeer"
+msgstr ""
 
 #: pages/choose.py:114 pages/edit.py:178
 msgid "Delete"
-msgstr "Vee uit"
+msgstr ""
 
 #: pages/cover.py:37 pages/preview.py:44
 msgid "started by"
-msgstr "begin deur"
+msgstr ""
 
 #: pages/cover.py:49
 msgid "Open"
-msgstr "Maak oop"
+msgstr ""
 
 #: pages/edit.py:57
 msgid "Edit Jokebook Cover"
-msgstr "Redigeer Grapboek "
+msgstr ""
 
 #: pages/edit.py:67
 msgid "Edit My Jokes"
-msgstr "Redigeer Grap"
+msgstr ""
 
 #: pages/edit.py:77
 msgid "Review Submitted Jokes"
-msgstr "Redigeer verwysings"
+msgstr ""
 
 #: pages/edit.py:123
 msgid "Preview"
-msgstr "Voorkyk"
+msgstr ""
 
 #: pages/edit.py:149
 msgid "Title of Jokebook:"
-msgstr "Naam van Grapboek:"
+msgstr ""
 
 #: pages/edit.py:153
 msgid "Sound Effect:"
-msgstr "Klank:"
+msgstr ""
 
 #: pages/edit.py:190
 msgid "Add New Joke"
-msgstr "Voeg nuwe grap by"
+msgstr ""
 
 #: pages/edit.py:201
 msgid "Are you sure you want to delete this joke ?"
-msgstr "Is jy seker jy wil hierdie grap uit vee ?"
+msgstr ""
 
 #: pages/edit.py:242
 msgid "Reject"
-msgstr "Nie Aanvaar"
+msgstr ""
 
 #: pages/edit.py:249
 msgid "Accept"
-msgstr "Aanvaar"
+msgstr ""
 
-#: pages/joke.py:56
+#: pages/joke.py:57
 msgid "Joke"
-msgstr "Grap"
+msgstr ""
 
-#: pages/joke.py:59
+#: pages/joke.py:60
 msgid "By"
-msgstr "By"
+msgstr ""
 
-#: pages/joke.py:69 pages/submit.py:63
+#: pages/joke.py:70 pages/submit.py:63
 msgid "Question"
-msgstr "Vraag"
+msgstr ""
 
-#: pages/joke.py:78 pages/joke.py:123 pages/submit.py:71
+#: pages/joke.py:79 pages/joke.py:124 pages/submit.py:71
 msgid "Answer"
-msgstr "Antwoord"
+msgstr ""
 
-#: pages/joke.py:97
+#: pages/joke.py:98
 msgid "This Jokebook is empty"
-msgstr "Hierdie Grapboek is leeg"
+msgstr ""
 
-#: pages/joke.py:99 pages/joke.py:156
+#: pages/joke.py:100 pages/joke.py:160
 msgid "Submit a Joke"
-msgstr "Stuur 'n Grappie"
+msgstr ""
 
-#: pages/joke.py:104
+#: pages/joke.py:105
 msgid "Add Jokes"
-msgstr "Voeg grap by"
+msgstr ""
 
-#: pages/joke.py:150
+#: pages/joke.py:154
 msgid "Next"
-msgstr "Volgende"
+msgstr ""
 
 #: pages/submit.py:93
 msgid "Submission For:"
-msgstr "Verwysing vir:"
+msgstr ""
 
 #: pages/submit.py:94
 msgid "Your Name:"
-msgstr "Jou Naam:"
+msgstr ""
 
 #: pages/submit.py:105
 msgid "Submit"
-msgstr "Verwys"
+msgstr ""
 
 #: pages/submit.py:108
 msgid "Back"
-msgstr "Terug"
+msgstr ""

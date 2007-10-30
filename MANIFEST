@@ -10,16 +10,17 @@
 ./i18n.py
 ./i18n_misc_strings.py
 ./resources/GameLogoCharacter.png
-./resources/image.png
 ./resources/audio.png
+./resources/image.png
+./resources/laugh_attack.au
 ./lessons/Introduction/default.abw
 ./lessons/Lesson 1/default.abw
 ./lessons/Lesson 2/default.abw
 ./lessons/Lesson 3/default.abw
 ./lessons/Lesson 4/default.abw
-./locale/JokeMachine.pot
-./locale/af/LC_MESSAGES/JokeMachine.mo
-./locale/af/LC_MESSAGES/JokeMachine.po
+./po/JokeMachine.pot
+./po/af/LC_MESSAGES/JokeMachine.mo
+./po/af/LC_MESSAGES/JokeMachine.po
 ./mesh/__init__.py
 ./mesh/activitysession.py
 ./pages/__init__.py
@@ -34,6 +35,7 @@
 ./persistence/jokebook.py
 ./persistence/jokemachinestate.py
 ./setup.py
+./tmp/.keep
 ./util/__init__.py
 ./util/audioplayer.py
 ./util/decorators.py

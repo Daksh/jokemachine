@@ -1,4 +1,20 @@
-4
+
+  * Feature: If no sound set, play default sound: laugh_attack.au
+  * Fixed: Activity icon now adopts users color scheme
+  * Fixed: Temp directory now rooted off activity.get_activity_root()
+  * Fixed: Moved locale/ dir back to po/
+  * Fixed: Temp filenames now created using more secure tempfile.mkstemp()
+  * i18n: Changed pot files to utf-8
+
+   -- Antoine van Gelder <hummingbird@hivemind.net>  Mon, 29 Oct 2007
+
+
+JokeMachine-4.xo
+
+  * Tested: Build# 622 and sugar-jhbuild
+
+   -- Antoine van Gelder <hummingbird@hivemind.net>  Mon, 29 Oct 2007
+
 
 JokeMachine-3.xo
 
@@ -12,7 +28,7 @@ JokeMachine-3.xo
   * Fixed: Don't hardcode JokeEditor delete button position 
   * Fixed: On read jokebook & empty -> "Edit My Jokes" -> Go to edit my jokes tab  
   * Updated :Mesh code for dbus tubes changes 
-  
+
    -- Antoine van Gelder <hummingbird@hivemind.net>  Mon, 29 Oct 2007
 
 

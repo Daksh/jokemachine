@@ -1,17 +1,19 @@
 
 = To Do =
 
-* Figure out why only alerts are being translated
+* Figure out why only alerts are being translated 
 * Double check that all strings are gettexted
 * Use hippo.PACK_EXPAND to get rid of hardcoded sizes
 * Get a fix on memory useage
 * Create and set activity_version property for persistence.JokeMachineState.version
 * Split unit.py out into separate test cases 
-* Refactor Page.make_* infrastructure
+* Sundry refactors
+* Figure out a safe way to clean out /activity_root/tmp on startup
 
 * Things waiting for the journal to settle
 ** Filter ObjectChooser to only list images/audio -> https://dev.laptop.org/ticket/3060
 ** Create sample Jokebooks in the journal on bundle installation
+** Insert sample laugh tracks into the journal on bundle installation
 ** Fold image/image_blob into a single property
 ** Fold sound/sound_blob into a single property
 ** Bring up the last Jokebooks instead of starting from scratch when started from the frame
@@ -21,8 +23,4 @@
 = Known Problems =
 
 * i18n is only translating alerts at the moment for some strange reason
-* AudioPlayer dumps files into /tmp which may be problematic for security system
 * Deprecating theme_widget() for custom gtkrc fixes language combo but there are now faint hints of Irish in the activity frame :)
-
-
-

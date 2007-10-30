@@ -16,6 +16,7 @@
 
 import os
 import logging
+import tempfile
 from sugar.activity import activity
 try:
   from hashlib import sha1
@@ -32,7 +33,9 @@ class __globals(object):
   
   def __init__(self):
     self.__pwd = activity.get_bundle_path()
+    self.__root = None
     self.__logo = 'resources/GameLogoCharacter.png'
+    self.__laugh = 'resources/laugh_attack.au'
     self.__activity_state = None
     self.__activity = None
     
@@ -46,6 +49,7 @@ class __globals(object):
   # convert all of these to @Property
   def set_activity_instance(self, activity_instance):
     logging.debug('setting actifity %r' % activity_instance)    
+    self.__root = activity_instance.get_activity_root()        
     self.__activity = activity_instance
     
   # TODO -> Should we refresh the GUI for this one ?
@@ -62,17 +66,26 @@ class __globals(object):
     return self.__pwd
   
   @property
+  def root(self):
+    return self.__root
+      
+  @property
   def tmpdir(self):
     '''Temporary directory - currently this exists for the sole purpose of
     having a place to dump sounds and images into so we don't have to keep
     them in memory - don't know if this will still be valid under bitfrost,
     don't know if sounds and images can be pulled directly out of the journal
     when needing to be (dis)played'''
-    return '/tmp' #os.path.join(self.__pwd, 'tmp')
+    logging.debug('Temp dir is %s' % os.path.join(self.__root, 'tmp'))
+    return os.path.join(self.__root, 'tmp')
   
   @property
   def logo(self):
     return os.path.join(self.pwd, self.__logo)
+  
+  @property
+  def laugh_uri(self):
+    return os.path.join(self.pwd, self.__laugh)
   
   @property
   def JokeMachineState(self):
@@ -100,10 +113,9 @@ class __globals(object):
   # utility functions with global state
   
   def temporary_filename(self):
-    # TODO - remember these and delete them all on app exit
-    file_name = os.tempnam(self.tmpdir)
-    self.__temporary_filenames.append(file_name)
-    return file_name
+    (fd, name) = tempfile.mkstemp(prefix='jokemachine_') 
+    self.__temporary_filenames.append(name)
+    return name
 
   
   def shutdown(self):

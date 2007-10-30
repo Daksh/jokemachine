@@ -72,7 +72,7 @@ class LangDetails (object):
     self.image = image
 
   def guess_translation (self, fallback=False):
-    self.gnutranslation = gettext.translation('JokeMachine', './locale', [self.code], fallback=fallback)
+    self.gnutranslation = gettext.translation('JokeMachine', './po', [self.code], fallback=fallback)
 
   def install (self):
     self.gnutranslation.install()
@@ -97,7 +97,7 @@ def get_lang_details (lang):
 def list_available_translations ():
   rv = [get_lang_details('en')]
   rv[0].guess_translation(True)
-  for i,x in enumerate([x for x in os.listdir('locale') if os.path.isdir('locale/' + x) and not x.startswith('.')]):
+  for i,x in enumerate([x for x in os.listdir('po') if os.path.isdir('po/' + x) and not x.startswith('.')]):
     try:
       details = get_lang_details(x)
       if details is not None:

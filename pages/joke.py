@@ -19,6 +19,7 @@ import gtk
 import hippo
 import pango
 from gettext import gettext as _
+import logging
 
 from globals import Globals
 from gui.page import Page
@@ -134,11 +135,14 @@ class Joke(Page):
 
   def __do_clicked_answer(self, button, jokebook, joke_id):
     # play a sound if the jokebook has one
+    player = AudioPlayer()
     if jokebook.sound_blob != None:
-      player = AudioPlayer()
       player.raw = jokebook.sound_blob
-      player.play()
-        
+    else: # default laugh
+      logging.debug('Playing default sound: %s', Globals.laugh_uri)
+      player.uri = Globals.laugh_uri
+    player.play()        
+    
     # show the answer
     self.joke_box.answer_box.set_visible(True)
     
