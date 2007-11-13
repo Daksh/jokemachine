@@ -1,5 +1,11 @@
-5
+6
 
+  * Feature: Added lesson plans.
+
+   -- Antoine van Gelder <hummingbird@hivemind.net>  Mon, 29 Oct 2007
+
+
+JokeMachine-5.xo
 
   * Feature: If no sound set, play default sound: laugh_attack.au
   * Fixed: Activity icon now adopts users color scheme
