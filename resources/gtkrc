@@ -3,8 +3,6 @@ style "mamabutton"
   color["focus_line"] = "#027F01"
   bg[NORMAL] = "#027F01"
   bg[ACTIVE] = "#026002"
-  GtkButton::inner-border = { 10, 10,  # left, right
-                               6, 6 }  # top, bottom
 }
 
 style "mamacombo"

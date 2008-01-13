@@ -1,3 +1,5 @@
+# Copyright 2007 World Wide Workshop Foundation
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -11,6 +13,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#
+# If you find this activity useful or end up using parts of it in one of your
+# own creations we would love to hear from you at info@WorldWideWorkshop.org !
 #
 
 import os
@@ -56,7 +61,7 @@ class LessonPlanWidget(gtk.Notebook):
     files = filter(lambda x: os.path.exists(x), files)
     # On jhbuild, the first works, on XO image 432 the second works:
     try:
-      canvas.load_file('file://%s' % files[0], 'text/plain')
+      canvas.load_file('file://%s' % files[0], 'application/x-abiword')
     except:
       canvas.load_file('file://%s' % files[0])
     canvas.view_online_layout()

@@ -1,8 +1,22 @@
-6
+
+
+  * Updated: Expanded copyright header on source files
+  * Updated: Reflect changes in sugar.graphics.objectchooser
+  * Fix: Widgets now render correctly on first expose event on XO hardware
+  * Fix: Background color of sound selector is now right color on XO hardware
+  * Fix: Lesson plans are no longer being opened as text by AbiWord on XO
+         hardware
+  * Fix: Cursor now changes to hand icon when over sound selector
+  * Added: AUTHORS file
+
+   -- Antoine van Gelder <hummingbird@hivemind.net>  Fri, 11 Jan 2008
+
+
+JokeMachine-6.xo
 
   * Feature: Added lesson plans.
 
-   -- Antoine van Gelder <hummingbird@hivemind.net>  Mon, 29 Oct 2007
+   -- Antoine van Gelder <hummingbird@hivemind.net>  Tue, 13 Nov 2007
 
 
 JokeMachine-5.xo

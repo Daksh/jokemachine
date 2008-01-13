@@ -1,3 +1,5 @@
+# Copyright 2007 World Wide Workshop Foundation
+#
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation; either version 2 of the License, or
@@ -11,6 +13,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+#
+# If you find this activity useful or end up using parts of it in one of your
+# own creations we would love to hear from you at info@WorldWideWorkshop.org !
 #
 
 import os
@@ -109,8 +114,10 @@ class Page(hippo.CanvasBox):
     sound_box.props.box_width = width
     sound_box.props.border=theme.BORDER_WIDTH_CONTROL / 2
     sound_box.props.border_color=theme.COLOR_DARK_GREEN.get_int()
+    sound_box.props.background_color = theme.COLOR_WHITE.get_int()
     sound_box.props.orientation=hippo.ORIENTATION_HORIZONTAL
     sound_box.props.xalign=hippo.ALIGNMENT_START
+    sound_box.set_clickable(True)
     sound_box.append(preview_sound)
     sound_box.append(choose_sound)
     
@@ -291,9 +298,9 @@ class Page(hippo.CanvasBox):
 
   def __do_clicked_image(self, control, event, obj, property):
     # Courtesy of Write.activity - toolbar.py
-    chooser = ObjectChooser(_('Choose image'), 
-                            Globals.JokeMachineActivity, #._parent,
-                            gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT)
+    chooser = ObjectChooser(title=_('Choose image'), 
+                            parent=Globals.JokeMachineActivity, #._parent,
+                            flags=gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT)
     try:
       result = chooser.run()
       if result == gtk.RESPONSE_ACCEPT:
@@ -312,16 +319,16 @@ class Page(hippo.CanvasBox):
           surface = cairo.ImageSurface.create_from_png(image_file) 
           control.props.image = surface
     finally:
-      chooser.hide()
+      #chooser.hide()
       chooser.destroy()
       del chooser
 
 
   def __do_clicked_choose_sound(self, control, event, obj, property):
     logging.debug('choosing sound file') 
-    chooser = ObjectChooser(_('Choose Sound'), 
-                            Globals.JokeMachineActivity, #._parent,
-                            gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT)
+    chooser = ObjectChooser(title=_('Choose Sound'), 
+                            parent=Globals.JokeMachineActivity, #._parent,
+                            flags=gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT)
     try:
       result = chooser.run()
       if result == gtk.RESPONSE_ACCEPT:
@@ -337,7 +344,7 @@ class Page(hippo.CanvasBox):
           obj.sound_blob = raw
           control.props.text = obj.sound
     finally:
-      chooser.hide()
+      #chooser.hide()
       chooser.destroy()
       del chooser
   
