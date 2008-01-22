@@ -1,6 +1,8 @@
-7
 
+  * i18n: Changed layout re ticket #6110
+  
 
+JokeMachine-7.xo
 
   * Updated: Expanded copyright header on source files
   * Updated: Reflect changes in sugar.graphics.objectchooser

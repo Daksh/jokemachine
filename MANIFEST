@@ -19,8 +19,7 @@
 ./lessons/Lesson 3/default.abw
 ./lessons/Lesson 4/default.abw
 ./po/JokeMachine.pot
-./po/af/LC_MESSAGES/JokeMachine.mo
-./po/af/LC_MESSAGES/JokeMachine.po
+./po/af.po
 ./mesh/__init__.py
 ./mesh/activitysession.py
 ./pages/__init__.py

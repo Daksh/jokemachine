@@ -105,7 +105,7 @@ class Frame(hippo.Canvas):
                                    padding_right=100,
                                    yalign=hippo.ALIGNMENT_CENTER,
                                    orientation=hippo.ORIENTATION_VERTICAL)
-    button = LanguageComboBox()
+    button = LanguageComboBox('org.worldwideworkshop.olpc.JokeMachine')
     button.install()
     button.set_name('fubar')
     language.props.widget = button 
