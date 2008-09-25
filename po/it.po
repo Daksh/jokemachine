@@ -1,0 +1,307 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-10-30 22:32+0200\n"
+"PO-Revision-Date: 2008-09-08 06:06-0400\n"
+"Last-Translator: Carlo Falciola <cfalciola@yahoo.it>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0rc2\n"
+
+#: activity/activity.info:2 JokeMachineActivity.py:128
+#: mesh/activitysession.py:165 mesh/activitysession.py:205
+msgid "Joke Machine"
+msgstr "La Macchina degli Indovinelli"
+
+#: JokeMachineActivity.py:128
+msgid "Please wait a moment for your buddy's Jokebooks to show up"
+msgstr ""
+"Per favore attendi per un attimo l'apertura dei libri di Indovinelli del tui "
+"compagni"
+
+#: gui/frame.py:121 gui/frame.py:208
+msgid "Lesson Plans"
+msgstr "Sommario Guida"
+
+#: gui/frame.py:139
+msgid "Read Jokebooks"
+msgstr "Leggi i Libri di Indovinelli"
+
+#: gui/frame.py:143
+msgid "Make Jokebook"
+msgstr "Scrivi un Libro di Indovinelli"
+
+#: gui/frame.py:212
+msgid "Close Lessons"
+msgstr "Chiudi Guida"
+
+#: gui/frame.py:216
+msgid "Lesson Plans:"
+msgstr "Sommario Guida:"
+
+#: gui/page.py:99
+msgid "Click to choose a sound"
+msgstr "Clicca per selezionare un suono"
+
+#: gui/page.py:294
+msgid "Choose image"
+msgstr "Scegli immagine"
+
+#: gui/page.py:322
+msgid "Choose Sound"
+msgstr "Scegli suono"
+
+#: i18n.py:40
+msgid "Chinese (simplified)"
+msgstr "Cinese (semplificato)"
+
+#: i18n.py:41
+msgid "Chinese (traditional)"
+msgstr "Cinese (tradizionale)"
+
+#: i18n.py:42
+msgid "Czech"
+msgstr "Ceco"
+
+#: i18n.py:43
+msgid "Danish"
+msgstr "Danese"
+
+#: i18n.py:44
+msgid "Dutch"
+msgstr "Olandese"
+
+#: i18n.py:45
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+#: i18n.py:46
+msgid "English"
+msgstr "Inglese"
+
+#: i18n.py:47
+msgid "English - Great Britain"
+msgstr "Inglese - Regno Unito"
+
+#: i18n.py:48
+msgid "English - U.S."
+msgstr "Inglese - U.S.A."
+
+#: i18n.py:49
+msgid "Finnish"
+msgstr "Finlandese"
+
+#: i18n.py:50
+msgid "French"
+msgstr "Francese"
+
+#: i18n.py:51
+msgid "German"
+msgstr "Tedesco"
+
+#: i18n.py:52
+msgid "Hungarian"
+msgstr "Ungherese"
+
+#: i18n.py:53
+msgid "Italian"
+msgstr "Italiano"
+
+#: i18n.py:54
+msgid "Japanese"
+msgstr "Giapponese"
+
+#: i18n.py:55
+msgid "Korean"
+msgstr "Coreano"
+
+#: i18n.py:56
+msgid "Norwegian"
+msgstr "Norvegese"
+
+#: i18n.py:57
+msgid "Polish"
+msgstr "Polacco"
+
+#: i18n.py:58
+msgid "Portuguese"
+msgstr "Portoghese"
+
+#: i18n.py:59
+msgid "Portuguese - Brazilian"
+msgstr "Portoghese - Brasiliano"
+
+#: i18n.py:60
+msgid "Russian"
+msgstr "Russo"
+
+#: i18n.py:61
+msgid "Slovak"
+msgstr "Slovacco"
+
+#: i18n.py:62
+msgid "Spanish"
+msgstr "Spagnolo"
+
+#: i18n.py:63
+msgid "Swedish"
+msgstr "Svedese"
+
+#: i18n.py:64
+msgid "Turkish"
+msgstr "Turco"
+
+#: i18n_misc_strings.py:1
+msgid "Lesson 1"
+msgstr "Lezione 1"
+
+#: i18n_misc_strings.py:2
+msgid "Lesson 2"
+msgstr "Lezione 2"
+
+#: i18n_misc_strings.py:3
+msgid "Lesson 3"
+msgstr "Lezione 3"
+
+#: i18n_misc_strings.py:4
+msgid "Lesson 4"
+msgstr "Lezione 4"
+
+#: i18n_misc_strings.py:5
+msgid "Introduction"
+msgstr "Introduzione"
+
+#: mesh/activitysession.py:164
+msgid " submitted a joke to "
+msgstr " proposto un'indovinello a "
+
+#: mesh/activitysession.py:203
+msgid " accepted a joke submitted to "
+msgstr " accettato un'indovinello proposto a  "
+
+#: mesh/activitysession.py:204
+msgid " by "
+msgstr " da "
+
+#: pages/choose.py:42
+msgid "Choose a Jokebook to read:"
+msgstr "Scegli un Libro di Indovinelli da leggere:"
+
+#: pages/choose.py:65
+msgid "Are you sure you want to delete your "
+msgstr "Sei certo di voler cancellare "
+
+#: pages/choose.py:68
+msgid "jokebook ?"
+msgstr "Libro di Indovinelli ?"
+
+#: pages/choose.py:110 pages/preview.py:62
+msgid "Edit"
+msgstr "Modifica"
+
+#: pages/choose.py:114 pages/edit.py:178
+msgid "Delete"
+msgstr "Cancella"
+
+#: pages/cover.py:37 pages/preview.py:44
+msgid "started by"
+msgstr "iniziato da"
+
+#: pages/cover.py:49
+msgid "Open"
+msgstr "Apri"
+
+#: pages/edit.py:57
+msgid "Edit Jokebook Cover"
+msgstr "Modifica la copertina del Libro di Indovinelli"
+
+#: pages/edit.py:67
+msgid "Edit My Jokes"
+msgstr "Modifica i miei Indovinelli"
+
+#: pages/edit.py:77
+msgid "Review Submitted Jokes"
+msgstr "Controlla gli Indovinelli proposti"
+
+#: pages/edit.py:123
+msgid "Preview"
+msgstr "Anteprima"
+
+#: pages/edit.py:149
+msgid "Title of Jokebook:"
+msgstr "Titolo del Libro di Indovinelli:"
+
+#: pages/edit.py:153
+msgid "Sound Effect:"
+msgstr "Effetto sonoro:"
+
+#: pages/edit.py:190
+msgid "Add New Joke"
+msgstr "Aggiungi un nuovo Indovinello"
+
+#: pages/edit.py:201
+msgid "Are you sure you want to delete this joke ?"
+msgstr "Sei certo di voler cancellare questo indovinello ?"
+
+#: pages/edit.py:242
+msgid "Reject"
+msgstr "Rifiuta"
+
+#: pages/edit.py:249
+msgid "Accept"
+msgstr "Accetta"
+
+#: pages/joke.py:57
+msgid "Joke"
+msgstr "Indovinello"
+
+#: pages/joke.py:60
+msgid "By"
+msgstr "Di"
+
+#: pages/joke.py:70 pages/submit.py:63
+msgid "Question"
+msgstr "Domanda"
+
+#: pages/joke.py:79 pages/joke.py:124 pages/submit.py:71
+msgid "Answer"
+msgstr "Risposta"
+
+#: pages/joke.py:98
+msgid "This Jokebook is empty"
+msgstr "Il Libro di Indovinelli è vuoto"
+
+#: pages/joke.py:100 pages/joke.py:160
+msgid "Submit a Joke"
+msgstr "Proponi un Indovinello"
+
+#: pages/joke.py:105
+msgid "Add Jokes"
+msgstr "Aggiungi Indovinelli"
+
+#: pages/joke.py:154
+msgid "Next"
+msgstr "Prossimo"
+
+#: pages/submit.py:93
+msgid "Submission For:"
+msgstr "Proposto Per:"
+
+#: pages/submit.py:94
+msgid "Your Name:"
+msgstr "Il tuo Nome:"
+
+#: pages/submit.py:105
+msgid "Submit"
+msgstr "Sottometti"
+
+#: pages/submit.py:108
+msgid "Back"
+msgstr "Indietro"
