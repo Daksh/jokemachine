@@ -1,0 +1,305 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-10-30 22:32+0200\n"
+"PO-Revision-Date: 2008-08-13 15:03-0400\n"
+"Last-Translator: Abdias Codio <codab2004@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0rc2\n"
+
+#: activity/activity.info:2 JokeMachineActivity.py:128
+#: mesh/activitysession.py:165 mesh/activitysession.py:205
+msgid "Joke Machine"
+msgstr "Machinn blag"
+
+#: JokeMachineActivity.py:128
+msgid "Please wait a moment for your buddy's Jokebooks to show up"
+msgstr "Pran yon ti tan po ka ye liv bag patnè ou a"
+
+#: gui/frame.py:121 gui/frame.py:208
+msgid "Lesson Plans"
+msgstr "Plan Leson"
+
+#: gui/frame.py:139
+msgid "Read Jokebooks"
+msgstr "Li liv blag yo"
+
+#: gui/frame.py:143
+msgid "Make Jokebook"
+msgstr "Fè yo liv blag"
+
+#: gui/frame.py:212
+msgid "Close Lessons"
+msgstr "Fèmen Leson yo"
+
+#: gui/frame.py:216
+msgid "Lesson Plans:"
+msgstr "Plan Leson yo:"
+
+#: gui/page.py:99
+msgid "Click to choose a sound"
+msgstr "Klike pou chwazi yon son"
+
+#: gui/page.py:294
+msgid "Choose image"
+msgstr "Chwazi yon imaj"
+
+#: gui/page.py:322
+msgid "Choose Sound"
+msgstr "Chwazi yon son"
+
+#: i18n.py:40
+msgid "Chinese (simplified)"
+msgstr "Chinwa (senp)"
+
+#: i18n.py:41
+msgid "Chinese (traditional)"
+msgstr "Chinwa (tradisyonel)"
+
+#: i18n.py:42
+msgid "Czech"
+msgstr "Tchèk"
+
+#: i18n.py:43
+msgid "Danish"
+msgstr "Danwa"
+
+#: i18n.py:44
+msgid "Dutch"
+msgstr "Neyalandè"
+
+#: i18n.py:45
+msgid "Afrikaans"
+msgstr "Afwiken"
+
+#: i18n.py:46
+msgid "English"
+msgstr "Anglè"
+
+#: i18n.py:47
+msgid "English - Great Britain"
+msgstr "Anglè - Grand-Bretay"
+
+#: i18n.py:48
+msgid "English - U.S."
+msgstr "Anglè - Etazini"
+
+#: i18n.py:49
+msgid "Finnish"
+msgstr "Finwa"
+
+#: i18n.py:50
+msgid "French"
+msgstr "Franse"
+
+#: i18n.py:51
+msgid "German"
+msgstr "Alman"
+
+#: i18n.py:52
+msgid "Hungarian"
+msgstr "Ongwa"
+
+#: i18n.py:53
+msgid "Italian"
+msgstr "Italyen"
+
+#: i18n.py:54
+msgid "Japanese"
+msgstr "Japonè"
+
+#: i18n.py:55
+msgid "Korean"
+msgstr "Koreyen"
+
+#: i18n.py:56
+msgid "Norwegian"
+msgstr "Nòvegyen"
+
+#: i18n.py:57
+msgid "Polish"
+msgstr "Polonè"
+
+#: i18n.py:58
+msgid "Portuguese"
+msgstr "Pòtigè"
+
+#: i18n.py:59
+msgid "Portuguese - Brazilian"
+msgstr "Pòtigè - Brezil"
+
+#: i18n.py:60
+msgid "Russian"
+msgstr "Ris"
+
+#: i18n.py:61
+msgid "Slovak"
+msgstr "Slovak"
+
+#: i18n.py:62
+msgid "Spanish"
+msgstr "Pangnol"
+
+#: i18n.py:63
+msgid "Swedish"
+msgstr "Suyedwa"
+
+#: i18n.py:64
+msgid "Turkish"
+msgstr "Tik"
+
+#: i18n_misc_strings.py:1
+msgid "Lesson 1"
+msgstr "Leson 1"
+
+#: i18n_misc_strings.py:2
+msgid "Lesson 2"
+msgstr "Leson 2"
+
+#: i18n_misc_strings.py:3
+msgid "Lesson 3"
+msgstr "Leson 3"
+
+#: i18n_misc_strings.py:4
+msgid "Lesson 4"
+msgstr "Leson 4"
+
+#: i18n_misc_strings.py:5
+msgid "Introduction"
+msgstr "Entrodiksyon"
+
+#: mesh/activitysession.py:164
+msgid " submitted a joke to "
+msgstr " voye yon blag pou"
+
+#: mesh/activitysession.py:203
+msgid " accepted a joke submitted to "
+msgstr " dakò yon blag yon voye pou ou "
+
+#: mesh/activitysession.py:204
+msgid " by "
+msgstr " pa "
+
+#: pages/choose.py:42
+msgid "Choose a Jokebook to read:"
+msgstr "Chwazi yon blag pou li:"
+
+#: pages/choose.py:65
+msgid "Are you sure you want to delete your "
+msgstr "Eske ou si ke ou vle efase pa ou a "
+
+#: pages/choose.py:68
+msgid "jokebook ?"
+msgstr "liv blag ?"
+
+#: pages/choose.py:110 pages/preview.py:62
+msgid "Edit"
+msgstr "Korije"
+
+#: pages/choose.py:114 pages/edit.py:178
+msgid "Delete"
+msgstr "Efase"
+
+#: pages/cover.py:37 pages/preview.py:44
+msgid "started by"
+msgstr "Li te Kòmanse pa "
+
+#: pages/cover.py:49
+msgid "Open"
+msgstr "Louvri"
+
+#: pages/edit.py:57
+msgid "Edit Jokebook Cover"
+msgstr "Korije po liv blag"
+
+#: pages/edit.py:67
+msgid "Edit My Jokes"
+msgstr "Korije blag mwen "
+
+#: pages/edit.py:77
+msgid "Review Submitted Jokes"
+msgstr "Regade bag ou voye yo"
+
+#: pages/edit.py:123
+msgid "Preview"
+msgstr "Visyone"
+
+#: pages/edit.py:149
+msgid "Title of Jokebook:"
+msgstr "Tit liv blag:"
+
+#: pages/edit.py:153
+msgid "Sound Effect:"
+msgstr "Efè son"
+
+#: pages/edit.py:190
+msgid "Add New Joke"
+msgstr "Mète nouvo blag"
+
+#: pages/edit.py:201
+msgid "Are you sure you want to delete this joke ?"
+msgstr "Eske ou si ke ou vle efase balg sa a?"
+
+#: pages/edit.py:242
+msgid "Reject"
+msgstr "Rejete"
+
+#: pages/edit.py:249
+msgid "Accept"
+msgstr "Dakò"
+
+#: pages/joke.py:57
+msgid "Joke"
+msgstr "Blag"
+
+#: pages/joke.py:60
+msgid "By"
+msgstr "Pa"
+
+#: pages/joke.py:70 pages/submit.py:63
+msgid "Question"
+msgstr "Kesyon"
+
+#: pages/joke.py:79 pages/joke.py:124 pages/submit.py:71
+msgid "Answer"
+msgstr "Repons"
+
+#: pages/joke.py:98
+msgid "This Jokebook is empty"
+msgstr "Liv blag sa a vid"
+
+#: pages/joke.py:100 pages/joke.py:160
+msgid "Submit a Joke"
+msgstr "Voye yo blag"
+
+#: pages/joke.py:105
+msgid "Add Jokes"
+msgstr "Mète blag yo"
+
+#: pages/joke.py:154
+msgid "Next"
+msgstr "Pwochen"
+
+#: pages/submit.py:93
+msgid "Submission For:"
+msgstr "Voye pou"
+
+#: pages/submit.py:94
+msgid "Your Name:"
+msgstr "Non ou:"
+
+#: pages/submit.py:105
+msgid "Submit"
+msgstr "Voye"
+
+#: pages/submit.py:108
+msgid "Back"
+msgstr "Retounen"
