@@ -1,0 +1,312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2007-10-30 22:32+0200\n"
+"PO-Revision-Date: 2008-09-19 09:43-0400\n"
+"Last-Translator: Markus Schlager <m.slg@gmx.de>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0rc2\n"
+
+#: activity/activity.info:2 JokeMachineActivity.py:128
+#: mesh/activitysession.py:165 mesh/activitysession.py:205
+msgid "Joke Machine"
+msgstr "Witz-Maschine"
+
+#: JokeMachineActivity.py:128
+msgid "Please wait a moment for your buddy's Jokebooks to show up"
+msgstr ""
+"Bitte warte einen Moment, bis die Witzbücher deines Kumpels angezeigt werden"
+
+#: gui/frame.py:121 gui/frame.py:208
+msgid "Lesson Plans"
+msgstr "Übungspläne"
+
+#: gui/frame.py:139
+msgid "Read Jokebooks"
+msgstr "Lese Witzbücher"
+
+#: gui/frame.py:143
+msgid "Make Jokebook"
+msgstr "Stelle ein Witzbuch her"
+
+#: gui/frame.py:212
+msgid "Close Lessons"
+msgstr "Schließe Übungen"
+
+#: gui/frame.py:216
+msgid "Lesson Plans:"
+msgstr "Übungspläne:"
+
+# (Markus S.) war 'Klicke, um einen Klang auszuwählen'; analog zu den anderen Strings auch hier lieber Infinitiv, oder ist das eine Hilfeblase?
+#: gui/page.py:99
+#, fuzzy
+msgid "Click to choose a sound"
+msgstr "Klicken, um einen Klang auszuwählen"
+
+#: gui/page.py:294
+msgid "Choose image"
+msgstr "Bild auswählen"
+
+#: gui/page.py:322
+msgid "Choose Sound"
+msgstr "Klang auswählen"
+
+#: i18n.py:40
+msgid "Chinese (simplified)"
+msgstr "Chinesisch (vereinfacht)"
+
+#: i18n.py:41
+msgid "Chinese (traditional)"
+msgstr "Chinesisch (traditionell)"
+
+#: i18n.py:42
+msgid "Czech"
+msgstr "Tschechisch"
+
+#: i18n.py:43
+msgid "Danish"
+msgstr "Dänisch"
+
+#: i18n.py:44
+msgid "Dutch"
+msgstr "Niederländisch"
+
+#: i18n.py:45
+msgid "Afrikaans"
+msgstr "Afrikaans"
+
+#: i18n.py:46
+msgid "English"
+msgstr "Englisch"
+
+#: i18n.py:47
+msgid "English - Great Britain"
+msgstr "Englisch (Großbritannien)"
+
+#: i18n.py:48
+msgid "English - U.S."
+msgstr "Englisch (USA)"
+
+#: i18n.py:49
+msgid "Finnish"
+msgstr "Finnisch"
+
+#: i18n.py:50
+msgid "French"
+msgstr "Französisch"
+
+#: i18n.py:51
+msgid "German"
+msgstr "Deutsch"
+
+#: i18n.py:52
+msgid "Hungarian"
+msgstr "Ungarisch"
+
+#: i18n.py:53
+msgid "Italian"
+msgstr "Italienisch"
+
+#: i18n.py:54
+msgid "Japanese"
+msgstr "Japanisch"
+
+#: i18n.py:55
+msgid "Korean"
+msgstr "Koreanisch"
+
+#: i18n.py:56
+msgid "Norwegian"
+msgstr "Norwegisch"
+
+#: i18n.py:57
+msgid "Polish"
+msgstr "Polnisch"
+
+#: i18n.py:58
+msgid "Portuguese"
+msgstr "Portugiesisch"
+
+#: i18n.py:59
+msgid "Portuguese - Brazilian"
+msgstr "Portugiesisch (Brasilien)"
+
+#: i18n.py:60
+msgid "Russian"
+msgstr "Russisch"
+
+#: i18n.py:61
+msgid "Slovak"
+msgstr "Slowakisch"
+
+#: i18n.py:62
+msgid "Spanish"
+msgstr "Spanisch"
+
+#: i18n.py:63
+msgid "Swedish"
+msgstr "Schwedisch"
+
+#: i18n.py:64
+msgid "Turkish"
+msgstr "Türkisch"
+
+#: i18n_misc_strings.py:1
+msgid "Lesson 1"
+msgstr "Übung 1"
+
+#: i18n_misc_strings.py:2
+msgid "Lesson 2"
+msgstr "Übung 2"
+
+#: i18n_misc_strings.py:3
+msgid "Lesson 3"
+msgstr "Übung 3"
+
+#: i18n_misc_strings.py:4
+msgid "Lesson 4"
+msgstr "Übung 4"
+
+#: i18n_misc_strings.py:5
+msgid "Introduction"
+msgstr "Einführung"
+
+#: mesh/activitysession.py:164
+#, fuzzy
+msgid " submitted a joke to "
+msgstr " hat einen Witz geschickt an "
+
+#: mesh/activitysession.py:203
+#, fuzzy
+msgid " accepted a joke submitted to "
+msgstr " hat einen Witz angenommen, der geschickt wurde an "
+
+#: mesh/activitysession.py:204
+msgid " by "
+msgstr " von "
+
+#: pages/choose.py:42
+msgid "Choose a Jokebook to read:"
+msgstr "Ein Witzbuch zum Lesen auswählen:"
+
+#: pages/choose.py:65
+#, fuzzy
+msgid "Are you sure you want to delete your "
+msgstr "Bist du sicher, dass du es löschen willst, dein "
+
+#: pages/choose.py:68
+msgid "jokebook ?"
+msgstr "Witzbuch?"
+
+#: pages/choose.py:110 pages/preview.py:62
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: pages/choose.py:114 pages/edit.py:178
+msgid "Delete"
+msgstr "Löschen"
+
+#: pages/cover.py:37 pages/preview.py:44
+msgid "started by"
+msgstr "begonnen von"
+
+#: pages/cover.py:49
+msgid "Open"
+msgstr "Öffnen"
+
+#: pages/edit.py:57
+msgid "Edit Jokebook Cover"
+msgstr "Witzbuch-Einband bearbeiten"
+
+#: pages/edit.py:67
+msgid "Edit My Jokes"
+msgstr "Meine Witze bearbeiten"
+
+#: pages/edit.py:77
+msgid "Review Submitted Jokes"
+msgstr "Abgegebene Witze durchsehen"
+
+#: pages/edit.py:123
+msgid "Preview"
+msgstr "Vorschau"
+
+#: pages/edit.py:149
+msgid "Title of Jokebook:"
+msgstr "Titel des Witzbuches:"
+
+#: pages/edit.py:153
+msgid "Sound Effect:"
+msgstr "Klangeffekt:"
+
+#: pages/edit.py:190
+msgid "Add New Joke"
+msgstr "Neuen Witz anfügen"
+
+#: pages/edit.py:201
+msgid "Are you sure you want to delete this joke ?"
+msgstr "Möchtest du diesen Witz wirklich löschen?"
+
+#: pages/edit.py:242
+msgid "Reject"
+msgstr "Ablehnen"
+
+#: pages/edit.py:249
+msgid "Accept"
+msgstr "Annehmen"
+
+#: pages/joke.py:57
+msgid "Joke"
+msgstr "Witz"
+
+#: pages/joke.py:60
+msgid "By"
+msgstr "Von"
+
+#: pages/joke.py:70 pages/submit.py:63
+msgid "Question"
+msgstr "Frage"
+
+#: pages/joke.py:79 pages/joke.py:124 pages/submit.py:71
+msgid "Answer"
+msgstr "Antwort"
+
+#: pages/joke.py:98
+msgid "This Jokebook is empty"
+msgstr "Dieses Witzbuch ist leer"
+
+#: pages/joke.py:100 pages/joke.py:160
+msgid "Submit a Joke"
+msgstr "Einen Witz abgeben"
+
+#: pages/joke.py:105
+msgid "Add Jokes"
+msgstr "Witze anfügen"
+
+#: pages/joke.py:154
+msgid "Next"
+msgstr "Nächster"
+
+#: pages/submit.py:93
+#, fuzzy
+msgid "Submission For:"
+msgstr "Abgabe für:"
+
+#: pages/submit.py:94
+msgid "Your Name:"
+msgstr "Dein Name:"
+
+#: pages/submit.py:105
+msgid "Submit"
+msgstr "Abgeben"
+
+#: pages/submit.py:108
+msgid "Back"
+msgstr "Zurück"
