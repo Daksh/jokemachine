@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-10-30 22:32+0200\n"
-"PO-Revision-Date: 2008-09-07 03:17-0400\n"
+"PO-Revision-Date: 2008-10-07 04:01-0400\n"
 "Last-Translator: abdullah kocabas <abdullah.kocabas@abcdizustu.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,43 +18,43 @@ msgstr ""
 #: activity/activity.info:2 JokeMachineActivity.py:128
 #: mesh/activitysession.py:165 mesh/activitysession.py:205
 msgid "Joke Machine"
-msgstr "şaka makinası"
+msgstr "Şaka Makinesi"
 
 #: JokeMachineActivity.py:128
 msgid "Please wait a moment for your buddy's Jokebooks to show up"
-msgstr "buddy'nin şaka kitabının yüklenmesi için biraz bekleyiniz."
+msgstr "Arkadaşınızın şaka kitabının yüklenmesi için biraz bekleyiniz"
 
 #: gui/frame.py:121 gui/frame.py:208
 msgid "Lesson Plans"
-msgstr "ders planları"
+msgstr "Ders Planları"
 
 #: gui/frame.py:139
 msgid "Read Jokebooks"
-msgstr "şaka kitabını okuyunuz."
+msgstr "Şaka kitabını oku"
 
 #: gui/frame.py:143
 msgid "Make Jokebook"
-msgstr "şaka kitabı oluşturunuz."
+msgstr "Şaka kitabı oluştur"
 
 #: gui/frame.py:212
 msgid "Close Lessons"
-msgstr "dersleri kapatınız."
+msgstr "Dersleri kapat"
 
 #: gui/frame.py:216
 msgid "Lesson Plans:"
-msgstr "ders planı:"
+msgstr "Ders Planı:"
 
 #: gui/page.py:99
 msgid "Click to choose a sound"
-msgstr "bir ses seçmek için tıklayınız."
+msgstr "Bir ses seçmek için tıkla"
 
 #: gui/page.py:294
 msgid "Choose image"
-msgstr "görüntü seçiniz."
+msgstr "Görüntü seç"
 
 #: gui/page.py:322
 msgid "Choose Sound"
-msgstr "ses seçiniz."
+msgstr "Ses seç"
 
 #: i18n.py:40
 msgid "Chinese (simplified)"
@@ -158,31 +158,31 @@ msgstr "Türkçe"
 
 #: i18n_misc_strings.py:1
 msgid "Lesson 1"
-msgstr "ders 1"
+msgstr "Ders 1"
 
 #: i18n_misc_strings.py:2
 msgid "Lesson 2"
-msgstr "ders 2"
+msgstr "Ders 2"
 
 #: i18n_misc_strings.py:3
 msgid "Lesson 3"
-msgstr "ders 3"
+msgstr "Ders 3"
 
 #: i18n_misc_strings.py:4
 msgid "Lesson 4"
-msgstr "ders 4"
+msgstr "Ders 4"
 
 #: i18n_misc_strings.py:5
 msgid "Introduction"
-msgstr "giriş"
+msgstr "Giriş"
 
 #: mesh/activitysession.py:164
 msgid " submitted a joke to "
-msgstr "_a bir şaka yapınız."
+msgstr "_a bir şaka yap"
 
 #: mesh/activitysession.py:203
 msgid " accepted a joke submitted to "
-msgstr "_a yapılan şakayı kabul ediniz."
+msgstr "_a yapılan şakayı kabul et"
 
 #: mesh/activitysession.py:204
 msgid " by "
@@ -190,11 +190,11 @@ msgstr "_tarafından"
 
 #: pages/choose.py:42
 msgid "Choose a Jokebook to read:"
-msgstr "okunacak bir şaka kitabı seçiniz:"
+msgstr "Okunacak bir şaka kitabı seç:"
 
 #: pages/choose.py:65
 msgid "Are you sure you want to delete your "
-msgstr "_ininizi silmek istediğinizden emin misiniz?"
+msgstr "_inizi silmek istediğinizden emin misiniz?"
 
 #: pages/choose.py:68
 msgid "jokebook ?"
@@ -202,63 +202,63 @@ msgstr "şaka kitabı?"
 
 #: pages/choose.py:110 pages/preview.py:62
 msgid "Edit"
-msgstr "düzenleyiniz."
+msgstr "Düzenle"
 
 #: pages/choose.py:114 pages/edit.py:178
 msgid "Delete"
-msgstr "siliniz."
+msgstr "Sil"
 
 #: pages/cover.py:37 pages/preview.py:44
 msgid "started by"
-msgstr "_tarafından başlamıştır."
+msgstr "_tarafından başlatıldı"
 
 #: pages/cover.py:49
 msgid "Open"
-msgstr "açınız."
+msgstr "Aç"
 
 #: pages/edit.py:57
 msgid "Edit Jokebook Cover"
-msgstr "şaka kitabı kapağını düzenleyiniz."
+msgstr "Şka kitabı kapağını düzenle"
 
 #: pages/edit.py:67
 msgid "Edit My Jokes"
-msgstr "şakalarımı düzenleyiniz."
+msgstr "Şakalarımı düzenle"
 
 #: pages/edit.py:77
 msgid "Review Submitted Jokes"
-msgstr "yapılan şakaları gösteriniz."
+msgstr "Yapılan şakaları göster"
 
 #: pages/edit.py:123
 msgid "Preview"
-msgstr "ön izleme"
+msgstr "Ön izleme"
 
 #: pages/edit.py:149
 msgid "Title of Jokebook:"
-msgstr "şaka kitabı adı:"
+msgstr "Şaka kitabı adı:"
 
 #: pages/edit.py:153
 msgid "Sound Effect:"
-msgstr "ses efekti:"
+msgstr "Ses efekti:"
 
 #: pages/edit.py:190
 msgid "Add New Joke"
-msgstr "yeni şaka ekleyiniz."
+msgstr "Yeni şaka ekle"
 
 #: pages/edit.py:201
 msgid "Are you sure you want to delete this joke ?"
-msgstr "bu şakayı silmek istediğinize emin misiniz?"
+msgstr "Bu şakayı silmek istediğinizden emin misiniz?"
 
 #: pages/edit.py:242
 msgid "Reject"
-msgstr "reddediniz."
+msgstr "Reddet"
 
 #: pages/edit.py:249
 msgid "Accept"
-msgstr "kabul ediniz."
+msgstr "Kabul et"
 
 #: pages/joke.py:57
 msgid "Joke"
-msgstr "şaka"
+msgstr "Şaka"
 
 #: pages/joke.py:60
 msgid "By"
@@ -266,27 +266,27 @@ msgstr "_tarafından"
 
 #: pages/joke.py:70 pages/submit.py:63
 msgid "Question"
-msgstr "soru"
+msgstr "Soru"
 
 #: pages/joke.py:79 pages/joke.py:124 pages/submit.py:71
 msgid "Answer"
-msgstr "cevap"
+msgstr "Cevap"
 
 #: pages/joke.py:98
 msgid "This Jokebook is empty"
-msgstr "bu şaka kitabı boştur."
+msgstr "Bu şaka kitabı boş"
 
 #: pages/joke.py:100 pages/joke.py:160
 msgid "Submit a Joke"
-msgstr "bir şaka yapınız."
+msgstr "Bir şaka yap"
 
 #: pages/joke.py:105
 msgid "Add Jokes"
-msgstr "şakalar ekleyiniz."
+msgstr "Şaka ekle"
 
 #: pages/joke.py:154
 msgid "Next"
-msgstr "diğer"
+msgstr "Diğer"
 
 #: pages/submit.py:93
 msgid "Submission For:"
@@ -294,12 +294,12 @@ msgstr "_için sunum:"
 
 #: pages/submit.py:94
 msgid "Your Name:"
-msgstr "adınız:"
+msgstr "Adınız:"
 
 #: pages/submit.py:105
 msgid "Submit"
-msgstr "sununuz."
+msgstr "Teslim et"
 
 #: pages/submit.py:108
 msgid "Back"
-msgstr "geri"
+msgstr "Geri"
