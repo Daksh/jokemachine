@@ -46,7 +46,8 @@ class Preview(Page):
     # cover
     cover = self.make_listrow()
     cover.props.orientation=hippo.ORIENTATION_VERTICAL
-    cover.append(hippo.CanvasText(text='"' + jokebook.title + '" ' + _('started by') + ' ' + jokebook.owner,
+    cover.append(hippo.CanvasText(text='"' + (jokebook.title or '')+ '" ' +
+        _('started by') + ' ' + (jokebook.owner or ''),
                                  xalign=hippo.ALIGNMENT_CENTER,
                                  padding_top=10))
     cover.append(hippo.CanvasBox(box_height=theme.SPACER_VERTICAL))      
