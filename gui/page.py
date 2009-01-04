@@ -104,8 +104,7 @@ class Page(hippo.CanvasBox):
       sound_name = _('Click to choose a sound')
     
     choose_sound = hippo.CanvasText(text=sound_name, 
-                                    xalign=hippo.ALIGNMENT_START,
-                                    font_desc=theme.FONT_BODY.get_pango_desc())
+                                    xalign=hippo.ALIGNMENT_START)
     choose_sound.connect('button-press-event', self.__do_clicked_choose_sound, obj, property)
     
     sound_box = RoundBox()
@@ -183,8 +182,7 @@ class Page(hippo.CanvasBox):
                             size_mode=hippo.CANVAS_SIZE_WRAP_WORD,
                             box_width=width,
                             xalign=xalign,
-                            color=text_color.get_int(),
-                            font_desc=theme.FONT_BODY.get_pango_desc())
+                            color=text_color.get_int())
   
   
   def make_textbox(self, obj, property, width=300, height=100, editable=True):
@@ -202,8 +200,7 @@ class Page(hippo.CanvasBox):
     field_box.append(hippo.CanvasText(text=label,
                                       box_width=label_width,
                                       xalign=hippo.ALIGNMENT_START,
-                                      color=theme.COLOR_DARK_GREEN.get_int(),
-                                      font_desc=theme.FONT_BODY.get_pango_desc()))
+                                      color=theme.COLOR_DARK_GREEN.get_int()))
     #if editable:
     textfield = self.__textview(value, field_width, -1, editable, False) 
     textfield.control.get_buffer().connect('changed', self.__do_changed_control, obj, property)    
@@ -213,8 +210,7 @@ class Page(hippo.CanvasBox):
       #glitch_box.append(hippo.CanvasText(text=value,
                                         #size_mode=hippo.CANVAS_SIZE_WRAP_WORD,
                                         #box_width=field_width,
-                                        #xalign=hippo.ALIGNMENT_START,
-                                        #font_desc=theme.FONT_BODY.get_pango_desc()))
+                                        #xalign=hippo.ALIGNMENT_START))
       #field_box.append(glitch_box)
     return field_box
 
@@ -228,16 +224,12 @@ class Page(hippo.CanvasBox):
 
     # control props
     textview.set_wrap_mode(gtk.WRAP_WORD)
-    font = font_desc=theme.FONT_TEXTBOX.get_pango_desc()
-    font.set_weight(pango.WEIGHT_LIGHT) 
-    textview.modify_font(font)
     textview.modify_base(gtk.STATE_NORMAL, theme.COLOR_TEXTBOX.get_gdk_color())
     textview.set_editable(editable)
     textview.set_cursor_visible(editable)
     if height == -1:
       context = textview.create_pango_context()
       layout = pango.Layout(context)
-      layout.set_font_description(font) # TODO theme.FONT_BODY should be a pango.FontDescription, not a string
       layout.set_text(text[ : text.find('\n')])
       (w, h) = layout.get_pixel_size()
       height = h #+ theme.BORDER_WIDTH_CONTROL / 2 # fudge factor - on the XO-1 hardware all known solutions evaporate

@@ -111,21 +111,6 @@ BORDER_WIDTH_IMAGE = style.zoom(1)
 SPACER_VERTICAL = style.zoom(20)
 SPACER_HORIZONTAL = style.zoom(20)
 
-# fonts ########################################################################
-
-#FONT_SIZE = zoom(7 * _XO_DPI / _get_screen_dpi())
-#FONT_NORMAL = Font('Bitstream Vera Sans %d' % FONT_SIZE)
-#_XO_DPI = 200.0
-FONT_SIZE_LARGE = style.zoom(10 * style._XO_DPI / style._get_screen_dpi())
-FONT_LARGE = style.Font('Bitstream Vera Sans %d' % FONT_SIZE_LARGE)
-
-#FONT_LARGE =  style.FONT_NORMAL #'Sans 18'
-FONT_BODY = style.FONT_NORMAL #'Sans 14'
-FONT_BODY_BOLD = style.FONT_BOLD #'Sans Bold 14'
-FONT_TABS = style.FONT_NORMAL #'Sans 12'
-FONT_TEXTBOX = style.FONT_NORMAL  #'Sans 10'
-
-
 # images #######################################################################
 
 IMAGE_CHOOSE = 'resources/image.png'

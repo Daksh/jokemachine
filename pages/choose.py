@@ -45,8 +45,7 @@ class Choose(Page):
     # page title
     self.append(hippo.CanvasText(text= _('Choose a Jokebook to read:'),
                                  xalign=hippo.ALIGNMENT_START,
-                                 padding=10,
-                                 font_desc=theme.FONT_BODY.get_pango_desc()))
+                                 padding=10))
     
     # list of Jokebooks 
     allow_edit = Globals.JokeMachineActivity.is_initiator
@@ -96,7 +95,6 @@ class Choose(Page):
     title = hippo.CanvasText(text=jokebook.title, 
                              padding_left = 20,                             
                              xalign=hippo.ALIGNMENT_START,
-                             font_desc=theme.FONT_LARGE.get_pango_desc(),
                              color=theme.COLOR_LINK.get_int())
     title.set_clickable(True)
     title.connect('button-press-event', self.__do_clicked_title, jokebook)    
@@ -106,8 +104,7 @@ class Choose(Page):
     
     # owner
     list_row.append(self.__make_column_div(330, hippo.CanvasText(text= jokebook.owner,
-                                                            xalign=hippo.ALIGNMENT_START,
-                                                            font_desc=theme.FONT_LARGE.get_pango_desc())))
+                                                            xalign=hippo.ALIGNMENT_START)))
 
     # buttons
     if edit:

@@ -64,8 +64,7 @@ class PageSelector(hippo.CanvasBox):
                                 padding=theme.PADDING_TAB,
                                 xalign=hippo.ALIGNMENT_START,
                                 background_color=theme.COLOR_TAB_ACTIVE.get_int(),
-                                color=theme.COLOR_TAB_TEXT.get_int(),
-                                font_desc=theme.FONT_TABS.get_pango_desc())
+                                color=theme.COLOR_TAB_TEXT.get_int())
     self.__tab_1.page = EditInfo
     self.__tab_1.connect('button-press-event', self.__do_clicked_tab)    
     tab_box.append(self.__tab_1)
@@ -74,8 +73,7 @@ class PageSelector(hippo.CanvasBox):
                                 padding=theme.PADDING_TAB,
                                 xalign=hippo.ALIGNMENT_START,
                                 background_color=theme.COLOR_TAB_INACTIVE.get_int(),
-                                color=theme.COLOR_TAB_TEXT.get_int(),
-                                font_desc=theme.FONT_TABS.get_pango_desc())
+                                color=theme.COLOR_TAB_TEXT.get_int())
     self.__tab_2.page = EditJokes
     self.__tab_2.connect('button-press-event', self.__do_clicked_tab)    
     tab_box.append(self.__tab_2)
@@ -84,8 +82,7 @@ class PageSelector(hippo.CanvasBox):
                                 padding=theme.PADDING_TAB,
                                 xalign=hippo.ALIGNMENT_START,
                                 background_color=theme.COLOR_TAB_INACTIVE.get_int(),
-                                color=theme.COLOR_TAB_TEXT.get_int(),
-                                font_desc=theme.FONT_TABS.get_pango_desc())
+                                color=theme.COLOR_TAB_TEXT.get_int())
     self.__tab_3.page = EditReview
     self.__tab_3.connect('button-press-event', self.__do_clicked_tab)    
     tab_box.append(self.__tab_3)
@@ -267,8 +264,7 @@ class EditReview(Page):
       #status_box.append(hippo.CanvasText(text=_('Status:'),
                                   #color=theme.COLOR_DARK_GREEN.get_int(),
                                   #box_width=100,
-                                  #xalign=hippo.ALIGNMENT_START,
-                                  #font_desc=theme.FONT_BODY.get_pango_desc()))
+                                  #xalign=hippo.ALIGNMENT_START))
       ##button = None
       #button = gtk.RadioButton()
       #button = gtk.RadioButton(button, _('Approved'))

@@ -57,14 +57,11 @@ class JokeViewer(Page):
     self.left.append(joke_image)
     self.left.append(hippo.CanvasText(text=jokebook_title,
                                       xalign=hippo.ALIGNMENT_START,
-                                      color=theme.COLOR_DARK_GREEN.get_int(),
-                                      font_desc=theme.FONT_BODY_BOLD.get_pango_desc()))
+                                      color=theme.COLOR_DARK_GREEN.get_int()))
     self.left.append(hippo.CanvasText(text=_('Joke') + ' ' + str(joke.id),
-                                      xalign=hippo.ALIGNMENT_START,
-                                      font_desc=theme.FONT_BODY.get_pango_desc()))
+                                      xalign=hippo.ALIGNMENT_START))
     self.left.append(hippo.CanvasText(text=_('By') + ' ' + str(joke.joker),
-                                      xalign=hippo.ALIGNMENT_START,
-                                      font_desc=theme.FONT_BODY.get_pango_desc()))
+                                      xalign=hippo.ALIGNMENT_START))
 
     # right column 
     self.right = hippo.CanvasBox(border=0,
@@ -74,8 +71,7 @@ class JokeViewer(Page):
                                  orientation=hippo.ORIENTATION_VERTICAL)
     self.right.append(hippo.CanvasText(text=_('Question'),
                                        xalign=hippo.ALIGNMENT_START,
-                                       color=theme.COLOR_DARK_GREEN.get_int(),
-                                       font_desc=theme.FONT_BODY.get_pango_desc()))
+                                       color=theme.COLOR_DARK_GREEN.get_int()))
     self.right.append(self.make_bodytext(joke.text))
 
     self.right.append(hippo.CanvasBox(box_height=30)) # spacer
@@ -83,8 +79,7 @@ class JokeViewer(Page):
     self.answer_box = hippo.CanvasBox()
     self.answer_box.append(hippo.CanvasText(text=_('Answer'),
                                        xalign=hippo.ALIGNMENT_START,
-                                       color=theme.COLOR_DARK_GREEN.get_int(),
-                                       font_desc=theme.FONT_BODY.get_pango_desc()))
+                                       color=theme.COLOR_DARK_GREEN.get_int()))
     self.answer_box.append(self.make_bodytext(joke.answer))    
     self.right.append(self.answer_box)
 

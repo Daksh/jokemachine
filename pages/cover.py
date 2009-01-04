@@ -40,8 +40,7 @@ class Cover(Page):
     # title
     self.append(hippo.CanvasText(text='"' + jokebook.title + '" ' + _('started by') + ' ' + jokebook.owner,
                                  xalign=hippo.ALIGNMENT_CENTER,
-                                 padding_top=10,
-                                 font_desc=theme.FONT_BODY_BOLD.get_pango_desc()))
+                                 padding_top=10))
     self.append(hippo.CanvasBox(box_height=theme.SPACER_VERTICAL))      
 
     # cover picture 

@@ -48,8 +48,7 @@ class Preview(Page):
     cover.props.orientation=hippo.ORIENTATION_VERTICAL
     cover.append(hippo.CanvasText(text='"' + jokebook.title + '" ' + _('started by') + ' ' + jokebook.owner,
                                  xalign=hippo.ALIGNMENT_CENTER,
-                                 padding_top=10,
-                                 font_desc=theme.FONT_BODY_BOLD.get_pango_desc()))
+                                 padding_top=10))
     cover.append(hippo.CanvasBox(box_height=theme.SPACER_VERTICAL))      
     cover_picture = self.make_imagebox(jokebook, 'image', 640, 480, False)    
     cover.append(cover_picture)

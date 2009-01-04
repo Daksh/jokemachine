@@ -67,16 +67,14 @@ class JokeEditor(Page):
                                  spacing=theme.BORDER_WIDTH_CONTROL/2)
     self.right.append(hippo.CanvasText(text=_('Question'),
                                   xalign=hippo.ALIGNMENT_START,
-                                  color=theme.COLOR_DARK_GREEN.get_int(),
-                                  font_desc=theme.FONT_BODY.get_pango_desc()))
+                                  color=theme.COLOR_DARK_GREEN.get_int()))
     self.right.append(self.make_textbox(joke, 'text'))
 
     self.right.append(hippo.CanvasBox(box_height=theme.SPACER_VERTICAL)) 
     
     self.right.append(hippo.CanvasText(text=_('Answer'),
                                   xalign=hippo.ALIGNMENT_START,
-                                  color=theme.COLOR_DARK_GREEN.get_int(),
-                                  font_desc=theme.FONT_BODY.get_pango_desc()))
+                                  color=theme.COLOR_DARK_GREEN.get_int()))
     self.right.append(self.make_textbox(joke, 'answer'))
     
     self.append(self.left)

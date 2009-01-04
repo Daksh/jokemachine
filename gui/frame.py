@@ -105,7 +105,7 @@ class Frame(hippo.Canvas):
                                    padding_right=100,
                                    yalign=hippo.ALIGNMENT_CENTER,
                                    orientation=hippo.ORIENTATION_VERTICAL)
-    button = LanguageComboBox('org.worldwideworkshop.olpc.JokeMachine')
+    button = LanguageComboBox('org.worldwideworkshop.JokeMachineActivity')
     button.install()
     button.set_name('fubar')
     language.props.widget = button 
@@ -220,8 +220,7 @@ class Frame(hippo.Canvas):
                                    border_color=theme.COLOR_BLUE.get_int())
       widget_box.append(hippo.CanvasText(text= _('Lesson Plans:'),
                                          xalign=hippo.ALIGNMENT_START,
-                                         padding=10,
-                                         font_desc=theme.FONT_BODY.get_pango_desc()))
+                                         padding=10))
       lesson_plans = LessonPlanWidget(Globals.pwd)
       lesson_plans.set_size_request(1050, 500)
       widget_box.append(hippo.CanvasWidget(widget=lesson_plans,
