@@ -44,8 +44,8 @@ class Cover(Page):
     self.append(hippo.CanvasBox(box_height=theme.SPACER_VERTICAL))      
 
     # cover picture 
-    cover_picture = self.make_imagebox(jokebook, 'image', 640, 480, False)    
-    self.append(cover_picture)
+    cover_picture = self.make_imagebox(jokebook, 'image', 480, 360, False)    
+    self.append(cover_picture, hippo.PACK_EXPAND)
     self.append(hippo.CanvasBox(box_height=theme.SPACER_VERTICAL))
     
     # open button 

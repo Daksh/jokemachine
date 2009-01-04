@@ -44,13 +44,11 @@ class JokeEditor(Page):
                   padding=4,
                   border_color=theme.COLOR_RED.get_int(),
                   border=0,
-                  xalign=hippo.ALIGNMENT_START,
                   orientation=hippo.ORIENTATION_HORIZONTAL)
     
      # left column 
     self.left = hippo.CanvasBox(border=0,
                                 border_color=theme.COLOR_RED.get_int(),
-                                box_width=450,
                                 xalign=hippo.ALIGNMENT_START,
                                 orientation=hippo.ORIENTATION_VERTICAL,
                                 padding=theme.BORDER_WIDTH_CONTROL/2)
@@ -60,8 +58,7 @@ class JokeEditor(Page):
     # right column 
     self.right = hippo.CanvasBox(border=0,
                                  border_color=theme.COLOR_RED.get_int(),
-                                 box_width=350,
-                                 xalign=hippo.ALIGNMENT_START,
+                                 padding=theme.SPACER_HORIZONTAL,
                                  orientation=hippo.ORIENTATION_VERTICAL,
                                  padding_bottom=theme.BORDER_WIDTH_CONTROL/2,
                                  spacing=theme.BORDER_WIDTH_CONTROL/2)
@@ -78,7 +75,7 @@ class JokeEditor(Page):
     self.right.append(self.make_textbox(joke, 'answer'))
     
     self.append(self.left)
-    self.append(self.right)
+    self.append(self.right, hippo.PACK_EXPAND)
 
 
 class Submit(Page):

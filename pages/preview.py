@@ -41,7 +41,7 @@ class Preview(Page):
   def __init__(self, jokebook):
     Page.__init__(self, xalign=hippo.ALIGNMENT_CENTER)
     
-    preview_box = CanvasListBox(1028, theme.PREVIEW_HEIGHT) # TODO - really shouldn't be hardcoded
+    preview_box = CanvasListBox()
     
     # cover
     cover = self.make_listrow()
@@ -50,7 +50,7 @@ class Preview(Page):
                                  xalign=hippo.ALIGNMENT_CENTER,
                                  padding_top=10))
     cover.append(hippo.CanvasBox(box_height=theme.SPACER_VERTICAL))      
-    cover_picture = self.make_imagebox(jokebook, 'image', 640, 480, False)    
+    cover_picture = self.make_imagebox(jokebook, 'image', 480, 360, False)    
     cover.append(cover_picture)
     cover.append(hippo.CanvasBox(box_height=theme.SPACER_VERTICAL))
     preview_box.append(cover)
@@ -59,7 +59,7 @@ class Preview(Page):
     for joke in jokebook.jokes:
       list_row = self.make_listrow(JokeViewer(joke, jokebook.title))
       preview_box.append(list_row)
-    self.append(preview_box)
+    self.append(preview_box, hippo.PACK_EXPAND)
     
     self.append(hippo.CanvasBox(box_height=theme.SPACER_VERTICAL))
     

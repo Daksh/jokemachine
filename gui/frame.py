@@ -72,9 +72,8 @@ class Frame(hippo.Canvas):
                                   border_color=theme.COLOR_PAGE_BORDER.get_int(), 
                                   spacing=8,      
                                   padding=20,
-                                  xalign=hippo.ALIGNMENT_CENTER,
                                   orientation=hippo.ORIENTATION_VERTICAL)
-    self.__container.append(self.__page)
+    self.__container.append(self.__page, hippo.PACK_EXPAND)
     
     self.__page_class = None
     
@@ -168,7 +167,7 @@ class Frame(hippo.Canvas):
     def set(self, value): 
       self.__page_class = type(value)
       self.__page.clear()
-      self.__page.append(value)
+      self.__page.append(value, hippo.PACK_EXPAND)
 
       # some rules for the buttons in the footer
       if not Globals.JokeMachineActivity.is_initiator \
@@ -222,10 +221,10 @@ class Frame(hippo.Canvas):
                                          xalign=hippo.ALIGNMENT_START,
                                          padding=10))
       lesson_plans = LessonPlanWidget(Globals.pwd)
-      lesson_plans.set_size_request(1050, 500)
       widget_box.append(hippo.CanvasWidget(widget=lesson_plans,
                                            border=0,
-                                           border_color=theme.COLOR_DARK_GREEN.get_int()))
+                                           border_color=theme.COLOR_DARK_GREEN.get_int()),
+                                           hippo.PACK_EXPAND)
       self.page = widget_box
       self.__button_read.set_visible(False)
       self.__button_make.set_visible(False)            

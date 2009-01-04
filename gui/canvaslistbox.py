@@ -29,7 +29,7 @@ from gui import page
 
 # TODO- height seems bust
 class CanvasListBox(hippo.CanvasWidget):
-  def __init__(self, width = 0, height = 0):
+  def __init__(self):
     self._entries_div = hippo.CanvasBox() 
 
     # props not set properly in constructor
@@ -50,8 +50,6 @@ class CanvasListBox(hippo.CanvasWidget):
 
     scroller = gtk.ScrolledWindow()
     scroller.set_policy(gtk.POLICY_NEVER, gtk.POLICY_AUTOMATIC)
-    if width > 0 or height > 0:
-      scroller.set_size_request(width, height) # TODO -> Size according to _entries_div w/ a max_entries or somesuch ?
     viewport = gtk.Viewport()
     viewport.set_shadow_type(gtk.SHADOW_NONE) 
     viewport.add(hbox)
@@ -67,6 +65,6 @@ class CanvasListBox(hippo.CanvasWidget):
                                 border_color=theme.COLOR_DARK_GREEN.get_int())
 
 
-  def append(self, entry):
-    self._entries_div.append(entry)
+  def append(self, entry, *args):
+    self._entries_div.append(entry, *args)
 

@@ -48,49 +48,43 @@ class PageSelector(hippo.CanvasBox):
     hippo.CanvasBox.__init__(self, **kwargs)
     self.__parent = parent
 
-    control_width = 1024 # TODO -> Figure this out from parent size
     self.props.border = 1
     self.props.border_color=theme.COLOR_TAB_ACTIVE.get_int()
     self.props.background_color=theme.COLOR_PAGE.get_int()
     self.props.orientation=hippo.ORIENTATION_VERTICAL
     
-    # button box -> # TODO -> Make into generic control
-    tab_width = control_width / 3.0
     tab_box = hippo.CanvasBox(background_color=theme.COLOR_TAB_SEPERATOR.get_int(),
                                  spacing=2,
                                  orientation=hippo.ORIENTATION_HORIZONTAL)
     self.__tab_1 = hippo.CanvasText(text=_('Edit Jokebook Cover'),
-                                box_width=tab_width,
                                 padding=theme.PADDING_TAB,
                                 xalign=hippo.ALIGNMENT_START,
                                 background_color=theme.COLOR_TAB_ACTIVE.get_int(),
                                 color=theme.COLOR_TAB_TEXT.get_int())
     self.__tab_1.page = EditInfo
     self.__tab_1.connect('button-press-event', self.__do_clicked_tab)    
-    tab_box.append(self.__tab_1)
+    tab_box.append(self.__tab_1, hippo.PACK_EXPAND)
     self.__tab_2 = hippo.CanvasText(text=_('Edit My Jokes'),
-                                box_width=tab_width,
                                 padding=theme.PADDING_TAB,
                                 xalign=hippo.ALIGNMENT_START,
                                 background_color=theme.COLOR_TAB_INACTIVE.get_int(),
                                 color=theme.COLOR_TAB_TEXT.get_int())
     self.__tab_2.page = EditJokes
     self.__tab_2.connect('button-press-event', self.__do_clicked_tab)    
-    tab_box.append(self.__tab_2)
+    tab_box.append(self.__tab_2, hippo.PACK_EXPAND)
     self.__tab_3 = hippo.CanvasText(text=_('Review Submitted Jokes'),
-                                box_width=tab_width,
                                 padding=theme.PADDING_TAB,
                                 xalign=hippo.ALIGNMENT_START,
                                 background_color=theme.COLOR_TAB_INACTIVE.get_int(),
                                 color=theme.COLOR_TAB_TEXT.get_int())
     self.__tab_3.page = EditReview
     self.__tab_3.connect('button-press-event', self.__do_clicked_tab)    
-    tab_box.append(self.__tab_3)
+    tab_box.append(self.__tab_3, hippo.PACK_EXPAND)
     self.append(tab_box)
     
     self.__page = hippo.CanvasBox(background_color=theme.COLOR_PAGE.get_int(),
                                 orientation=hippo.ORIENTATION_VERTICAL)
-    self.append(self.__page)
+    self.append(self.__page, hippo.PACK_EXPAND)
     
     
   @Property
@@ -98,7 +92,7 @@ class PageSelector(hippo.CanvasBox):
     def get(self): return self.__page.the_page
     def set(self, value): 
       self.__page.clear()
-      self.__page.append(value)
+      self.__page.append(value, hippo.PACK_EXPAND)
       self.__page.the_page = value
     
     
@@ -114,12 +108,12 @@ class PageSelector(hippo.CanvasBox):
 class Edit(Page):
 
   def __init__(self, jokebook):
-    Page.__init__(self, xalign=hippo.ALIGNMENT_CENTER)
+    Page.__init__(self)
     
     self.__jokebook = jokebook    
     
     self.__page_selector = PageSelector(self)
-    self.append(self.__page_selector)
+    self.append(self.__page_selector, hippo.PACK_EXPAND)
     self.__page_selector.page = EditInfo(jokebook, self)
     
     button = gtk.Button(_('Preview'))
@@ -174,17 +168,17 @@ class EditJokes(Page):
     self.__parent = parent
     
     # list of jokes
-    jokes_div = CanvasListBox(800, theme.TABS_HEIGHT)  
+    jokes_div = CanvasListBox()
     jokes_div.props.border=0
     for joke in jokebook.jokes:
       button = gtk.Button(' ' + _('Delete') + ' ')
       button.connect('clicked', self.__do_clicked_delete, jokebook, joke)
-      list_row = self.make_listrow(JokeEditor(joke))
+      list_row = self.make_listrow(JokeEditor(joke), hippo.PACK_EXPAND)
       list_row.append(hippo.CanvasWidget(widget=theme.theme_widget(button),
                                          padding=5),
                       hippo.PACK_END)
       jokes_div.append(list_row)
-    self.append(jokes_div)
+    self.append(jokes_div, hippo.PACK_EXPAND)
     
     # new joke button
     buttons = hippo.CanvasBox(orientation=hippo.ORIENTATION_HORIZONTAL,
@@ -230,7 +224,7 @@ class EditReview(Page):
     
     self.__parent = parent
     
-    jokes_div = CanvasListBox(800, theme.TABS_HEIGHT)  
+    jokes_div = CanvasListBox()  
     jokes_div.props.border=0
     for joke in jokebook.submissions:
       list_row = self.make_listrow(JokeViewer(joke, jokebook.title))

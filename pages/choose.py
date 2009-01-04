@@ -49,11 +49,10 @@ class Choose(Page):
     
     # list of Jokebooks 
     allow_edit = Globals.JokeMachineActivity.is_initiator
-    #jokebooks_div = CanvasListBox(1050, 500)
-    jokebooks_div = CanvasListBox(1050, theme.zoom(500)) # TODO -> This should be sizing relative to parent
+    jokebooks_div = CanvasListBox()
     for jokebook in Globals.JokeMachineState.jokebooks:
       jokebooks_div.append(self.__make_jokebook_div(jokebook, allow_edit))
-    self.append(jokebooks_div) 
+    self.append(jokebooks_div, hippo.PACK_EXPAND) 
 
 
   def __do_clicked_title(self, control, event, jokebook):
@@ -92,20 +91,17 @@ class Choose(Page):
     list_row.append(self.__make_column_div(100, thumbnail))
 
     # title
-    title = hippo.CanvasText(text=jokebook.title, 
+    title = hippo.CanvasText(
+            text = (jokebook.title or '')+ "\n" + (jokebook.owner or ''), 
                              padding_left = 20,                             
                              xalign=hippo.ALIGNMENT_START,
                              color=theme.COLOR_LINK.get_int())
     title.set_clickable(True)
     title.connect('button-press-event', self.__do_clicked_title, jokebook)    
-    list_row.append(self.__make_column_div(330, title)) 
+    list_row.append(self.__make_column_div(-1, title), hippo.PACK_EXPAND) 
     
     list_row.append(hippo.CanvasBox(box_width=theme.SPACER_HORIZONTAL)) # TODO spacer    
     
-    # owner
-    list_row.append(self.__make_column_div(330, hippo.CanvasText(text= jokebook.owner,
-                                                            xalign=hippo.ALIGNMENT_START)))
-
     # buttons
     if edit:
       button = gtk.Button(_('Edit'))
@@ -115,6 +111,7 @@ class Choose(Page):
       button = gtk.Button(_('Delete'))
       button.connect('clicked', self.__do_clicked_delete, jokebook)
       list_row.append(self.__make_column_div(100, hippo.CanvasWidget(widget=theme.theme_widget(button))))
+      list_row.append(hippo.CanvasBox(box_width=theme.SPACER_HORIZONTAL)) # TODO spacer    
 
     return list_row
 
