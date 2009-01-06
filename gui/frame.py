@@ -66,8 +66,7 @@ class Frame(hippo.Canvas):
                                        orientation=hippo.ORIENTATION_VERTICAL)
     self.__root.append(self.__container, hippo.PACK_EXPAND)
     
-    self.__page = hippo.CanvasBox(box_height=theme.PAGE_HEIGHT,
-                                  background_color=theme.COLOR_PAGE.get_int(),
+    self.__page = hippo.CanvasBox(background_color=theme.COLOR_PAGE.get_int(),
                                   border=4,
                                   border_color=theme.COLOR_PAGE_BORDER.get_int(), 
                                   spacing=8,      

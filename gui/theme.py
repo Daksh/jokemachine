@@ -98,10 +98,6 @@ COLOR_TAB_TEXT        = COLOR_WHITE
 
 zoom = style.zoom
 
-PAGE_HEIGHT = style.zoom(635) # don't ask 
-TABS_HEIGHT = style.zoom(480) # 465 450
-PREVIEW_HEIGHT = style.zoom(519)  # 564
-
 PADDING_TAB = style.zoom(6)
 DEFAULT_PADDING = style.zoom(6)
 DEFAULT_SPACING = style.zoom(8)

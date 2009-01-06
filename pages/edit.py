@@ -136,8 +136,7 @@ class EditInfo(Page): # TODO -> gui.Page should follow this pattern rather
     Page.__init__(self, xalign=hippo.ALIGNMENT_CENTER,
                         orientation=hippo.ORIENTATION_VERTICAL,
                         padding=20, 
-                        spacing=20,
-                        box_height=theme.TABS_HEIGHT)
+                        spacing=20)
     
     self.__parent = parent
     
