@@ -402,11 +402,12 @@ class JokeMachineActivity(activity.Activity):
       f.close()
     else:
       logging.debug('nothing to persist')
+      raise NotImplementedError
 
 
-  def close(self):    
+  def can_close(self):    
     '''Called on activity close'''
     logging.info('Exiting Activity. Performing cleanup...')
     Globals.shutdown()
     logging.info('Done')
-    activity.Activity.close(self)
+    return True
