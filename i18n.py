@@ -72,7 +72,10 @@ class LangDetails (object):
     self.domain = domain
 
   def guess_translation (self, fallback=False):
-    self.gnutranslation = gettext.translation(self.domain, 'locale', [self.code], fallback=fallback)
+    try:
+      self.gnutranslation = gettext.translation(self.domain, 'locale', [self.code], fallback=fallback)
+    except:
+      return False
 
   def install (self):
     self.gnutranslation.install()
@@ -103,8 +106,8 @@ def list_available_translations (domain):
     try:
       details = get_lang_details(x, domain)
       if details is not None:
-        details.guess_translation()
-        rv.append(details)
+        if details.guess_translation():
+          rv.append(details)
     except:
       raise
       pass
