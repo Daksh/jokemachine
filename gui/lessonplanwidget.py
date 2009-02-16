@@ -22,6 +22,7 @@ import os
 import locale
 import gtk
 import logging
+from gettext import gettext as _
 
 from abiword import Canvas as AbiCanvas
 

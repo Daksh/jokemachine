@@ -23,7 +23,6 @@ import gtk
 import hippo
 import logging
 
-from i18n import LanguageComboBox
 from gettext import gettext as _
 
 from globals import Globals
@@ -91,23 +90,6 @@ class Frame(hippo.Canvas):
     logo = gtk.Image()
     logo.set_from_file(Globals.logo)
     ret.append(hippo.CanvasWidget(widget=logo))
-    
-    # language selection box
-    language =  hippo.CanvasWidget(background_color=theme.COLOR_BACKGROUND.get_int(),
-                                   border_top=theme.BORDER_WIDTH,
-                                   border_left=theme.BORDER_WIDTH,
-                                   border_color=theme.COLOR_FRAME.get_int(),
-                                   padding_top=12, 
-                                   padding_bottom=12,
-                                   padding_left=100, 
-                                   padding_right=100,
-                                   yalign=hippo.ALIGNMENT_CENTER,
-                                   orientation=hippo.ORIENTATION_VERTICAL)
-    button = LanguageComboBox('org.worldwideworkshop.JokeMachineActivity')
-    button.install()
-    button.set_name('fubar')
-    language.props.widget = button 
-    ret.append(language, hippo.PACK_EXPAND)
     
     # lesson plans
     lesson_plans =  hippo.CanvasWidget(background_color=theme.COLOR_BACKGROUND.get_int(),

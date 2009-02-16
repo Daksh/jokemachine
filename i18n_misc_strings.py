@@ -1,5 +1,0 @@
-_("Lesson 1")
-_("Lesson 2")
-_("Lesson 3")
-_("Lesson 4")
-_("Introduction")
