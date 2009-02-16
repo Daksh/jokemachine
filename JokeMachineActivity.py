@@ -18,6 +18,10 @@
 # own creations we would love to hear from you at info@WorldWideWorkshop.org !
 #
 
+# init gthreads before using abiword
+import gobject
+gobject.threads_init()
+
 import os
 import logging
 import gtk
