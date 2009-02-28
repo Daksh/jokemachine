@@ -2,305 +2,304 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-10-30 22:32+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2009-01-11 14:52-0500\n"
+"Last-Translator: Nicci Manns <nicci@saunalahti.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.1.1rc4\n"
+"X-Generator: Pootle 1.1.0rc2\n"
 
 #: activity/activity.info:2 JokeMachineActivity.py:128
 #: mesh/activitysession.py:165 mesh/activitysession.py:205
 msgid "Joke Machine"
-msgstr ""
+msgstr "Skämtskaparen"
 
 #: JokeMachineActivity.py:128
 msgid "Please wait a moment for your buddy's Jokebooks to show up"
-msgstr ""
+msgstr "Din kopis skämtbok håller på att laddas in."
 
 #: gui/frame.py:121 gui/frame.py:208
 msgid "Lesson Plans"
-msgstr ""
+msgstr "Lektionsplaner"
 
 #: gui/frame.py:139
 msgid "Read Jokebooks"
-msgstr ""
+msgstr "Läs skämtböcker"
 
 #: gui/frame.py:143
 msgid "Make Jokebook"
-msgstr ""
+msgstr "Skapa en skämtbok"
 
 #: gui/frame.py:212
 msgid "Close Lessons"
-msgstr ""
+msgstr "Stäng lektioner"
 
 #: gui/frame.py:216
 msgid "Lesson Plans:"
-msgstr ""
+msgstr "Lektionsplaner:"
 
 #: gui/page.py:99
 msgid "Click to choose a sound"
-msgstr ""
+msgstr "Klicka för att välja ett ljud"
 
 #: gui/page.py:294
 msgid "Choose image"
-msgstr ""
+msgstr "Välj bild"
 
 #: gui/page.py:322
 msgid "Choose Sound"
-msgstr ""
+msgstr "Välj Ljud"
 
 #: i18n.py:40
 msgid "Chinese (simplified)"
-msgstr ""
+msgstr "kinesiska (förenklad)"
 
 #: i18n.py:41
 msgid "Chinese (traditional)"
-msgstr ""
+msgstr "kinesiska (traditionell)"
 
 #: i18n.py:42
 msgid "Czech"
-msgstr ""
+msgstr "tjeckiska"
 
 #: i18n.py:43
 msgid "Danish"
-msgstr ""
+msgstr "danska"
 
 #: i18n.py:44
 msgid "Dutch"
-msgstr ""
+msgstr "holländska"
 
 #: i18n.py:45
 msgid "Afrikaans"
-msgstr ""
+msgstr "Afrikaans"
 
 #: i18n.py:46
 msgid "English"
-msgstr ""
+msgstr "engelska"
 
 #: i18n.py:47
 msgid "English - Great Britain"
-msgstr ""
+msgstr "engelska (Storbritannien)"
 
 #: i18n.py:48
 msgid "English - U.S."
-msgstr ""
+msgstr "engelska (USA)  "
 
 #: i18n.py:49
 msgid "Finnish"
-msgstr ""
+msgstr "finska"
 
 #: i18n.py:50
 msgid "French"
-msgstr ""
+msgstr "franska"
 
 #: i18n.py:51
 msgid "German"
-msgstr ""
+msgstr "tyska"
 
 #: i18n.py:52
 msgid "Hungarian"
-msgstr ""
+msgstr "ungerska"
 
 #: i18n.py:53
 msgid "Italian"
-msgstr ""
+msgstr "italienska"
 
 #: i18n.py:54
 msgid "Japanese"
-msgstr ""
+msgstr "japanska"
 
 #: i18n.py:55
 msgid "Korean"
-msgstr ""
+msgstr "koreanska"
 
 #: i18n.py:56
 msgid "Norwegian"
-msgstr ""
+msgstr "norska"
 
 #: i18n.py:57
 msgid "Polish"
-msgstr ""
+msgstr "polska"
 
 #: i18n.py:58
 msgid "Portuguese"
-msgstr ""
+msgstr "portugisiska"
 
 #: i18n.py:59
 msgid "Portuguese - Brazilian"
-msgstr ""
+msgstr "portugisiska (brasilianska)"
 
 #: i18n.py:60
 msgid "Russian"
-msgstr ""
+msgstr "ryska"
 
 #: i18n.py:61
 msgid "Slovak"
-msgstr ""
+msgstr "slovaksika"
 
 #: i18n.py:62
 msgid "Spanish"
-msgstr ""
+msgstr "spanska"
 
 #: i18n.py:63
 msgid "Swedish"
-msgstr ""
+msgstr "svenska"
 
 #: i18n.py:64
 msgid "Turkish"
-msgstr ""
+msgstr "turkiska"
 
 #: i18n_misc_strings.py:1
 msgid "Lesson 1"
-msgstr ""
+msgstr "Lektion 1"
 
 #: i18n_misc_strings.py:2
 msgid "Lesson 2"
-msgstr ""
+msgstr "Lektion 2"
 
 #: i18n_misc_strings.py:3
 msgid "Lesson 3"
-msgstr ""
+msgstr "Lektion 3"
 
 #: i18n_misc_strings.py:4
 msgid "Lesson 4"
-msgstr ""
+msgstr "Lektion 4"
 
 #: i18n_misc_strings.py:5
 msgid "Introduction"
-msgstr ""
+msgstr "Introduktion"
 
 #: mesh/activitysession.py:164
 msgid " submitted a joke to "
-msgstr ""
+msgstr " skickade ett skämt till "
 
 #: mesh/activitysession.py:203
 msgid " accepted a joke submitted to "
-msgstr ""
+msgstr " accepterade ett skämt skickat till "
 
 #: mesh/activitysession.py:204
 msgid " by "
-msgstr ""
+msgstr " av "
 
 #: pages/choose.py:42
 msgid "Choose a Jokebook to read:"
-msgstr ""
+msgstr "Välj en skämtbok:"
 
 #: pages/choose.py:65
 msgid "Are you sure you want to delete your "
-msgstr ""
+msgstr "Är du säker på att du vill ta bort din "
 
 #: pages/choose.py:68
 msgid "jokebook ?"
-msgstr ""
+msgstr "skämtbok?"
 
 #: pages/choose.py:110 pages/preview.py:62
 msgid "Edit"
-msgstr ""
+msgstr "Redigera"
 
 #: pages/choose.py:114 pages/edit.py:178
 msgid "Delete"
-msgstr ""
+msgstr "Ta bort"
 
 #: pages/cover.py:37 pages/preview.py:44
 msgid "started by"
-msgstr ""
+msgstr "skapades av"
 
 #: pages/cover.py:49
 msgid "Open"
-msgstr ""
+msgstr "Öppna"
 
 #: pages/edit.py:57
 msgid "Edit Jokebook Cover"
-msgstr ""
+msgstr "Redigera skämtbokens framsida"
 
 #: pages/edit.py:67
 msgid "Edit My Jokes"
-msgstr ""
+msgstr "Redigera mina skämt"
 
 #: pages/edit.py:77
 msgid "Review Submitted Jokes"
-msgstr ""
+msgstr "Gransak inskickade skämt"
 
 #: pages/edit.py:123
 msgid "Preview"
-msgstr ""
+msgstr "Förhandsgranska"
 
 #: pages/edit.py:149
 msgid "Title of Jokebook:"
-msgstr ""
+msgstr "Skämtbokstitel:"
 
 #: pages/edit.py:153
 msgid "Sound Effect:"
-msgstr ""
+msgstr "Ljudeffekt:"
 
 #: pages/edit.py:190
 msgid "Add New Joke"
-msgstr ""
+msgstr "Lägg till nytt skämt"
 
 #: pages/edit.py:201
 msgid "Are you sure you want to delete this joke ?"
-msgstr ""
+msgstr "Är du säker på att du vill ta bort det här skämtet?"
 
 #: pages/edit.py:242
 msgid "Reject"
-msgstr ""
+msgstr "Avslå"
 
 #: pages/edit.py:249
 msgid "Accept"
-msgstr ""
+msgstr "Godkänn"
 
 #: pages/joke.py:57
 msgid "Joke"
-msgstr ""
+msgstr "Skämt"
 
 #: pages/joke.py:60
 msgid "By"
-msgstr ""
+msgstr "Av"
 
 #: pages/joke.py:70 pages/submit.py:63
 msgid "Question"
-msgstr ""
+msgstr "Fråga"
 
 #: pages/joke.py:79 pages/joke.py:124 pages/submit.py:71
 msgid "Answer"
-msgstr ""
+msgstr "Svar"
 
 #: pages/joke.py:98
 msgid "This Jokebook is empty"
-msgstr ""
+msgstr "Denna skämtbok är tom"
 
 #: pages/joke.py:100 pages/joke.py:160
 msgid "Submit a Joke"
-msgstr ""
+msgstr "Skicka in ett skämt"
 
 #: pages/joke.py:105
 msgid "Add Jokes"
-msgstr ""
+msgstr "Lägg till skämt"
 
 #: pages/joke.py:154
 msgid "Next"
-msgstr ""
+msgstr "Nästa"
 
 #: pages/submit.py:93
 msgid "Submission For:"
-msgstr ""
+msgstr "Inskickas till:"
 
 #: pages/submit.py:94
 msgid "Your Name:"
-msgstr ""
+msgstr "Ditt namn:"
 
 #: pages/submit.py:105
 msgid "Submit"
-msgstr ""
+msgstr "Skicka in"
 
 #: pages/submit.py:108
 msgid "Back"
-msgstr ""
+msgstr "Tillbaka"
