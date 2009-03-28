@@ -1,3 +1,11 @@
+9
+
+* Add COPYING file
+* Init gthreads before using abiword
+* Fix close() related issues
+* Adapt to non-XO screen resolution
+* Use default font sizes
+
 8
 
 
