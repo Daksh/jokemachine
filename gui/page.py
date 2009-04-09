@@ -30,6 +30,7 @@ from gettext import gettext as _
 
 from sugar.graphics import style
 from sugar.graphics.objectchooser import ObjectChooser
+from sugar import mime
 
 # argh!
 try:
@@ -289,10 +290,16 @@ class Page(hippo.CanvasBox):
 
 
   def __do_clicked_image(self, control, event, obj, property):
+    if hasattr(mime, 'GENERIC_TYPE_IMAGE'):
+      filter = { 'what_filter': mime.GENERIC_TYPE_IMAGE }
+    else:
+      filter = { }
+
     # Courtesy of Write.activity - toolbar.py
     chooser = ObjectChooser(title=_('Choose image'), 
                             parent=Globals.JokeMachineActivity, #._parent,
-                            flags=gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT)
+                            flags=gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
+                            **filter)
     try:
       result = chooser.run()
       if result == gtk.RESPONSE_ACCEPT:
@@ -317,10 +324,16 @@ class Page(hippo.CanvasBox):
 
 
   def __do_clicked_choose_sound(self, control, event, obj, property):
+    if hasattr(mime, 'GENERIC_TYPE_AUDIO'):
+      filter = { 'what_filter': mime.GENERIC_TYPE_AUDIO }
+    else:
+      filter = { }
+
     logging.debug('choosing sound file') 
     chooser = ObjectChooser(title=_('Choose Sound'), 
                             parent=Globals.JokeMachineActivity, #._parent,
-                            flags=gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT)
+                            flags=gtk.DIALOG_MODAL | gtk.DIALOG_DESTROY_WITH_PARENT,
+                            **filter)
     try:
       result = chooser.run()
       if result == gtk.RESPONSE_ACCEPT:
