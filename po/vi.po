@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-30 22:32+0200\n"
+"POT-Creation-Date: 2009-04-09 17:16+0000\n"
 "PO-Revision-Date: 2009-02-16 09:13-0500\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,291 +15,271 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.1.0rc2\n"
 
-#: activity/activity.info:2 JokeMachineActivity.py:128
-#: mesh/activitysession.py:165 mesh/activitysession.py:205
+#: activity/activity.info:2
+#: /home/sugar/src/activities/joke-machine/JokeMachineActivity.py:137
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:170
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:210
 msgid "Joke Machine"
 msgstr "Máy trò đùa"
 
-#: JokeMachineActivity.py:128
+#: /home/sugar/src/activities/joke-machine/JokeMachineActivity.py:137
 msgid "Please wait a moment for your buddy's Jokebooks to show up"
 msgstr "Hãy đợi một chút để hiển thị các Sách Trò Đùa của bạn bè"
 
-#: gui/frame.py:121 gui/frame.py:208
-msgid "Lesson Plans"
-msgstr "Kế hoạch bài học"
-
-#: gui/frame.py:139
-msgid "Read Jokebooks"
-msgstr "Đọc Sách Trò Đùa"
-
-#: gui/frame.py:143
-msgid "Make Jokebook"
-msgstr "Tạo Sách Trò Đùa"
-
-#: gui/frame.py:212
-msgid "Close Lessons"
-msgstr "Đóng bài học"
-
-#: gui/frame.py:216
-msgid "Lesson Plans:"
-msgstr "Kế hoạch bài học:"
-
-#: gui/page.py:99
-msgid "Click to choose a sound"
-msgstr "Nhấn để chọn âm thanh"
-
-#: gui/page.py:294
-msgid "Choose image"
-msgstr "Chọn ảnh"
-
-#: gui/page.py:322
-msgid "Choose Sound"
-msgstr "Chọn âm thanh"
-
-#: i18n.py:40
-msgid "Chinese (simplified)"
-msgstr "Tiếng Trung (giản thể)"
-
-#: i18n.py:41
-msgid "Chinese (traditional)"
-msgstr "Tiếng Trung (phồn thể)"
-
-#: i18n.py:42
-msgid "Czech"
-msgstr "Tiếng Séc"
-
-#: i18n.py:43
-msgid "Danish"
-msgstr "Tiếng Đan Mạch"
-
-#: i18n.py:44
-msgid "Dutch"
-msgstr "Tiếng Hoà Lan"
-
-#: i18n.py:45
-msgid "Afrikaans"
-msgstr "Tiếng Hoà Nam Phi"
-
-#: i18n.py:46
-msgid "English"
-msgstr "Tiếng Anh"
-
-#: i18n.py:47
-msgid "English - Great Britain"
-msgstr "Tiếng Anh (Quốc Anh)"
-
-#: i18n.py:48
-msgid "English - U.S."
-msgstr "Tiếng Anh (Mỹ)"
-
-#: i18n.py:49
-msgid "Finnish"
-msgstr "Tiếng Phần Lan"
-
-#: i18n.py:50
-msgid "French"
-msgstr "Tiếng Pháp"
-
-#: i18n.py:51
-msgid "German"
-msgstr "Tiếng Đức"
-
-#: i18n.py:52
-msgid "Hungarian"
-msgstr "Tiếng Hung-ga-ri"
-
-#: i18n.py:53
-msgid "Italian"
-msgstr "Tiếng Ý"
-
-#: i18n.py:54
-msgid "Japanese"
-msgstr "Tiếng Nhật"
-
-#: i18n.py:55
-msgid "Korean"
-msgstr "Tiếng Hàn"
-
-#: i18n.py:56
-msgid "Norwegian"
-msgstr "Tiếng Na Uy"
-
-#: i18n.py:57
-msgid "Polish"
-msgstr "Tiếng Ba Lan"
-
-#: i18n.py:58
-msgid "Portuguese"
-msgstr "Tiếng Bồ Đào Nha"
-
-#: i18n.py:59
-msgid "Portuguese - Brazilian"
-msgstr "Tiếng Bồ Đào Nha ở Bra-xin"
-
-#: i18n.py:60
-msgid "Russian"
-msgstr "Tiếng Nga"
-
-#: i18n.py:61
-msgid "Slovak"
-msgstr "Tiếng Xlô-vác"
-
-#: i18n.py:62
-msgid "Spanish"
-msgstr "Tiếng Tây Ban Nha"
-
-#: i18n.py:63
-msgid "Swedish"
-msgstr "Tiếng Thuỵ Điển"
-
-#: i18n.py:64
-msgid "Turkish"
-msgstr "Tiếng Thổ Nhĩ Kỳ"
-
-#: i18n_misc_strings.py:1
-msgid "Lesson 1"
-msgstr "Bài học 1"
-
-#: i18n_misc_strings.py:2
-msgid "Lesson 2"
-msgstr "Bài học 2"
-
-#: i18n_misc_strings.py:3
-msgid "Lesson 3"
-msgstr "Bài học 3"
-
-#: i18n_misc_strings.py:4
-msgid "Lesson 4"
-msgstr "Bài học 4"
-
-#: i18n_misc_strings.py:5
-msgid "Introduction"
-msgstr "Giới thiệu"
-
-#: mesh/activitysession.py:164
-msgid " submitted a joke to "
-msgstr " đã gửi một trò đùa cho "
-
-#: mesh/activitysession.py:203
-msgid " accepted a joke submitted to "
-msgstr " đã chấp nhận một trò đùa được gửi cho "
-
-#: mesh/activitysession.py:204
-msgid " by "
-msgstr " bởi "
-
-#: pages/choose.py:42
-msgid "Choose a Jokebook to read:"
-msgstr "Chọn Sách Trò Đùa cần đọc:"
-
-#: pages/choose.py:65
-msgid "Are you sure you want to delete your "
-msgstr "Bạn có chắc muốn xoá sách trò đùa "
-
-#: pages/choose.py:68
-msgid "jokebook ?"
-msgstr " của mình không?"
-
-#: pages/choose.py:110 pages/preview.py:62
-msgid "Edit"
-msgstr "Sửa"
-
-#: pages/choose.py:114 pages/edit.py:178
-msgid "Delete"
-msgstr "Xoá"
-
-#: pages/cover.py:37 pages/preview.py:44
+#: /home/sugar/src/activities/joke-machine/pages/cover.py:42
+#: /home/sugar/src/activities/joke-machine/pages/preview.py:50
 msgid "started by"
 msgstr "khởi tạo bởi"
 
-#: pages/cover.py:49
+#: /home/sugar/src/activities/joke-machine/pages/cover.py:53
 msgid "Open"
 msgstr "Mở"
 
-#: pages/edit.py:57
-msgid "Edit Jokebook Cover"
-msgstr "Sửa bìa Sách Trò Đùa"
-
-#: pages/edit.py:67
-msgid "Edit My Jokes"
-msgstr "Sửa trò đùa của mình"
-
-#: pages/edit.py:77
-msgid "Review Submitted Jokes"
-msgstr "Xem lại các trò đùa gửi đến"
-
-#: pages/edit.py:123
-msgid "Preview"
-msgstr "Xem thử"
-
-#: pages/edit.py:149
-msgid "Title of Jokebook:"
-msgstr "Tên của Sách Trò Đùa:"
-
-#: pages/edit.py:153
-msgid "Sound Effect:"
-msgstr "Hiệu ứng âm thanh:"
-
-#: pages/edit.py:190
-msgid "Add New Joke"
-msgstr "Thêm trò đùa mới"
-
-#: pages/edit.py:201
-msgid "Are you sure you want to delete this joke ?"
-msgstr "Bạn có chắc muốn xoá trò đùa này không?"
-
-#: pages/edit.py:242
-msgid "Reject"
-msgstr "Từ chối"
-
-#: pages/edit.py:249
-msgid "Accept"
-msgstr "Chấp nhận"
-
-#: pages/joke.py:57
-msgid "Joke"
-msgstr "Trò đùa"
-
-#: pages/joke.py:60
-msgid "By"
-msgstr "Bởi"
-
-#: pages/joke.py:70 pages/submit.py:63
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:65
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:72
 msgid "Question"
 msgstr "Hỏi"
 
-#: pages/joke.py:79 pages/joke.py:124 pages/submit.py:71
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:72
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:80
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:124
 msgid "Answer"
 msgstr "Đáp"
 
-#: pages/joke.py:98
-msgid "This Jokebook is empty"
-msgstr "Sách Trò Đùa này vẫn trống"
-
-#: pages/joke.py:100 pages/joke.py:160
-msgid "Submit a Joke"
-msgstr "Gửi trò đùa"
-
-#: pages/joke.py:105
-msgid "Add Jokes"
-msgstr "Thêm trò đùa"
-
-#: pages/joke.py:154
-msgid "Next"
-msgstr "Tiếp"
-
-#: pages/submit.py:93
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:93
 msgid "Submission For:"
 msgstr "Gửi cho :"
 
-#: pages/submit.py:94
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:94
 msgid "Your Name:"
 msgstr "Tên của bạn:"
 
-#: pages/submit.py:105
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:105
 msgid "Submit"
 msgstr "Gửi"
 
-#: pages/submit.py:108
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:108
 msgid "Back"
 msgstr "Lùi"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:61
+msgid "Joke"
+msgstr "Trò đùa"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:63
+msgid "By"
+msgstr "Bởi"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:98
+msgid "This Jokebook is empty"
+msgstr "Sách Trò Đùa này vẫn trống"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:100
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:160
+msgid "Submit a Joke"
+msgstr "Gửi trò đùa"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:105
+msgid "Add Jokes"
+msgstr "Thêm trò đùa"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:154
+msgid "Next"
+msgstr "Tiếp"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:46
+msgid "Choose a Jokebook to read:"
+msgstr "Chọn Sách Trò Đùa cần đọc:"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:67
+msgid "Are you sure you want to delete your "
+msgstr "Bạn có chắc muốn xoá sách trò đùa "
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:70
+msgid "jokebook ?"
+msgstr " của mình không?"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:107
+#: /home/sugar/src/activities/joke-machine/pages/preview.py:67
+msgid "Edit"
+msgstr "Sửa"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:111
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:173
+msgid "Delete"
+msgstr "Xoá"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:59
+msgid "Edit Jokebook Cover"
+msgstr "Sửa bìa Sách Trò Đùa"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:67
+msgid "Edit My Jokes"
+msgstr "Sửa trò đùa của mình"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:75
+msgid "Review Submitted Jokes"
+msgstr "Xem lại các trò đùa gửi đến"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:119
+msgid "Preview"
+msgstr "Xem thử"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:144
+msgid "Title of Jokebook:"
+msgstr "Tên của Sách Trò Đùa:"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:148
+msgid "Sound Effect:"
+msgstr "Hiệu ứng âm thanh:"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:185
+msgid "Add New Joke"
+msgstr "Thêm trò đùa mới"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:196
+msgid "Are you sure you want to delete this joke ?"
+msgstr "Bạn có chắc muốn xoá trò đùa này không?"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:237
+msgid "Reject"
+msgstr "Từ chối"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:244
+msgid "Accept"
+msgstr "Chấp nhận"
+
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:169
+msgid " submitted a joke to "
+msgstr " đã gửi một trò đùa cho "
+
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:208
+msgid " accepted a joke submitted to "
+msgstr " đã chấp nhận một trò đùa được gửi cho "
+
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:209
+msgid " by "
+msgstr " bởi "
+
+#: /home/sugar/src/activities/joke-machine/gui/page.py:105
+msgid "Click to choose a sound"
+msgstr "Nhấn để chọn âm thanh"
+
+#: /home/sugar/src/activities/joke-machine/gui/page.py:299
+msgid "Choose image"
+msgstr "Chọn ảnh"
+
+#: /home/sugar/src/activities/joke-machine/gui/page.py:333
+msgid "Choose Sound"
+msgstr "Chọn âm thanh"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:106
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:193
+msgid "Lesson Plans"
+msgstr "Kế hoạch bài học"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:124
+msgid "Read Jokebooks"
+msgstr "Đọc Sách Trò Đùa"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:128
+msgid "Make Jokebook"
+msgstr "Tạo Sách Trò Đùa"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:197
+msgid "Close Lessons"
+msgstr "Đóng bài học"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:201
+msgid "Lesson Plans:"
+msgstr "Kế hoạch bài học:"
+
+#~ msgid "Chinese (simplified)"
+#~ msgstr "Tiếng Trung (giản thể)"
+
+#~ msgid "Chinese (traditional)"
+#~ msgstr "Tiếng Trung (phồn thể)"
+
+#~ msgid "Czech"
+#~ msgstr "Tiếng Séc"
+
+#~ msgid "Danish"
+#~ msgstr "Tiếng Đan Mạch"
+
+#~ msgid "Dutch"
+#~ msgstr "Tiếng Hoà Lan"
+
+#~ msgid "Afrikaans"
+#~ msgstr "Tiếng Hoà Nam Phi"
+
+#~ msgid "English"
+#~ msgstr "Tiếng Anh"
+
+#~ msgid "English - Great Britain"
+#~ msgstr "Tiếng Anh (Quốc Anh)"
+
+#~ msgid "English - U.S."
+#~ msgstr "Tiếng Anh (Mỹ)"
+
+#~ msgid "Finnish"
+#~ msgstr "Tiếng Phần Lan"
+
+#~ msgid "French"
+#~ msgstr "Tiếng Pháp"
+
+#~ msgid "German"
+#~ msgstr "Tiếng Đức"
+
+#~ msgid "Hungarian"
+#~ msgstr "Tiếng Hung-ga-ri"
+
+#~ msgid "Italian"
+#~ msgstr "Tiếng Ý"
+
+#~ msgid "Japanese"
+#~ msgstr "Tiếng Nhật"
+
+#~ msgid "Korean"
+#~ msgstr "Tiếng Hàn"
+
+#~ msgid "Norwegian"
+#~ msgstr "Tiếng Na Uy"
+
+#~ msgid "Polish"
+#~ msgstr "Tiếng Ba Lan"
+
+#~ msgid "Portuguese"
+#~ msgstr "Tiếng Bồ Đào Nha"
+
+#~ msgid "Portuguese - Brazilian"
+#~ msgstr "Tiếng Bồ Đào Nha ở Bra-xin"
+
+#~ msgid "Russian"
+#~ msgstr "Tiếng Nga"
+
+#~ msgid "Slovak"
+#~ msgstr "Tiếng Xlô-vác"
+
+#~ msgid "Spanish"
+#~ msgstr "Tiếng Tây Ban Nha"
+
+#~ msgid "Swedish"
+#~ msgstr "Tiếng Thuỵ Điển"
+
+#~ msgid "Turkish"
+#~ msgstr "Tiếng Thổ Nhĩ Kỳ"
+
+#~ msgid "Lesson 1"
+#~ msgstr "Bài học 1"
+
+#~ msgid "Lesson 2"
+#~ msgstr "Bài học 2"
+
+#~ msgid "Lesson 3"
+#~ msgstr "Bài học 3"
+
+#~ msgid "Lesson 4"
+#~ msgstr "Bài học 4"
+
+#~ msgid "Introduction"
+#~ msgstr "Giới thiệu"
