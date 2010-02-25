@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-30 22:32+0200\n"
+"POT-Creation-Date: 2009-04-09 17:16+0000\n"
 "PO-Revision-Date: 2008-08-25 16:20-0400\n"
 "Last-Translator: Myckel Habets <myckel@sdf.lonestar.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,291 +15,271 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Pootle 1.1.0rc2\n"
 
-#: activity/activity.info:2 JokeMachineActivity.py:128
-#: mesh/activitysession.py:165 mesh/activitysession.py:205
+#: activity/activity.info:2
+#: /home/sugar/src/activities/joke-machine/JokeMachineActivity.py:137
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:170
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:210
 msgid "Joke Machine"
 msgstr "Grappenmaker"
 
-#: JokeMachineActivity.py:128
+#: /home/sugar/src/activities/joke-machine/JokeMachineActivity.py:137
 msgid "Please wait a moment for your buddy's Jokebooks to show up"
 msgstr "Wacht even totdat je maatje's Grappenboek verschijnt"
 
-#: gui/frame.py:121 gui/frame.py:208
-msgid "Lesson Plans"
-msgstr "Les ideeën"
-
-#: gui/frame.py:139
-msgid "Read Jokebooks"
-msgstr "Grappenboeken lezen"
-
-#: gui/frame.py:143
-msgid "Make Jokebook"
-msgstr "Grappenboek maken"
-
-#: gui/frame.py:212
-msgid "Close Lessons"
-msgstr "Lessen sluiten"
-
-#: gui/frame.py:216
-msgid "Lesson Plans:"
-msgstr "Les ideeën:"
-
-#: gui/page.py:99
-msgid "Click to choose a sound"
-msgstr "Klik om een geluid te kiezen:"
-
-#: gui/page.py:294
-msgid "Choose image"
-msgstr "Kies afbeelding"
-
-#: gui/page.py:322
-msgid "Choose Sound"
-msgstr "Kies geluid"
-
-#: i18n.py:40
-msgid "Chinese (simplified)"
-msgstr "Chinees (vereenvoudigd)"
-
-#: i18n.py:41
-msgid "Chinese (traditional)"
-msgstr "Chinees (traditioneel)"
-
-#: i18n.py:42
-msgid "Czech"
-msgstr "Tsjechisch"
-
-#: i18n.py:43
-msgid "Danish"
-msgstr "Deens"
-
-#: i18n.py:44
-msgid "Dutch"
-msgstr "Nederlands"
-
-#: i18n.py:45
-msgid "Afrikaans"
-msgstr "Afrikaans"
-
-#: i18n.py:46
-msgid "English"
-msgstr "Engels"
-
-#: i18n.py:47
-msgid "English - Great Britain"
-msgstr "Engels - Groot-Brittannië"
-
-#: i18n.py:48
-msgid "English - U.S."
-msgstr "Engels - V.S."
-
-#: i18n.py:49
-msgid "Finnish"
-msgstr "Fins"
-
-#: i18n.py:50
-msgid "French"
-msgstr "Frans"
-
-#: i18n.py:51
-msgid "German"
-msgstr "Duits"
-
-#: i18n.py:52
-msgid "Hungarian"
-msgstr "Hongaars"
-
-#: i18n.py:53
-msgid "Italian"
-msgstr "Italiaans"
-
-#: i18n.py:54
-msgid "Japanese"
-msgstr "Japans"
-
-#: i18n.py:55
-msgid "Korean"
-msgstr "Koreaans"
-
-#: i18n.py:56
-msgid "Norwegian"
-msgstr "Noors"
-
-#: i18n.py:57
-msgid "Polish"
-msgstr "Pools"
-
-#: i18n.py:58
-msgid "Portuguese"
-msgstr "Portugees"
-
-#: i18n.py:59
-msgid "Portuguese - Brazilian"
-msgstr "Portugees - Braziliaans"
-
-#: i18n.py:60
-msgid "Russian"
-msgstr "Russisch"
-
-#: i18n.py:61
-msgid "Slovak"
-msgstr "Slowaaks"
-
-#: i18n.py:62
-msgid "Spanish"
-msgstr "Spaans"
-
-#: i18n.py:63
-msgid "Swedish"
-msgstr "Zweeds"
-
-#: i18n.py:64
-msgid "Turkish"
-msgstr "Turks"
-
-#: i18n_misc_strings.py:1
-msgid "Lesson 1"
-msgstr "Les 1"
-
-#: i18n_misc_strings.py:2
-msgid "Lesson 2"
-msgstr "Les 2"
-
-#: i18n_misc_strings.py:3
-msgid "Lesson 3"
-msgstr "Les 3"
-
-#: i18n_misc_strings.py:4
-msgid "Lesson 4"
-msgstr "Les 4"
-
-#: i18n_misc_strings.py:5
-msgid "Introduction"
-msgstr "Introductie"
-
-#: mesh/activitysession.py:164
-msgid " submitted a joke to "
-msgstr " stuurde een grap naar "
-
-#: mesh/activitysession.py:203
-msgid " accepted a joke submitted to "
-msgstr "  accepteerde een grap gestuurd naar "
-
-#: mesh/activitysession.py:204
-msgid " by "
-msgstr " door "
-
-#: pages/choose.py:42
-msgid "Choose a Jokebook to read:"
-msgstr "Kies een Grappenboek om te lezen:"
-
-#: pages/choose.py:65
-msgid "Are you sure you want to delete your "
-msgstr "Weet je zeker dat je wilt verwijderen je "
-
-#: pages/choose.py:68
-msgid "jokebook ?"
-msgstr "grappenboek?"
-
-#: pages/choose.py:110 pages/preview.py:62
-msgid "Edit"
-msgstr "Bewerken"
-
-#: pages/choose.py:114 pages/edit.py:178
-msgid "Delete"
-msgstr "Verwijderen"
-
-#: pages/cover.py:37 pages/preview.py:44
+#: /home/sugar/src/activities/joke-machine/pages/cover.py:42
+#: /home/sugar/src/activities/joke-machine/pages/preview.py:50
 msgid "started by"
 msgstr "gestart door"
 
-#: pages/cover.py:49
+#: /home/sugar/src/activities/joke-machine/pages/cover.py:53
 msgid "Open"
 msgstr "Openen"
 
-#: pages/edit.py:57
-msgid "Edit Jokebook Cover"
-msgstr "Grappenboekkaft bewerken"
-
-#: pages/edit.py:67
-msgid "Edit My Jokes"
-msgstr "Mijn grappen bewerken"
-
-#: pages/edit.py:77
-msgid "Review Submitted Jokes"
-msgstr "Ingestuurde grappen beoordelen"
-
-#: pages/edit.py:123
-msgid "Preview"
-msgstr "Voorbeeld"
-
-#: pages/edit.py:149
-msgid "Title of Jokebook:"
-msgstr "Titel van het grappenboek:"
-
-#: pages/edit.py:153
-msgid "Sound Effect:"
-msgstr "Geluidseffect:"
-
-#: pages/edit.py:190
-msgid "Add New Joke"
-msgstr "Nieuwe grap toevoegen"
-
-#: pages/edit.py:201
-msgid "Are you sure you want to delete this joke ?"
-msgstr "Weet je zeker dat je deze grap verwijderen wilt?"
-
-#: pages/edit.py:242
-msgid "Reject"
-msgstr "Afwijzen"
-
-#: pages/edit.py:249
-msgid "Accept"
-msgstr "Accepteren"
-
-#: pages/joke.py:57
-msgid "Joke"
-msgstr "Grap"
-
-#: pages/joke.py:60
-msgid "By"
-msgstr "door"
-
-#: pages/joke.py:70 pages/submit.py:63
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:65
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:72
 msgid "Question"
 msgstr "Vraag"
 
-#: pages/joke.py:79 pages/joke.py:124 pages/submit.py:71
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:72
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:80
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:124
 msgid "Answer"
 msgstr "Antwoord"
 
-#: pages/joke.py:98
-msgid "This Jokebook is empty"
-msgstr "Dit grappenboek is leeg"
-
-#: pages/joke.py:100 pages/joke.py:160
-msgid "Submit a Joke"
-msgstr "Een grap insturen"
-
-#: pages/joke.py:105
-msgid "Add Jokes"
-msgstr "Grappen toevoegen"
-
-#: pages/joke.py:154
-msgid "Next"
-msgstr "Volgende"
-
-#: pages/submit.py:93
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:93
 msgid "Submission For:"
 msgstr "Ingestuurd voor:"
 
-#: pages/submit.py:94
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:94
 msgid "Your Name:"
 msgstr "Je naam:"
 
-#: pages/submit.py:105
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:105
 msgid "Submit"
 msgstr "Insturen"
 
-#: pages/submit.py:108
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:108
 msgid "Back"
 msgstr "Terug"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:61
+msgid "Joke"
+msgstr "Grap"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:63
+msgid "By"
+msgstr "door"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:98
+msgid "This Jokebook is empty"
+msgstr "Dit grappenboek is leeg"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:100
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:160
+msgid "Submit a Joke"
+msgstr "Een grap insturen"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:105
+msgid "Add Jokes"
+msgstr "Grappen toevoegen"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:154
+msgid "Next"
+msgstr "Volgende"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:46
+msgid "Choose a Jokebook to read:"
+msgstr "Kies een Grappenboek om te lezen:"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:67
+msgid "Are you sure you want to delete your "
+msgstr "Weet je zeker dat je wilt verwijderen je "
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:70
+msgid "jokebook ?"
+msgstr "grappenboek?"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:107
+#: /home/sugar/src/activities/joke-machine/pages/preview.py:67
+msgid "Edit"
+msgstr "Bewerken"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:111
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:173
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:59
+msgid "Edit Jokebook Cover"
+msgstr "Grappenboekkaft bewerken"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:67
+msgid "Edit My Jokes"
+msgstr "Mijn grappen bewerken"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:75
+msgid "Review Submitted Jokes"
+msgstr "Ingestuurde grappen beoordelen"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:119
+msgid "Preview"
+msgstr "Voorbeeld"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:144
+msgid "Title of Jokebook:"
+msgstr "Titel van het grappenboek:"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:148
+msgid "Sound Effect:"
+msgstr "Geluidseffect:"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:185
+msgid "Add New Joke"
+msgstr "Nieuwe grap toevoegen"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:196
+msgid "Are you sure you want to delete this joke ?"
+msgstr "Weet je zeker dat je deze grap verwijderen wilt?"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:237
+msgid "Reject"
+msgstr "Afwijzen"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:244
+msgid "Accept"
+msgstr "Accepteren"
+
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:169
+msgid " submitted a joke to "
+msgstr " stuurde een grap naar "
+
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:208
+msgid " accepted a joke submitted to "
+msgstr "  accepteerde een grap gestuurd naar "
+
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:209
+msgid " by "
+msgstr " door "
+
+#: /home/sugar/src/activities/joke-machine/gui/page.py:105
+msgid "Click to choose a sound"
+msgstr "Klik om een geluid te kiezen:"
+
+#: /home/sugar/src/activities/joke-machine/gui/page.py:299
+msgid "Choose image"
+msgstr "Kies afbeelding"
+
+#: /home/sugar/src/activities/joke-machine/gui/page.py:333
+msgid "Choose Sound"
+msgstr "Kies geluid"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:106
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:193
+msgid "Lesson Plans"
+msgstr "Les ideeën"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:124
+msgid "Read Jokebooks"
+msgstr "Grappenboeken lezen"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:128
+msgid "Make Jokebook"
+msgstr "Grappenboek maken"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:197
+msgid "Close Lessons"
+msgstr "Lessen sluiten"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:201
+msgid "Lesson Plans:"
+msgstr "Les ideeën:"
+
+#~ msgid "Chinese (simplified)"
+#~ msgstr "Chinees (vereenvoudigd)"
+
+#~ msgid "Chinese (traditional)"
+#~ msgstr "Chinees (traditioneel)"
+
+#~ msgid "Czech"
+#~ msgstr "Tsjechisch"
+
+#~ msgid "Danish"
+#~ msgstr "Deens"
+
+#~ msgid "Dutch"
+#~ msgstr "Nederlands"
+
+#~ msgid "Afrikaans"
+#~ msgstr "Afrikaans"
+
+#~ msgid "English"
+#~ msgstr "Engels"
+
+#~ msgid "English - Great Britain"
+#~ msgstr "Engels - Groot-Brittannië"
+
+#~ msgid "English - U.S."
+#~ msgstr "Engels - V.S."
+
+#~ msgid "Finnish"
+#~ msgstr "Fins"
+
+#~ msgid "French"
+#~ msgstr "Frans"
+
+#~ msgid "German"
+#~ msgstr "Duits"
+
+#~ msgid "Hungarian"
+#~ msgstr "Hongaars"
+
+#~ msgid "Italian"
+#~ msgstr "Italiaans"
+
+#~ msgid "Japanese"
+#~ msgstr "Japans"
+
+#~ msgid "Korean"
+#~ msgstr "Koreaans"
+
+#~ msgid "Norwegian"
+#~ msgstr "Noors"
+
+#~ msgid "Polish"
+#~ msgstr "Pools"
+
+#~ msgid "Portuguese"
+#~ msgstr "Portugees"
+
+#~ msgid "Portuguese - Brazilian"
+#~ msgstr "Portugees - Braziliaans"
+
+#~ msgid "Russian"
+#~ msgstr "Russisch"
+
+#~ msgid "Slovak"
+#~ msgstr "Slowaaks"
+
+#~ msgid "Spanish"
+#~ msgstr "Spaans"
+
+#~ msgid "Swedish"
+#~ msgstr "Zweeds"
+
+#~ msgid "Turkish"
+#~ msgstr "Turks"
+
+#~ msgid "Lesson 1"
+#~ msgstr "Les 1"
+
+#~ msgid "Lesson 2"
+#~ msgstr "Les 2"
+
+#~ msgid "Lesson 3"
+#~ msgstr "Les 3"
+
+#~ msgid "Lesson 4"
+#~ msgstr "Les 4"
+
+#~ msgid "Introduction"
+#~ msgstr "Introductie"
