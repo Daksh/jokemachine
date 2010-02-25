@@ -51,6 +51,9 @@ from gui import theme
 from globals import Globals
 
 
+THUMB_SIZE = min(gtk.gdk.screen_width(), gtk.gdk.screen_height()) / 2
+
+
 class Page(hippo.CanvasBox):
 
   def __init__(self, **kwargs):
@@ -308,9 +311,7 @@ class Page(hippo.CanvasBox):
         if hasattr(obj, 'image_blob') and journal_object and journal_object.file_path:
           logging.debug('Getting journal object: %r, %s', journal_object, journal_object.file_path)
           # Set the image now
-          f = open(journal_object.file_path, 'r')
-          raw = f.read()
-          f.close()
+          raw = _load_image(journal_object.file_path)
           obj.image =  str(journal_object.metadata['title'])
           obj.image_blob = raw
           # refresh the image 
@@ -364,6 +365,12 @@ class Page(hippo.CanvasBox):
     #player.uri = sound_file
     player.raw = obj.sound_blob
     player.play()
-    
-    
-    
+
+def _load_image(file_name):
+    pixbuf = gtk.gdk.pixbuf_new_from_file_at_size(file_name,
+            THUMB_SIZE, THUMB_SIZE)
+    if pixbuf is None:
+        return None
+    stream = StringIO.StringIO()
+    pixbuf.save_to_callback(lambda data: stream.write(data), 'png')
+    return stream.getvalue()
