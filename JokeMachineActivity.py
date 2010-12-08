@@ -397,6 +397,7 @@ class JokeMachineActivity(activity.Activity):
 
   def write_file(self, file_path):
     '''Callback to persist activity state to Journal'''
+    self.metadata['mime_type'] = 'application/x-jokemachine-project'
     
     if len(Globals.JokeMachineState.jokebooks) != 0:
       logging.debug('Writing file to datastore via Journal: %s' % file_path)

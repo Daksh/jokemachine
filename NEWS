@@ -1,3 +1,9 @@
+12
+
+* Add application/x-jokemachine-project MIME type for JokeMachine projects
+* Update de, it and nl translations
+* Add ta translation
+
 11
 
 * Load any image format pixbuf supports
