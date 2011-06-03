@@ -2,12 +2,48 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-30 22:32+0200\n"
+"POT-Creation-Date: 2009-04-09 17:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,291 +52,181 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 1.1.1rc4\n"
 
-#: activity/activity.info:2 JokeMachineActivity.py:128
-#: mesh/activitysession.py:165 mesh/activitysession.py:205
+#: activity/activity.info:2
+#: /home/sugar/src/activities/joke-machine/JokeMachineActivity.py:137
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:170
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:210
 msgid "Joke Machine"
-msgstr ""
+msgstr "Joke Machine"
 
-#: JokeMachineActivity.py:128
+#: /home/sugar/src/activities/joke-machine/JokeMachineActivity.py:137
 msgid "Please wait a moment for your buddy's Jokebooks to show up"
-msgstr ""
+msgstr "Please wait a moment for your buddy's Jokebooks to show up"
 
-#: gui/frame.py:121 gui/frame.py:208
-msgid "Lesson Plans"
-msgstr ""
-
-#: gui/frame.py:139
-msgid "Read Jokebooks"
-msgstr ""
-
-#: gui/frame.py:143
-msgid "Make Jokebook"
-msgstr ""
-
-#: gui/frame.py:212
-msgid "Close Lessons"
-msgstr ""
-
-#: gui/frame.py:216
-msgid "Lesson Plans:"
-msgstr ""
-
-#: gui/page.py:99
-msgid "Click to choose a sound"
-msgstr ""
-
-#: gui/page.py:294
-msgid "Choose image"
-msgstr ""
-
-#: gui/page.py:322
-msgid "Choose Sound"
-msgstr ""
-
-#: i18n.py:40
-msgid "Chinese (simplified)"
-msgstr ""
-
-#: i18n.py:41
-msgid "Chinese (traditional)"
-msgstr ""
-
-#: i18n.py:42
-msgid "Czech"
-msgstr ""
-
-#: i18n.py:43
-msgid "Danish"
-msgstr ""
-
-#: i18n.py:44
-msgid "Dutch"
-msgstr ""
-
-#: i18n.py:45
-msgid "Afrikaans"
-msgstr ""
-
-#: i18n.py:46
-msgid "English"
-msgstr ""
-
-#: i18n.py:47
-msgid "English - Great Britain"
-msgstr ""
-
-#: i18n.py:48
-msgid "English - U.S."
-msgstr ""
-
-#: i18n.py:49
-msgid "Finnish"
-msgstr ""
-
-#: i18n.py:50
-msgid "French"
-msgstr ""
-
-#: i18n.py:51
-msgid "German"
-msgstr ""
-
-#: i18n.py:52
-msgid "Hungarian"
-msgstr ""
-
-#: i18n.py:53
-msgid "Italian"
-msgstr ""
-
-#: i18n.py:54
-msgid "Japanese"
-msgstr ""
-
-#: i18n.py:55
-msgid "Korean"
-msgstr ""
-
-#: i18n.py:56
-msgid "Norwegian"
-msgstr ""
-
-#: i18n.py:57
-msgid "Polish"
-msgstr ""
-
-#: i18n.py:58
-msgid "Portuguese"
-msgstr ""
-
-#: i18n.py:59
-msgid "Portuguese - Brazilian"
-msgstr ""
-
-#: i18n.py:60
-msgid "Russian"
-msgstr ""
-
-#: i18n.py:61
-msgid "Slovak"
-msgstr ""
-
-#: i18n.py:62
-msgid "Spanish"
-msgstr ""
-
-#: i18n.py:63
-msgid "Swedish"
-msgstr ""
-
-#: i18n.py:64
-msgid "Turkish"
-msgstr ""
-
-#: i18n_misc_strings.py:1
-msgid "Lesson 1"
-msgstr ""
-
-#: i18n_misc_strings.py:2
-msgid "Lesson 2"
-msgstr ""
-
-#: i18n_misc_strings.py:3
-msgid "Lesson 3"
-msgstr ""
-
-#: i18n_misc_strings.py:4
-msgid "Lesson 4"
-msgstr ""
-
-#: i18n_misc_strings.py:5
-msgid "Introduction"
-msgstr ""
-
-#: mesh/activitysession.py:164
-msgid " submitted a joke to "
-msgstr ""
-
-#: mesh/activitysession.py:203
-msgid " accepted a joke submitted to "
-msgstr ""
-
-#: mesh/activitysession.py:204
-msgid " by "
-msgstr ""
-
-#: pages/choose.py:42
-msgid "Choose a Jokebook to read:"
-msgstr ""
-
-#: pages/choose.py:65
-msgid "Are you sure you want to delete your "
-msgstr ""
-
-#: pages/choose.py:68
-msgid "jokebook ?"
-msgstr ""
-
-#: pages/choose.py:110 pages/preview.py:62
-msgid "Edit"
-msgstr ""
-
-#: pages/choose.py:114 pages/edit.py:178
-msgid "Delete"
-msgstr ""
-
-#: pages/cover.py:37 pages/preview.py:44
+#: /home/sugar/src/activities/joke-machine/pages/cover.py:42
+#: /home/sugar/src/activities/joke-machine/pages/preview.py:50
 msgid "started by"
-msgstr ""
+msgstr "started by"
 
-#: pages/cover.py:49
+#: /home/sugar/src/activities/joke-machine/pages/cover.py:53
 msgid "Open"
-msgstr ""
+msgstr "Open"
 
-#: pages/edit.py:57
-msgid "Edit Jokebook Cover"
-msgstr ""
-
-#: pages/edit.py:67
-msgid "Edit My Jokes"
-msgstr ""
-
-#: pages/edit.py:77
-msgid "Review Submitted Jokes"
-msgstr ""
-
-#: pages/edit.py:123
-msgid "Preview"
-msgstr ""
-
-#: pages/edit.py:149
-msgid "Title of Jokebook:"
-msgstr ""
-
-#: pages/edit.py:153
-msgid "Sound Effect:"
-msgstr ""
-
-#: pages/edit.py:190
-msgid "Add New Joke"
-msgstr ""
-
-#: pages/edit.py:201
-msgid "Are you sure you want to delete this joke ?"
-msgstr ""
-
-#: pages/edit.py:242
-msgid "Reject"
-msgstr ""
-
-#: pages/edit.py:249
-msgid "Accept"
-msgstr ""
-
-#: pages/joke.py:57
-msgid "Joke"
-msgstr ""
-
-#: pages/joke.py:60
-msgid "By"
-msgstr ""
-
-#: pages/joke.py:70 pages/submit.py:63
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:65
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:72
 msgid "Question"
-msgstr ""
+msgstr "Question"
 
-#: pages/joke.py:79 pages/joke.py:124 pages/submit.py:71
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:72
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:80
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:124
 msgid "Answer"
-msgstr ""
+msgstr "Answer"
 
-#: pages/joke.py:98
-msgid "This Jokebook is empty"
-msgstr ""
-
-#: pages/joke.py:100 pages/joke.py:160
-msgid "Submit a Joke"
-msgstr ""
-
-#: pages/joke.py:105
-msgid "Add Jokes"
-msgstr ""
-
-#: pages/joke.py:154
-msgid "Next"
-msgstr ""
-
-#: pages/submit.py:93
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:93
 msgid "Submission For:"
-msgstr ""
+msgstr "Submission For:"
 
-#: pages/submit.py:94
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:94
 msgid "Your Name:"
-msgstr ""
+msgstr "Your Name:"
 
-#: pages/submit.py:105
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:105
 msgid "Submit"
-msgstr ""
+msgstr "Submit"
 
-#: pages/submit.py:108
+#: /home/sugar/src/activities/joke-machine/pages/submit.py:108
 msgid "Back"
-msgstr ""
+msgstr "Back"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:61
+msgid "Joke"
+msgstr "Joke"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:63
+msgid "By"
+msgstr "By"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:98
+msgid "This Jokebook is empty"
+msgstr "This Jokebook is empty"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:100
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:160
+msgid "Submit a Joke"
+msgstr "Submit a Joke"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:105
+msgid "Add Jokes"
+msgstr "Add Jokes"
+
+#: /home/sugar/src/activities/joke-machine/pages/joke.py:154
+msgid "Next"
+msgstr "Next"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:46
+msgid "Choose a Jokebook to read:"
+msgstr "Choose a Jokebook to read:"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:67
+msgid "Are you sure you want to delete your "
+msgstr "Are you sure you want to delete your "
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:70
+msgid "jokebook ?"
+msgstr "jokebook ?"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:107
+#: /home/sugar/src/activities/joke-machine/pages/preview.py:67
+msgid "Edit"
+msgstr "Edit"
+
+#: /home/sugar/src/activities/joke-machine/pages/choose.py:111
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:173
+msgid "Delete"
+msgstr "Delete"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:59
+msgid "Edit Jokebook Cover"
+msgstr "Edit Jokebook Cover"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:67
+msgid "Edit My Jokes"
+msgstr "Edit My Jokes"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:75
+msgid "Review Submitted Jokes"
+msgstr "Review Submitted Jokes"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:119
+msgid "Preview"
+msgstr "Preview"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:144
+msgid "Title of Jokebook:"
+msgstr "Title of Jokebook:"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:148
+msgid "Sound Effect:"
+msgstr "Sound Effect:"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:185
+msgid "Add New Joke"
+msgstr "Add New Joke"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:196
+msgid "Are you sure you want to delete this joke ?"
+msgstr "Are you sure you want to delete this joke ?"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:237
+msgid "Reject"
+msgstr "Reject"
+
+#: /home/sugar/src/activities/joke-machine/pages/edit.py:244
+msgid "Accept"
+msgstr "Accept"
+
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:169
+msgid " submitted a joke to "
+msgstr " submitted a joke to "
+
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:208
+msgid " accepted a joke submitted to "
+msgstr " accepted a joke submitted to "
+
+#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:209
+msgid " by "
+msgstr " by "
+
+#: /home/sugar/src/activities/joke-machine/gui/page.py:105
+msgid "Click to choose a sound"
+msgstr "Click to choose a sound"
+
+#: /home/sugar/src/activities/joke-machine/gui/page.py:299
+msgid "Choose image"
+msgstr "Choose image"
+
+#: /home/sugar/src/activities/joke-machine/gui/page.py:333
+msgid "Choose Sound"
+msgstr "Choose Sound"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:106
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:193
+msgid "Lesson Plans"
+msgstr "Lesson Plans"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:124
+msgid "Read Jokebooks"
+msgstr "Read Jokebooks"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:128
+msgid "Make Jokebook"
+msgstr "Make Jokebook"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:197
+msgid "Close Lessons"
+msgstr "Close Lessons"
+
+#: /home/sugar/src/activities/joke-machine/gui/frame.py:201
+msgid "Lesson Plans:"
+msgstr "Lesson Plans:"
