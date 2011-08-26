@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-08-04 13:32+0000\n"
-"PO-Revision-Date: 2011-08-19 07:55+0200\n"
+"PO-Revision-Date: 2011-08-26 17:28+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hus\n"
@@ -46,7 +46,7 @@ msgstr "Ki mapuy an dhuchadh exobchixtaláb"
 
 #: gui/frame.py:201
 msgid "Lesson Plans:"
-msgstr "Dhuchadh exobchixtaláb"
+msgstr "Dhuchadh exobchixtaláb:"
 
 #: gui/page.py:108
 msgid "Click to choose a sound"
@@ -82,7 +82,7 @@ msgstr "A lej tsalpayámalits abal a le' ka pakuw a "
 
 #: pages/choose.py:70
 msgid "jokebook ?"
-msgstr "¿Te'endhom ts'atadh mudhat úw?"
+msgstr "¿Te'endhom ts'atadh mudhat úw ?"
 
 #: pages/choose.py:107 pages/preview.py:67
 msgid "Edit"
@@ -122,7 +122,7 @@ msgstr "In tujtal bij an Te'endhom ts'atadh mudhat úw:"
 
 #: pages/edit.py:148
 msgid "Sound Effect:"
-msgstr "Ats'abnaxtaláb k'al an janidhtaláb"
+msgstr "Ats'abnaxtaláb k'al an janidhtaláb:"
 
 #: pages/edit.py:185
 msgid "Add New Joke"
