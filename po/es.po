@@ -158,196 +158,186 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-09 17:16+0000\n"
-"PO-Revision-Date: 2010-02-12 07:50+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"POT-Creation-Date: 2011-08-04 13:32+0000\n"
+"PO-Revision-Date: 2011-06-28 15:35+0200\n"
+"Last-Translator: Enrique <quique@estudiosdeldesarrollo.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: es\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.0.1\n"
 
-#: activity/activity.info:2
-#: /home/sugar/src/activities/joke-machine/JokeMachineActivity.py:137
-#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:170
-#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:210
+#: JokeMachineActivity.py:137 activity/activity.info:2
+#: mesh/activitysession.py:170 mesh/activitysession.py:210
 msgid "Joke Machine"
-msgstr "Joke Machine"
+msgstr "Máquina de Bromas"
 
-#: /home/sugar/src/activities/joke-machine/JokeMachineActivity.py:137
+#: JokeMachineActivity.py:137
 msgid "Please wait a moment for your buddy's Jokebooks to show up"
 msgstr "Por favor espere un momento por su amigo de chistes"
 
-#: /home/sugar/src/activities/joke-machine/pages/cover.py:42
-#: /home/sugar/src/activities/joke-machine/pages/preview.py:50
-msgid "started by"
-msgstr "comenzado por"
+#: gui/frame.py:106 gui/frame.py:193
+msgid "Lesson Plans"
+msgstr "Lecciones"
 
-#: /home/sugar/src/activities/joke-machine/pages/cover.py:53
-msgid "Open"
-msgstr "Abrir"
+#: gui/frame.py:124
+msgid "Read Jokebooks"
+msgstr "Leer Libros de chistes"
 
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:65
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:72
-msgid "Question"
-msgstr "Pregunta"
+#: gui/frame.py:128
+msgid "Make Jokebook"
+msgstr "Crear Libro de Chistes"
 
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:72
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:80
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:124
-msgid "Answer"
-msgstr "Respuesta"
+#: gui/frame.py:197
+msgid "Close Lessons"
+msgstr "Cerrar Lecciones"
 
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:93
-msgid "Submission For:"
-msgstr "Sumisión Para:"
+#: gui/frame.py:201
+msgid "Lesson Plans:"
+msgstr "Lecciones:"
 
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:94
-msgid "Your Name:"
-msgstr "Tu Nombre:"
+#: gui/page.py:108
+msgid "Click to choose a sound"
+msgstr "Haz click para elegir un sonido"
 
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:105
-msgid "Submit"
-msgstr "Someter"
+#: gui/page.py:302
+msgid "Choose image"
+msgstr "Escoge una imagen"
 
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:108
-msgid "Back"
-msgstr "Atrás"
+#: gui/page.py:334
+msgid "Choose Sound"
+msgstr "Escoge un Sonido"
 
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:61
-msgid "Joke"
-msgstr "Chiste"
+#: mesh/activitysession.py:169
+msgid " submitted a joke to "
+msgstr " presentando un chiste a "
 
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:63
-msgid "By"
-msgstr "Por"
+#: mesh/activitysession.py:208
+msgid " accepted a joke submitted to "
+msgstr " aceptó un chiste presentado a "
 
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:98
-msgid "This Jokebook is empty"
-msgstr "Este Libro de Chistes esta vacío"
+#: mesh/activitysession.py:209
+msgid " by "
+msgstr " por "
 
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:100
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:160
-msgid "Submit a Joke"
-msgstr "Añadir un Chiste"
-
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:105
-msgid "Add Jokes"
-msgstr "Añadir Chistes"
-
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:154
-msgid "Next"
-msgstr "Siguiente"
-
-#: /home/sugar/src/activities/joke-machine/pages/choose.py:46
+#: pages/choose.py:46
 msgid "Choose a Jokebook to read:"
 msgstr "Elegir un Libro de Chistes a leer:"
 
-#: /home/sugar/src/activities/joke-machine/pages/choose.py:67
+#: pages/choose.py:67
 msgid "Are you sure you want to delete your "
 msgstr "Esta seguro(a) que quiere borrar su "
 
-#: /home/sugar/src/activities/joke-machine/pages/choose.py:70
+#: pages/choose.py:70
 msgid "jokebook ?"
 msgstr "¿ libro de chistes ?"
 
-#: /home/sugar/src/activities/joke-machine/pages/choose.py:107
-#: /home/sugar/src/activities/joke-machine/pages/preview.py:67
+#: pages/choose.py:107 pages/preview.py:67
 msgid "Edit"
 msgstr "Editar"
 
-#: /home/sugar/src/activities/joke-machine/pages/choose.py:111
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:173
+#: pages/choose.py:111 pages/edit.py:173
 msgid "Delete"
 msgstr "Borrar"
 
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:59
+#: pages/cover.py:42 pages/preview.py:50
+msgid "started by"
+msgstr "comenzado por"
+
+#: pages/cover.py:53
+msgid "Open"
+msgstr "Abrir"
+
+#: pages/edit.py:59
 msgid "Edit Jokebook Cover"
 msgstr "Editar portada de Libro de Chistes"
 
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:67
+#: pages/edit.py:67
 msgid "Edit My Jokes"
 msgstr "Editar mis chistes"
 
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:75
+#: pages/edit.py:75
 msgid "Review Submitted Jokes"
 msgstr "Revisar Chistes Suministrados"
 
 # This is a hard one. "Preestreno" or "Anticipo" could both fit the bill.
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:119
+#: pages/edit.py:119
 msgid "Preview"
 msgstr "Vista Previa"
 
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:144
+#: pages/edit.py:144
 msgid "Title of Jokebook:"
 msgstr "Título de Libro de Chistes:"
 
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:148
+#: pages/edit.py:148
 msgid "Sound Effect:"
 msgstr "Effecto de Sonido:"
 
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:185
+#: pages/edit.py:185
 msgid "Add New Joke"
 msgstr "Añadir Chiste Nuevo"
 
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:196
+#: pages/edit.py:196
 msgid "Are you sure you want to delete this joke ?"
 msgstr "¿Esta seguro(a) que quiere borrar este chiste ?"
 
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:237
+#: pages/edit.py:237
 msgid "Reject"
 msgstr "Rechazar"
 
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:244
+#: pages/edit.py:244
 msgid "Accept"
 msgstr "Aceptar"
 
-#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:169
-msgid " submitted a joke to "
-msgstr " presentando un chiste a "
+#: pages/joke.py:61
+msgid "Joke"
+msgstr "Chiste"
 
-#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:208
-msgid " accepted a joke submitted to "
-msgstr " aceptó un chiste presentado a "
+#: pages/joke.py:63
+msgid "By"
+msgstr "Por"
 
-#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:209
-msgid " by "
-msgstr " por "
+#: pages/joke.py:72 pages/submit.py:65
+msgid "Question"
+msgstr "Pregunta"
 
-#: /home/sugar/src/activities/joke-machine/gui/page.py:105
-msgid "Click to choose a sound"
-msgstr "Haz click para elegir un sonido"
+#: pages/joke.py:80 pages/joke.py:124 pages/submit.py:72
+msgid "Answer"
+msgstr "Respuesta"
 
-#: /home/sugar/src/activities/joke-machine/gui/page.py:299
-msgid "Choose image"
-msgstr "Escoge una imagen"
+#: pages/joke.py:98
+msgid "This Jokebook is empty"
+msgstr "Este Libro de Chistes esta vacío"
 
-#: /home/sugar/src/activities/joke-machine/gui/page.py:333
-msgid "Choose Sound"
-msgstr "Escoge un Sonido"
+#: pages/joke.py:100 pages/joke.py:160
+msgid "Submit a Joke"
+msgstr "Añadir un Chiste"
 
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:106
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:193
-msgid "Lesson Plans"
-msgstr "Lecciones"
+#: pages/joke.py:105
+msgid "Add Jokes"
+msgstr "Añadir Chistes"
 
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:124
-msgid "Read Jokebooks"
-msgstr "Leer Libros de chistes"
+#: pages/joke.py:154
+msgid "Next"
+msgstr "Siguiente"
 
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:128
-msgid "Make Jokebook"
-msgstr "Crear Libro de Chistes"
+#: pages/submit.py:93
+msgid "Submission For:"
+msgstr "Sumisión Para:"
 
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:197
-msgid "Close Lessons"
-msgstr "Cerrar Lecciones"
+#: pages/submit.py:94
+msgid "Your Name:"
+msgstr "Tu Nombre:"
 
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:201
-msgid "Lesson Plans:"
-msgstr "Lecciones:"
+#: pages/submit.py:105
+msgid "Submit"
+msgstr "Someter"
+
+#: pages/submit.py:108
+msgid "Back"
+msgstr "Atrás"
 
 #~ msgid "Chinese (simplified)"
 #~ msgstr "Chino (simplificado)"
