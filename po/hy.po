@@ -26,192 +26,182 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-09 17:16+0000\n"
-"PO-Revision-Date: 2011-05-15 13:02+0200\n"
+"POT-Creation-Date: 2011-08-04 13:32+0000\n"
+"PO-Revision-Date: 2011-12-24 04:50+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2
-#: /home/sugar/src/activities/joke-machine/JokeMachineActivity.py:137
-#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:170
-#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:210
+#: JokeMachineActivity.py:137 activity/activity.info:2
+#: mesh/activitysession.py:170 mesh/activitysession.py:210
 msgid "Joke Machine"
 msgstr "Կատակների Մեքենա"
 
-#: /home/sugar/src/activities/joke-machine/JokeMachineActivity.py:137
+#: JokeMachineActivity.py:137
 msgid "Please wait a moment for your buddy's Jokebooks to show up"
 msgstr "Խնդրում եմ սպասեք մինչև երևան ձեր ընկերների Կատակագրքերը"
 
-#: /home/sugar/src/activities/joke-machine/pages/cover.py:42
-#: /home/sugar/src/activities/joke-machine/pages/preview.py:50
-msgid "started by"
-msgstr "Մեկնարկված է"
-
-#: /home/sugar/src/activities/joke-machine/pages/cover.py:53
-msgid "Open"
-msgstr "Բացել"
-
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:65
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:72
-msgid "Question"
-msgstr "Հարց"
-
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:72
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:80
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:124
-msgid "Answer"
-msgstr "Պատասխան"
-
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:93
-msgid "Submission For:"
-msgstr "Ներկայացնել .... համար"
-
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:94
-msgid "Your Name:"
-msgstr "Ձեր Անունը"
-
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:105
-msgid "Submit"
-msgstr "Ներկայացնել"
-
-#: /home/sugar/src/activities/joke-machine/pages/submit.py:108
-msgid "Back"
-msgstr "Հետ"
-
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:61
-msgid "Joke"
-msgstr "Կատակ"
-
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:63
-msgid "By"
-msgstr "միջոցով"
-
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:98
-msgid "This Jokebook is empty"
-msgstr "Այս կատակագիրքը դատարկ է"
-
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:100
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:160
-msgid "Submit a Joke"
-msgstr "Ներկայացնել Կատակ"
-
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:105
-msgid "Add Jokes"
-msgstr "Ավելացնել Կատակներ"
-
-#: /home/sugar/src/activities/joke-machine/pages/joke.py:154
-msgid "Next"
-msgstr "Հաջորդ"
-
-#: /home/sugar/src/activities/joke-machine/pages/choose.py:46
-msgid "Choose a Jokebook to read:"
-msgstr "Ընտրել Կատակագիրքը"
-
-#: /home/sugar/src/activities/joke-machine/pages/choose.py:67
-msgid "Are you sure you want to delete your "
-msgstr "Դուք համոզվա՞ծ եք, որ ցանկանում եք ջնջել ձեր "
-
-#: /home/sugar/src/activities/joke-machine/pages/choose.py:70
-msgid "jokebook ?"
-msgstr "Կատակագիրքը:"
-
-#: /home/sugar/src/activities/joke-machine/pages/choose.py:107
-#: /home/sugar/src/activities/joke-machine/pages/preview.py:67
-msgid "Edit"
-msgstr "Խմբագրել"
-
-#: /home/sugar/src/activities/joke-machine/pages/choose.py:111
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:173
-msgid "Delete"
-msgstr "Ջնջել"
-
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:59
-msgid "Edit Jokebook Cover"
-msgstr "Խմբագրել Կատակագրքի Կազմէջը"
-
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:67
-msgid "Edit My Jokes"
-msgstr "Խմբագրել Իմ Կատակները"
-
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:75
-msgid "Review Submitted Jokes"
-msgstr "Վերադիտել Ներկայացված Կատակները"
-
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:119
-msgid "Preview"
-msgstr "Նախադիտում"
-
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:144
-msgid "Title of Jokebook:"
-msgstr "Կատակագրքի Վերնագիրը"
-
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:148
-msgid "Sound Effect:"
-msgstr "Ձայնային Էֆֆեկտ"
-
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:185
-msgid "Add New Joke"
-msgstr "Ավելացնել Նոր Կատակ"
-
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:196
-msgid "Are you sure you want to delete this joke ?"
-msgstr "Դուք համոզվա՞ծ եք, որ ցանկանում եք ջնջել այս կատակը:"
-
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:237
-msgid "Reject"
-msgstr "Մերժել"
-
-#: /home/sugar/src/activities/joke-machine/pages/edit.py:244
-msgid "Accept"
-msgstr "Ընդունել"
-
-#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:169
-msgid " submitted a joke to "
-msgstr " ներկայացված է կատակ "
-
-#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:208
-msgid " accepted a joke submitted to "
-msgstr " ընդունված կատակը ներկայացված է "
-
-#: /home/sugar/src/activities/joke-machine/mesh/activitysession.py:209
-msgid " by "
-msgstr " -ով "
-
-#: /home/sugar/src/activities/joke-machine/gui/page.py:105
-msgid "Click to choose a sound"
-msgstr "Քլիք, որպեսզի ընտրեք ձայնանշանը"
-
-#: /home/sugar/src/activities/joke-machine/gui/page.py:299
-msgid "Choose image"
-msgstr "Ընտրել պատկերը"
-
-#: /home/sugar/src/activities/joke-machine/gui/page.py:333
-msgid "Choose Sound"
-msgstr "Ընտրել Ձայնանշանը"
-
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:106
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:193
+#: gui/frame.py:106 gui/frame.py:193
 msgid "Lesson Plans"
 msgstr "Դասերի Պլանը"
 
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:124
+#: gui/frame.py:124
 msgid "Read Jokebooks"
 msgstr "Կարդալ Կատակագրքերը"
 
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:128
+#: gui/frame.py:128
 msgid "Make Jokebook"
 msgstr "Ստեղծել Կատակագիրք"
 
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:197
+#: gui/frame.py:197
 msgid "Close Lessons"
 msgstr "Փակել Դասերը"
 
-#: /home/sugar/src/activities/joke-machine/gui/frame.py:201
+#: gui/frame.py:201
 msgid "Lesson Plans:"
 msgstr "Դասերի Պլանը."
+
+#: gui/page.py:108
+msgid "Click to choose a sound"
+msgstr "Քլիք, որպեսզի ընտրեք ձայնը"
+
+#: gui/page.py:302
+msgid "Choose image"
+msgstr "Ընտրել պատկերը"
+
+#: gui/page.py:334
+msgid "Choose Sound"
+msgstr "Ընտրել Ձայնը"
+
+#: mesh/activitysession.py:169
+msgid " submitted a joke to "
+msgstr " ներկայացված է կատակ "
+
+#: mesh/activitysession.py:208
+msgid " accepted a joke submitted to "
+msgstr " ընդունված կատակ, որ ներկայացված է "
+
+#: mesh/activitysession.py:209
+msgid " by "
+msgstr " -ի կողմից "
+
+#: pages/choose.py:46
+msgid "Choose a Jokebook to read:"
+msgstr "Ընտրել ընթերցվելիք Կատակագիրքը"
+
+#: pages/choose.py:67
+msgid "Are you sure you want to delete your "
+msgstr "Դուք համոզվա՞ծ եք, որ ցանկանում եք ջնջել ձեր "
+
+#: pages/choose.py:70
+msgid "jokebook ?"
+msgstr "Կատակագիրքը:"
+
+#: pages/choose.py:107 pages/preview.py:67
+msgid "Edit"
+msgstr "Խմբագրել"
+
+#: pages/choose.py:111 pages/edit.py:173
+msgid "Delete"
+msgstr "Ջնջել"
+
+#: pages/cover.py:42 pages/preview.py:50
+msgid "started by"
+msgstr "Սկսել է."
+
+#: pages/cover.py:53
+msgid "Open"
+msgstr "Բացել"
+
+#: pages/edit.py:59
+msgid "Edit Jokebook Cover"
+msgstr "Խմբագրել Կատակագրքի Կազմէջը"
+
+#: pages/edit.py:67
+msgid "Edit My Jokes"
+msgstr "Խմբագրել Իմ Կատակները"
+
+#: pages/edit.py:75
+msgid "Review Submitted Jokes"
+msgstr "Դիտարկել Ներկայացված Կատակները"
+
+#: pages/edit.py:119
+msgid "Preview"
+msgstr "Նախադիտում"
+
+#: pages/edit.py:144
+msgid "Title of Jokebook:"
+msgstr "Կատակագրքի Վերնագիրը"
+
+#: pages/edit.py:148
+msgid "Sound Effect:"
+msgstr "Ձայնային Էֆեկտ"
+
+#: pages/edit.py:185
+msgid "Add New Joke"
+msgstr "Ավելացնել Նոր Կատակ"
+
+#: pages/edit.py:196
+msgid "Are you sure you want to delete this joke ?"
+msgstr "Դուք համոզվա՞ծ եք, որ ցանկանում եք ջնջել այս կատակը:"
+
+#: pages/edit.py:237
+msgid "Reject"
+msgstr "Մերժել"
+
+#: pages/edit.py:244
+msgid "Accept"
+msgstr "Ընդունել"
+
+#: pages/joke.py:61
+msgid "Joke"
+msgstr "Կատակ"
+
+#: pages/joke.py:63
+msgid "By"
+msgstr "միջոցով"
+
+#: pages/joke.py:72 pages/submit.py:65
+msgid "Question"
+msgstr "Հարց"
+
+#: pages/joke.py:80 pages/joke.py:124 pages/submit.py:72
+msgid "Answer"
+msgstr "Պատասխան"
+
+#: pages/joke.py:98
+msgid "This Jokebook is empty"
+msgstr "Այս կատակագիրքը դատարկ է"
+
+#: pages/joke.py:100 pages/joke.py:160
+msgid "Submit a Joke"
+msgstr "Ավելացնել Կատակ"
+
+#: pages/joke.py:105
+msgid "Add Jokes"
+msgstr "Ավելացնել Կատակներ"
+
+#: pages/joke.py:154
+msgid "Next"
+msgstr "Հաջորդ"
+
+#: pages/submit.py:93
+msgid "Submission For:"
+msgstr "Ներմուծում ... համար"
+
+#: pages/submit.py:94
+msgid "Your Name:"
+msgstr "Ձեր Անունը."
+
+#: pages/submit.py:105
+msgid "Submit"
+msgstr "Ներմուծել"
+
+#: pages/submit.py:108
+msgid "Back"
+msgstr "Հետ"
