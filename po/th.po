@@ -35,8 +35,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-08-04 13:32+0000\n"
-"PO-Revision-Date: 2012-03-15 04:39+0200\n"
-"Last-Translator: Meechai <malaku38@hotmail.com>\n"
+"PO-Revision-Date: 2012-03-16 05:34+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
@@ -88,15 +88,15 @@ msgstr "เลือกเสียง"
 
 #: mesh/activitysession.py:169
 msgid " submitted a joke to "
-msgstr "ส่งมุกตลกไปยัง"
+msgstr " ส่งมุกตลกไปยัง "
 
 #: mesh/activitysession.py:208
 msgid " accepted a joke submitted to "
-msgstr "ยอมรับเรื่องมุกซึ่งส่งไปยัง"
+msgstr " ยอมรับเรื่องมุกซึ่งส่งไปยัง "
 
 #: mesh/activitysession.py:209
 msgid " by "
-msgstr "โดย"
+msgstr " โดย "
 
 #: pages/choose.py:46
 msgid "Choose a Jokebook to read:"
