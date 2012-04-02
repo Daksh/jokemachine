@@ -35,14 +35,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-08-04 13:32+0000\n"
-"PO-Revision-Date: 2008-09-23 11:52-0400\n"
-"Last-Translator: Eduardo H. Silva <HoboPrimate@gmail.com>\n"
+"PO-Revision-Date: 2012-03-21 00:39+0200\n"
+"Last-Translator: Eduardo H. <hoboprimate@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 1.1.0rc2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: JokeMachineActivity.py:137 activity/activity.info:2
 #: mesh/activitysession.py:170 mesh/activitysession.py:210
@@ -73,7 +74,7 @@ msgstr "Fechar Lições"
 
 #: gui/frame.py:201
 msgid "Lesson Plans:"
-msgstr "Planos de Lições:"
+msgstr "Planos de Lição:"
 
 #: gui/page.py:108
 msgid "Click to choose a sound"
@@ -133,7 +134,7 @@ msgstr "Editar Capa do Livro de Anedotas"
 
 #: pages/edit.py:67
 msgid "Edit My Jokes"
-msgstr "Editar Minhas Anedotas"
+msgstr "Editar as Minhas Anedotas"
 
 #: pages/edit.py:75
 msgid "Review Submitted Jokes"
@@ -205,7 +206,7 @@ msgstr "Submissão Para:"
 
 #: pages/submit.py:94
 msgid "Your Name:"
-msgstr "Teu Nome:"
+msgstr "O Teu Nome:"
 
 #: pages/submit.py:105
 msgid "Submit"
