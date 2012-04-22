@@ -2,221 +2,139 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-30 22:32+0200\n"
-"PO-Revision-Date: 2008-08-28 05:42-0400\n"
-"Last-Translator: Rupali Sarode <rups23in@gmail.com>\n"
+"POT-Creation-Date: 2011-08-04 13:32+0000\n"
+"PO-Revision-Date: 2010-03-27 20:53+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 1.1.0rc2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.3\n"
 
-#: activity/activity.info:2 JokeMachineActivity.py:128
-#: mesh/activitysession.py:165 mesh/activitysession.py:205
+#: JokeMachineActivity.py:137 activity/activity.info:2
+#: mesh/activitysession.py:170 mesh/activitysession.py:210
 msgid "Joke Machine"
 msgstr "विनोद यंत्र"
 
-#: JokeMachineActivity.py:128
+#: JokeMachineActivity.py:137
 msgid "Please wait a moment for your buddy's Jokebooks to show up"
 msgstr "कृपया तुमच्या मित्राची विनोद पुस्तिका दाखवण्या साठी काही क्षण थांबा"
 
-#: gui/frame.py:121 gui/frame.py:208
+#: gui/frame.py:106 gui/frame.py:193
 msgid "Lesson Plans"
 msgstr "धडाची योजना"
 
-#: gui/frame.py:139
+#: gui/frame.py:124
 msgid "Read Jokebooks"
 msgstr "विनोद पुस्तिका वाचा"
 
-#: gui/frame.py:143
+#: gui/frame.py:128
 msgid "Make Jokebook"
 msgstr "विनोद पुस्तिका बनवा"
 
-#: gui/frame.py:212
+#: gui/frame.py:197
 msgid "Close Lessons"
 msgstr "धडा बंद करा"
 
-#: gui/frame.py:216
+#: gui/frame.py:201
 msgid "Lesson Plans:"
-msgstr "धडाची योजना :"
+msgstr "धडाची योजना:"
 
-#: gui/page.py:99
+#: gui/page.py:108
 msgid "Click to choose a sound"
 msgstr "आवाज निवडण्यासाठी दाबा"
 
-#: gui/page.py:294
+#: gui/page.py:302
 msgid "Choose image"
 msgstr "चित्र निवडा"
 
-#: gui/page.py:322
+#: gui/page.py:334
 msgid "Choose Sound"
 msgstr "आवाज निवडा"
 
-#: i18n.py:40
-msgid "Chinese (simplified)"
-msgstr "चाइनिस(सरलतं)"
-
-#: i18n.py:41
-msgid "Chinese (traditional)"
-msgstr "चाइनिस(पारंपरिक)"
-
-#: i18n.py:42
-msgid "Czech"
-msgstr "सेज़"
-
-#: i18n.py:43
-msgid "Danish"
-msgstr "दानिश"
-
-#: i18n.py:44
-msgid "Dutch"
-msgstr "डच"
-
-#: i18n.py:45
-msgid "Afrikaans"
-msgstr "आफ्रिकान्स"
-
-#: i18n.py:46
-msgid "English"
-msgstr "इंग्रजी"
-
-#: i18n.py:47
-msgid "English - Great Britain"
-msgstr "इंग्रजी- ग्रेट ब्रिटन"
-
-#: i18n.py:48
-msgid "English - U.S."
-msgstr "इंग्रजी - यु एस"
-
-#: i18n.py:49
-msgid "Finnish"
-msgstr "फिन्निश"
-
-#: i18n.py:50
-msgid "French"
-msgstr "फ्रेंच"
-
-#: i18n.py:51
-msgid "German"
-msgstr "जर्मन"
-
-#: i18n.py:52
-msgid "Hungarian"
-msgstr "हंगेरियन"
-
-#: i18n.py:53
-msgid "Italian"
-msgstr "इटॅलियन"
-
-#: i18n.py:54
-msgid "Japanese"
-msgstr "जॅप्नीस"
-
-#: i18n.py:55
-msgid "Korean"
-msgstr "कोरियन"
-
-#: i18n.py:56
-msgid "Norwegian"
-msgstr "नॉरवेगियं"
-
-#: i18n.py:57
-msgid "Polish"
-msgstr "पॉलिश"
-
-#: i18n.py:58
-msgid "Portuguese"
-msgstr "पोर्चुगीज़"
-
-#: i18n.py:59
-msgid "Portuguese - Brazilian"
-msgstr "पोर्चुगीज़-ब्राज़ेलियन"
-
-#: i18n.py:60
-msgid "Russian"
-msgstr "रशियन"
-
-#: i18n.py:61
-msgid "Slovak"
-msgstr "स्लोवाक"
-
-#: i18n.py:62
-msgid "Spanish"
-msgstr "स्पॅनिश"
-
-#: i18n.py:63
-msgid "Swedish"
-msgstr "स्वीडिश"
-
-#: i18n.py:64
-msgid "Turkish"
-msgstr "टर्किश"
-
-#: i18n_misc_strings.py:1
-msgid "Lesson 1"
-msgstr "धडा १"
-
-#: i18n_misc_strings.py:2
-msgid "Lesson 2"
-msgstr "धडा २"
-
-#: i18n_misc_strings.py:3
-msgid "Lesson 3"
-msgstr "धडा ३"
-
-#: i18n_misc_strings.py:4
-msgid "Lesson 4"
-msgstr "धडा ४"
-
-#: i18n_misc_strings.py:5
-msgid "Introduction"
-msgstr "परिचय"
-
-#: mesh/activitysession.py:164
+#: mesh/activitysession.py:169
 msgid " submitted a joke to "
-msgstr "विनोद _ला जमा केले"
+msgstr " विनोद _ला जमा केले "
 
-#: mesh/activitysession.py:203
+#: mesh/activitysession.py:208
 msgid " accepted a joke submitted to "
-msgstr "स्वीकारलेले विनोद _ला जमा केले"
+msgstr " स्वीकारलेले विनोद _ला जमा केले "
 
-#: mesh/activitysession.py:204
+#: mesh/activitysession.py:209
 msgid " by "
-msgstr "_कडून"
+msgstr " कडून "
 
-#: pages/choose.py:42
+#: pages/choose.py:46
 msgid "Choose a Jokebook to read:"
-msgstr "वाचण्यासाठी विनोद पुस्तिका निवडा :"
+msgstr "वाचण्यासाठी विनोद पुस्तिका निवडा:"
 
-#: pages/choose.py:65
+#: pages/choose.py:67
 msgid "Are you sure you want to delete your "
-msgstr "तुम्हाला तुमच _ नक्की बंद करायच आहे का"
+msgstr "तुम्हाला तुमच _ नक्की बंद करायच आहे का "
 
-#: pages/choose.py:68
+#: pages/choose.py:70
 msgid "jokebook ?"
 msgstr "विनोद पुस्तिका ?"
 
-#: pages/choose.py:110 pages/preview.py:62
+#: pages/choose.py:107 pages/preview.py:67
 msgid "Edit"
 msgstr "संपादन करा"
 
-#: pages/choose.py:114 pages/edit.py:178
+#: pages/choose.py:111 pages/edit.py:173
 msgid "Delete"
 msgstr "मिटवा"
 
-#: pages/cover.py:37 pages/preview.py:44
+#: pages/cover.py:42 pages/preview.py:50
 msgid "started by"
 msgstr "कडून सुरुआत केलेला"
 
-#: pages/cover.py:49
+#: pages/cover.py:53
 msgid "Open"
 msgstr "उघडा"
 
-#: pages/edit.py:57
+#: pages/edit.py:59
 msgid "Edit Jokebook Cover"
 msgstr "विनोद पुस्तिकाचा मूळपृष्ठ संपादित करा"
 
@@ -224,51 +142,51 @@ msgstr "विनोद पुस्तिकाचा मूळपृष्ठ 
 msgid "Edit My Jokes"
 msgstr "माझे विनोद संपादित करा"
 
-#: pages/edit.py:77
+#: pages/edit.py:75
 msgid "Review Submitted Jokes"
 msgstr "जमा केलेले विनोद परत पहा"
 
-#: pages/edit.py:123
+#: pages/edit.py:119
 msgid "Preview"
 msgstr "पूर्वावलोकन"
 
-#: pages/edit.py:149
+#: pages/edit.py:144
 msgid "Title of Jokebook:"
-msgstr "विनोद पुस्तिकाचा शीर्षक :"
+msgstr "विनोद पुस्तिकाचा शीर्षक:"
 
-#: pages/edit.py:153
+#: pages/edit.py:148
 msgid "Sound Effect:"
-msgstr "घडवलेला आवज़"
+msgstr "घडवलेला आवज़:"
 
-#: pages/edit.py:190
+#: pages/edit.py:185
 msgid "Add New Joke"
 msgstr "नवीन विनोद जोडा"
 
-#: pages/edit.py:201
+#: pages/edit.py:196
 msgid "Are you sure you want to delete this joke ?"
 msgstr "तुम्हाला हा विनोद नक्की मिटवायचा आहे ?"
 
-#: pages/edit.py:242
+#: pages/edit.py:237
 msgid "Reject"
 msgstr "नाकारणे"
 
-#: pages/edit.py:249
+#: pages/edit.py:244
 msgid "Accept"
 msgstr "स्वीकारणे"
 
-#: pages/joke.py:57
+#: pages/joke.py:61
 msgid "Joke"
 msgstr "विनोद"
 
-#: pages/joke.py:60
+#: pages/joke.py:63
 msgid "By"
 msgstr "कडून"
 
-#: pages/joke.py:70 pages/submit.py:63
+#: pages/joke.py:72 pages/submit.py:65
 msgid "Question"
 msgstr "प्रश्न"
 
-#: pages/joke.py:79 pages/joke.py:124 pages/submit.py:71
+#: pages/joke.py:80 pages/joke.py:124 pages/submit.py:72
 msgid "Answer"
 msgstr "उत्तर"
 
@@ -278,7 +196,7 @@ msgstr "ही विनोद पुस्तिका रिकामी आ�
 
 #: pages/joke.py:100 pages/joke.py:160
 msgid "Submit a Joke"
-msgstr "विनोद जमा करा "
+msgstr "विनोद जमा करा"
 
 #: pages/joke.py:105
 msgid "Add Jokes"
@@ -290,11 +208,11 @@ msgstr "पुढच"
 
 #: pages/submit.py:93
 msgid "Submission For:"
-msgstr "चासाठी जमाव"
+msgstr "चासाठी जमाव:"
 
 #: pages/submit.py:94
 msgid "Your Name:"
-msgstr "तुमच नाव"
+msgstr "तुमच नाव:"
 
 #: pages/submit.py:105
 msgid "Submit"
@@ -303,3 +221,93 @@ msgstr "जमा करा"
 #: pages/submit.py:108
 msgid "Back"
 msgstr "मागे"
+
+#~ msgid "Chinese (simplified)"
+#~ msgstr "चाइनिस(सरलतं)"
+
+#~ msgid "Chinese (traditional)"
+#~ msgstr "चाइनिस(पारंपरिक)"
+
+#~ msgid "Czech"
+#~ msgstr "सेज़"
+
+#~ msgid "Danish"
+#~ msgstr "दानिश"
+
+#~ msgid "Dutch"
+#~ msgstr "डच"
+
+#~ msgid "Afrikaans"
+#~ msgstr "आफ्रिकान्स"
+
+#~ msgid "English"
+#~ msgstr "इंग्रजी"
+
+#~ msgid "English - Great Britain"
+#~ msgstr "इंग्रजी- ग्रेट ब्रिटन"
+
+#~ msgid "English - U.S."
+#~ msgstr "इंग्रजी - यु एस"
+
+#~ msgid "Finnish"
+#~ msgstr "फिन्निश"
+
+#~ msgid "French"
+#~ msgstr "फ्रेंच"
+
+#~ msgid "German"
+#~ msgstr "जर्मन"
+
+#~ msgid "Hungarian"
+#~ msgstr "हंगेरियन"
+
+#~ msgid "Italian"
+#~ msgstr "इटॅलियन"
+
+#~ msgid "Japanese"
+#~ msgstr "जॅप्नीस"
+
+#~ msgid "Korean"
+#~ msgstr "कोरियन"
+
+#~ msgid "Norwegian"
+#~ msgstr "नॉरवेगियं"
+
+#~ msgid "Polish"
+#~ msgstr "पॉलिश"
+
+#~ msgid "Portuguese"
+#~ msgstr "पोर्चुगीज़"
+
+#~ msgid "Portuguese - Brazilian"
+#~ msgstr "पोर्चुगीज़-ब्राज़ेलियन"
+
+#~ msgid "Russian"
+#~ msgstr "रशियन"
+
+#~ msgid "Slovak"
+#~ msgstr "स्लोवाक"
+
+#~ msgid "Spanish"
+#~ msgstr "स्पॅनिश"
+
+#~ msgid "Swedish"
+#~ msgstr "स्वीडिश"
+
+#~ msgid "Turkish"
+#~ msgstr "टर्किश"
+
+#~ msgid "Lesson 1"
+#~ msgstr "धडा १"
+
+#~ msgid "Lesson 2"
+#~ msgstr "धडा २"
+
+#~ msgid "Lesson 3"
+#~ msgstr "धडा ३"
+
+#~ msgid "Lesson 4"
+#~ msgstr "धडा ४"
+
+#~ msgid "Introduction"
+#~ msgstr "परिचय"

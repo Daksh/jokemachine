@@ -7,10 +7,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-08-04 13:32+0000\n"
-"PO-Revision-Date: 2011-08-26 17:28+0200\n"
+"PO-Revision-Date: 2011-08-29 03:29+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: hus\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -62,11 +62,11 @@ msgstr "Ka takuy jun i janidhtaláb"
 
 #: mesh/activitysession.py:169
 msgid " submitted a joke to "
-msgstr " Ki olchij jún i te'endhomtaláb a "
+msgstr " ki olchij jún i te'endhomtaláb a "
 
 #: mesh/activitysession.py:208
 msgid " accepted a joke submitted to "
-msgstr " In bats'uw jún i te'endhomtaláb olchidh a "
+msgstr " in bats'uw jún i te'endhomtaláb olchidh a "
 
 #: mesh/activitysession.py:209
 msgid " by "
@@ -82,7 +82,7 @@ msgstr "A lej tsalpayámalits abal a le' ka pakuw a "
 
 #: pages/choose.py:70
 msgid "jokebook ?"
-msgstr "¿Te'endhom ts'atadh mudhat úw ?"
+msgstr "¿te'endhom ts'atadh mudhat úw ?"
 
 #: pages/choose.py:107 pages/preview.py:67
 msgid "Edit"
@@ -94,7 +94,7 @@ msgstr "Pakuw"
 
 #: pages/cover.py:42 pages/preview.py:50
 msgid "started by"
-msgstr "Tujudh k'al"
+msgstr "tujudh k'al"
 
 #: pages/cover.py:53
 msgid "Open"
@@ -155,7 +155,7 @@ msgstr "Konoy"
 
 #: pages/joke.py:80 pages/joke.py:124 pages/submit.py:72
 msgid "Answer"
-msgstr "tok'tsixtaláb"
+msgstr "Tok'tsixtaláb"
 
 #: pages/joke.py:98
 msgid "This Jokebook is empty"
@@ -187,4 +187,4 @@ msgstr "Wat'badh"
 
 #: pages/submit.py:108
 msgid "Back"
-msgstr "wichiy"
+msgstr "Wichiy"

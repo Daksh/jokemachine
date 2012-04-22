@@ -2,221 +2,131 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-10-30 22:32+0200\n"
-"PO-Revision-Date: 2008-08-28 05:14-0400\n"
-"Last-Translator: salman minhas <sulmanminhas@gmail.com>\n"
+"POT-Creation-Date: 2011-08-04 13:32+0000\n"
+"PO-Revision-Date: 2011-12-11 09:19+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 1.1.0rc2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
 
-#: activity/activity.info:2 JokeMachineActivity.py:128
-#: mesh/activitysession.py:165 mesh/activitysession.py:205
+#: JokeMachineActivity.py:137 activity/activity.info:2
+#: mesh/activitysession.py:170 mesh/activitysession.py:210
 msgid "Joke Machine"
 msgstr "ہنسنے والی مشين"
 
-#: JokeMachineActivity.py:128
+#: JokeMachineActivity.py:137
 msgid "Please wait a moment for your buddy's Jokebooks to show up"
 msgstr "براہ مہربانی اپنے ساتھی کی جوک کتاب کھلنے تک انتظار کريں"
 
-#: gui/frame.py:121 gui/frame.py:208
+#: gui/frame.py:106 gui/frame.py:193
 msgid "Lesson Plans"
 msgstr "سبق کے پلان"
 
-#: gui/frame.py:139
+#: gui/frame.py:124
 msgid "Read Jokebooks"
 msgstr "جوک کتاب پڑھيں"
 
-#: gui/frame.py:143
+#: gui/frame.py:128
 msgid "Make Jokebook"
 msgstr "جوک کتاب بنائيں"
 
-#: gui/frame.py:212
+#: gui/frame.py:197
 msgid "Close Lessons"
 msgstr "سبق بند کريں"
 
-#: gui/frame.py:216
+#: gui/frame.py:201
 msgid "Lesson Plans:"
 msgstr "سبق کے پلان:"
 
-#: gui/page.py:99
+#: gui/page.py:108
 msgid "Click to choose a sound"
 msgstr "آواز منتخب کرنے کے ليے کلک کريں"
 
-#: gui/page.py:294
+#: gui/page.py:302
 msgid "Choose image"
 msgstr "تصوير منتخب کريں"
 
-#: gui/page.py:322
+#: gui/page.py:334
 msgid "Choose Sound"
 msgstr "آواز منتخب کريں"
 
-#: i18n.py:40
-msgid "Chinese (simplified)"
-msgstr "چائينيز (سادہ)"
-
-#: i18n.py:41
-msgid "Chinese (traditional)"
-msgstr "چائينيز (صقافت)"
-
-#: i18n.py:42
-msgid "Czech"
-msgstr "سزيچ"
-
-#: i18n.py:43
-msgid "Danish"
-msgstr "ڈنمارکی"
-
-#: i18n.py:44
-msgid "Dutch"
-msgstr "ولندیزی"
-
-#: i18n.py:45
-msgid "Afrikaans"
-msgstr "افريکن"
-
-#: i18n.py:46
-msgid "English"
-msgstr "انگریزی"
-
-#: i18n.py:47
-msgid "English - Great Britain"
-msgstr "انگریزی - برطانی"
-
-#: i18n.py:48
-msgid "English - U.S."
-msgstr "انگریزی - امريکہ"
-
-#: i18n.py:49
-msgid "Finnish"
-msgstr "ختم"
-
-#: i18n.py:50
-msgid "French"
-msgstr "فرانسیسی"
-
-#: i18n.py:51
-msgid "German"
-msgstr "جرمن"
-
-#: i18n.py:52
-msgid "Hungarian"
-msgstr "ہنگریائی"
-
-#: i18n.py:53
-msgid "Italian"
-msgstr "اطالوی"
-
-#: i18n.py:54
-msgid "Japanese"
-msgstr "جاپانی"
-
-#: i18n.py:55
-msgid "Korean"
-msgstr "کوریائی"
-
-#: i18n.py:56
-msgid "Norwegian"
-msgstr "نارویجی"
-
-#: i18n.py:57
-msgid "Polish"
-msgstr "پولش"
-
-#: i18n.py:58
-msgid "Portuguese"
-msgstr "پرتگالی"
-
-#: i18n.py:59
-msgid "Portuguese - Brazilian"
-msgstr "پرتگالی - برازیلی"
-
-#: i18n.py:60
-msgid "Russian"
-msgstr "روسی"
-
-#: i18n.py:61
-msgid "Slovak"
-msgstr "سلوواکی"
-
-#: i18n.py:62
-msgid "Spanish"
-msgstr "ہسپانوی"
-
-#: i18n.py:63
-msgid "Swedish"
-msgstr "سویڈش"
-
-#: i18n.py:64
-msgid "Turkish"
-msgstr "ترکی"
-
-#: i18n_misc_strings.py:1
-msgid "Lesson 1"
-msgstr "سبق 1"
-
-#: i18n_misc_strings.py:2
-msgid "Lesson 2"
-msgstr "سبق 2"
-
-#: i18n_misc_strings.py:3
-msgid "Lesson 3"
-msgstr "سبق 3"
-
-#: i18n_misc_strings.py:4
-msgid "Lesson 4"
-msgstr "سبق 4"
-
-#: i18n_misc_strings.py:5
-msgid "Introduction"
-msgstr "تعارف"
-
-#: mesh/activitysession.py:164
+#: mesh/activitysession.py:169
 msgid " submitted a joke to "
-msgstr "ايک جوک لکھا "
+msgstr " ايک جوک لکھا "
 
-#: mesh/activitysession.py:203
+#: mesh/activitysession.py:208
 msgid " accepted a joke submitted to "
-msgstr "جوک کو قبول کيآ"
+msgstr " جوک کو قبول کيآ "
 
-#: mesh/activitysession.py:204
+#: mesh/activitysession.py:209
 msgid " by "
-msgstr " by "
+msgstr ""
 
-#: pages/choose.py:42
+#: pages/choose.py:46
 msgid "Choose a Jokebook to read:"
 msgstr "پرھنے کے ليے جوک کتاب منتخب کريں:"
 
-#: pages/choose.py:65
+#: pages/choose.py:67
 msgid "Are you sure you want to delete your "
 msgstr "کيا آپ کو يقين ہے کہ آپ اس کو ختم کرنا چاھتے ہیں "
 
-#: pages/choose.py:68
+#: pages/choose.py:70
 msgid "jokebook ?"
 msgstr "جوک کتاب؟"
 
-#: pages/choose.py:110 pages/preview.py:62
+#: pages/choose.py:107 pages/preview.py:67
 msgid "Edit"
 msgstr "تدوین کریں"
 
-#: pages/choose.py:114 pages/edit.py:178
+#: pages/choose.py:111 pages/edit.py:173
 msgid "Delete"
 msgstr "ختم کريں"
 
-#: pages/cover.py:37 pages/preview.py:44
+#: pages/cover.py:42 pages/preview.py:50
 msgid "started by"
 msgstr "شروع کيا"
 
-#: pages/cover.py:49
+#: pages/cover.py:53
 msgid "Open"
 msgstr "کھوليں"
 
-#: pages/edit.py:57
+#: pages/edit.py:59
 msgid "Edit Jokebook Cover"
 msgstr "جوک کتاب کور کو تبديل کريں"
 
@@ -224,51 +134,51 @@ msgstr "جوک کتاب کور کو تبديل کريں"
 msgid "Edit My Jokes"
 msgstr "ميرے جوک کو تبديل کريں"
 
-#: pages/edit.py:77
+#: pages/edit.py:75
 msgid "Review Submitted Jokes"
 msgstr "ديے گئے جوک کا ريويو کريں"
 
-#: pages/edit.py:123
+#: pages/edit.py:119
 msgid "Preview"
 msgstr "پريويو"
 
-#: pages/edit.py:149
+#: pages/edit.py:144
 msgid "Title of Jokebook:"
 msgstr "جوک کتاب کا ٹائٹل:"
 
-#: pages/edit.py:153
+#: pages/edit.py:148
 msgid "Sound Effect:"
 msgstr "آواز کا اثر:"
 
-#: pages/edit.py:190
+#: pages/edit.py:185
 msgid "Add New Joke"
 msgstr "نيا جوک شامل کريں"
 
-#: pages/edit.py:201
+#: pages/edit.py:196
 msgid "Are you sure you want to delete this joke ?"
 msgstr "کيا آپ کو يقين ہے کہ آپ اس جوک کو ختم کرنا چاھتے ہيں؟"
 
-#: pages/edit.py:242
+#: pages/edit.py:237
 msgid "Reject"
 msgstr "قبول نہيں کیا"
 
-#: pages/edit.py:249
+#: pages/edit.py:244
 msgid "Accept"
 msgstr "قبول کيا"
 
-#: pages/joke.py:57
+#: pages/joke.py:61
 msgid "Joke"
 msgstr "جوک"
 
-#: pages/joke.py:60
+#: pages/joke.py:63
 msgid "By"
 msgstr "کے ليے"
 
-#: pages/joke.py:70 pages/submit.py:63
+#: pages/joke.py:72 pages/submit.py:65
 msgid "Question"
 msgstr "سوال"
 
-#: pages/joke.py:79 pages/joke.py:124 pages/submit.py:71
+#: pages/joke.py:80 pages/joke.py:124 pages/submit.py:72
 msgid "Answer"
 msgstr "جواب"
 
@@ -303,3 +213,93 @@ msgstr "داخل کريں"
 #: pages/submit.py:108
 msgid "Back"
 msgstr "واپس"
+
+#~ msgid "Chinese (simplified)"
+#~ msgstr "چائينيز (سادہ)"
+
+#~ msgid "Chinese (traditional)"
+#~ msgstr "چائينيز (صقافت)"
+
+#~ msgid "Czech"
+#~ msgstr "سزيچ"
+
+#~ msgid "Danish"
+#~ msgstr "ڈنمارکی"
+
+#~ msgid "Dutch"
+#~ msgstr "ولندیزی"
+
+#~ msgid "Afrikaans"
+#~ msgstr "افريکن"
+
+#~ msgid "English"
+#~ msgstr "انگریزی"
+
+#~ msgid "English - Great Britain"
+#~ msgstr "انگریزی - برطانی"
+
+#~ msgid "English - U.S."
+#~ msgstr "انگریزی - امريکہ"
+
+#~ msgid "Finnish"
+#~ msgstr "ختم"
+
+#~ msgid "French"
+#~ msgstr "فرانسیسی"
+
+#~ msgid "German"
+#~ msgstr "جرمن"
+
+#~ msgid "Hungarian"
+#~ msgstr "ہنگریائی"
+
+#~ msgid "Italian"
+#~ msgstr "اطالوی"
+
+#~ msgid "Japanese"
+#~ msgstr "جاپانی"
+
+#~ msgid "Korean"
+#~ msgstr "کوریائی"
+
+#~ msgid "Norwegian"
+#~ msgstr "نارویجی"
+
+#~ msgid "Polish"
+#~ msgstr "پولش"
+
+#~ msgid "Portuguese"
+#~ msgstr "پرتگالی"
+
+#~ msgid "Portuguese - Brazilian"
+#~ msgstr "پرتگالی - برازیلی"
+
+#~ msgid "Russian"
+#~ msgstr "روسی"
+
+#~ msgid "Slovak"
+#~ msgstr "سلوواکی"
+
+#~ msgid "Spanish"
+#~ msgstr "ہسپانوی"
+
+#~ msgid "Swedish"
+#~ msgstr "سویڈش"
+
+#~ msgid "Turkish"
+#~ msgstr "ترکی"
+
+#~ msgid "Lesson 1"
+#~ msgstr "سبق 1"
+
+#~ msgid "Lesson 2"
+#~ msgstr "سبق 2"
+
+#~ msgid "Lesson 3"
+#~ msgstr "سبق 3"
+
+#~ msgid "Lesson 4"
+#~ msgstr "سبق 4"
+
+#~ msgid "Introduction"
+#~ msgstr "تعارف"
