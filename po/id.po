@@ -35,7 +35,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-08-04 13:32+0000\n"
-"PO-Revision-Date: 2011-04-04 11:37+0200\n"
+"PO-Revision-Date: 2012-05-22 03:04+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -43,7 +43,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: JokeMachineActivity.py:137 activity/activity.info:2
 #: mesh/activitysession.py:170 mesh/activitysession.py:210
@@ -115,16 +115,18 @@ msgid "Edit"
 msgstr "Sunting"
 
 #: pages/choose.py:111 pages/edit.py:173
+#, fuzzy
 msgid "Delete"
-msgstr ""
+msgstr "Hapus"
 
 #: pages/cover.py:42 pages/preview.py:50
 msgid "started by"
 msgstr ""
 
 #: pages/cover.py:53
+#, fuzzy
 msgid "Open"
-msgstr ""
+msgstr "Buka"
 
 #: pages/edit.py:59
 msgid "Edit Jokebook Cover"
@@ -159,12 +161,14 @@ msgid "Are you sure you want to delete this joke ?"
 msgstr ""
 
 #: pages/edit.py:237
+#, fuzzy
 msgid "Reject"
-msgstr ""
+msgstr "Tolak"
 
 #: pages/edit.py:244
+#, fuzzy
 msgid "Accept"
-msgstr ""
+msgstr "Terima"
 
 #: pages/joke.py:61
 msgid "Joke"
@@ -175,12 +179,14 @@ msgid "By"
 msgstr ""
 
 #: pages/joke.py:72 pages/submit.py:65
+#, fuzzy
 msgid "Question"
-msgstr ""
+msgstr "Pertanyaan"
 
 #: pages/joke.py:80 pages/joke.py:124 pages/submit.py:72
+#, fuzzy
 msgid "Answer"
-msgstr ""
+msgstr "Jawab"
 
 #: pages/joke.py:98
 msgid "This Jokebook is empty"
@@ -195,8 +201,9 @@ msgid "Add Jokes"
 msgstr ""
 
 #: pages/joke.py:154
+#, fuzzy
 msgid "Next"
-msgstr ""
+msgstr "Selanjutnya"
 
 #: pages/submit.py:93
 msgid "Submission For:"
