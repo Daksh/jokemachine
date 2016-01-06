@@ -1,0 +1,26 @@
+﻿Lesson 2: Create a Jokebook with Joke Machine
+After collecting a set of jokes, and creating images and sounds to go with them, you can create an original jokebook with the Joke Machine.
+
+From the Home screen of your XO,click on the Joke Machine icon to open the activity. You can also open it from theMaMaMedia Creative Center.
+
+Click the "Make jokebooks" button at the bottom of the screen to start a new jokebook. You will see three tabs at the top of the Jokebook editing screen:
+Edit Jokebook Cover
+Edit My Jokes
+Review Submitted Jokes
+
+At first you will be on the "Edit Jokebook Cover" tab:
+Type in your jokebook title (i.e. "Celia's Favorite Jokes")
+Click on the camera button to find a picture or photo from your Journal that you wish to use as the cover image. 
+You can also find a sound effect in your journal and add it to the cover.
+
+When you are happy with the cover, click on "Edit My Jokes" to add your jokes:
+Type in the Question and Answer for your jokes in the text fields.
+Click on the camera button to find a picture or photo from your Journal that you wish to use as the image with a joke. (Joke Machine will automatically make your picture the right size to fit in your jokebook.)
+There is a delete button in case you decide you want to delete the joke later.
+Click "Add Joke" to start creating another joke for your jokebook.
+After you add your jokes, click "Preview" to see how your jokebook looks!
+
+When you are happy with your jokebook, click on the Journal icon (open book at the top of your screen) to keep a copy of it in your Journal.
+
+Present your jokebook to your class. Select the "Share with: My Neighborhood" option  in the top bar of your screen. This will allow other XO users in your 'neighborhood' to see your jokebook and read it through the Mesh network.
+

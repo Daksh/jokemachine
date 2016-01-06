@@ -1,0 +1,16 @@
+﻿Lesson 3: Contributing Jokes to a Friend's Jokebook
+Not only can you share your jokebook with friends over the mesh, you can also contribute joke ideas to one another's jokebooks. 
+
+Go to your neighborhood view and look for a Joke Machine icon. Click on the icon to join that activity. The jokebook will load on your XO so you can read it.
+
+While you are reading a jokebook , click on the "Submit a Joke" button to suggest a joke for the author to add.
+
+A "Submit Joke" screen will appear on your XO. Type your joke question and answer in the text field and click on the camera button to browse your journal for an image. Click the "Submit" button to send the joke to the jokebook author.
+
+The author's XO will be updated with your joke submission during the shared activity. An alert message will let him know that your suggestion is there, so he can review it and decide whether to add it to his jokebook.
+
+Once a joke is approved by author, it is added to his jokebook.
+
+New jokes can be seen by other users the next time the jokebook is shared. 
+
+If the author disconnects or closes the activity, you cannot submit jokes, but you can keep reading his jokebook.

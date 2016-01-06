@@ -23,9 +23,7 @@ import locale
 import gtk
 import logging
 from gettext import gettext as _
-
-from abiword import Canvas as AbiCanvas
-
+#from gi.repository import Gtk
 
 class LessonPlanWidget(gtk.Notebook):
   
@@ -44,7 +42,7 @@ class LessonPlanWidget(gtk.Notebook):
 
 
   def _load_lesson (self, path, name):
-    """Load the lesson content from a .abw, taking l10n into account.
+    """Load the lesson content from a .txt, taking l10n into account.
 
         path -- string, path of lesson plan file, e.g. lessons/Introduction
         lesson -- string, name of lesson
@@ -54,20 +52,18 @@ class LessonPlanWidget(gtk.Notebook):
     if code is None or encoding is None:
       locale.setlocale(locale.LC_ALL, 'en_US')
       code, encoding = locale.getlocale()
-    canvas = AbiCanvas()
+    #canvas = Gtk.TextView()
+    canvas = gtk.TextView()
     canvas.show()
-    files = map(lambda x: os.path.join(path, '%s.abw' % x),
+    canvas.set_wrap_mode(gtk.WRAP_WORD)
+
+    files = map(lambda x: os.path.join(path, '%s.txt' % x),
                 ('_'+code.lower(), '_'+code.split('_')[0].lower(), 
                  'default'))
     files = filter(lambda x: os.path.exists(x), files)
-    # On jhbuild, the first works, on XO image 432 the second works:
-    try:
-      canvas.load_file('file://%s' % files[0], 'application/x-abiword')
-    except:
-      canvas.load_file('file://%s' % files[0])
-    canvas.view_online_layout()
-    canvas.zoom_width()
-    canvas.set_show_margin(False)
+
+    with open(files[0],'r') as f:
+      text = f.read()
+      canvas.get_buffer().set_text(text)
+
     self.append_page(canvas, gtk.Label(name))
-    
-    
